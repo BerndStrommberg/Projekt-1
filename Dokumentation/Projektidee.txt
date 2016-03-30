@@ -1,11 +1,17 @@
-Projektidee:
+﻿Projektidee:
 
 In meinem Projekt möchte ich ein kleines Spiel umsetzen.
-Der Nutzer soll dabei über Hindernisse springen, die auf ihn zukommen. Die einzige Eingabe, die der Spieler vornehmen muss ist ein Klick oder ein Tippen auf den Bildschirm um zu springen. Die Hindernisse bewegen sich von alleine auf ihn zu. 
+Der Nutzer soll dabei über Hindernisse springen, die auf ihn zukommen. 
+Die einzige Eingabe, die der Spieler vornehmen muss ist ein Klick oder ein Tippen auf den Bildschirm um zu springen. 
+Die Hindernisse bewegen sich von alleine auf ihn zu. 
 Die Höhe des Sprungs ist festgelegt. Es kommt also auf das korrekte Timing des Sprungs an um die Hindernisse zu überwinden. 
 Neben einem einfachen Sprung kann über zwei aufeinanderfolgende Eingaben ein Doppelsprung ausgeführt werden.
 
-Die Hindernisse, die auf den Nutzer zukommen, haben keine Regelmäßigkeit. Es ist also kein Muster zu erkennen. Dabei bleibt aber jedes Hindernis überwindbar. 
-Das Spiel ist in mehrere Abschnitte (Level) aufgeteilt. Nach jeweils 20 überwundenen Hindernissen beginnt ein neuer Level. Das wird dann am rechten oberen Bildschirmrand vermerkt. Die Hindernisse bestehen aus Einer- oder Zweiereinheiten. Die Spielfigur selbst hat die Größe einer Einereinheit. Durch den Doppelsprung ist sie aber in der Lage Zweiereinheiten zu überwinden.
+Die Hindernisse, die auf den Nutzer zukommen, haben keine Regelmäßigkeit. Es ist also kein Muster zu erkennen. 
+Dabei bleibt aber jedes Hindernis überwindbar. 
+Das Spiel ist in mehrere Abschnitte (Level) aufgeteilt. Nach jeweils 20 überwundenen Hindernissen beginnt ein neuer Level. 
+Das wird dann am rechten oberen Bildschirmrand vermerkt. Die Hindernisse bestehen aus Einer- oder Zweiereinheiten. 
+Die Spielfigur selbst hat die Größe einer Einereinheit. Durch den Doppelsprung ist sie aber in der Lage Zweiereinheiten zu überwinden.
 
-Das Spiel wird über ein Menü gestartet. Um das Spiel zu starten muss auf den entsprechenden Button geklickt werden. Unter dem Startbutton ist das Höchste Level, dass der Nutzer bisher erreicht hat, vermerkt.   
+Das Spiel wird über ein Menü gestartet. Um das Spiel zu starten muss auf den entsprechenden Button geklickt werden. 
+Unter dem Startbutton ist das höchste Level, dass der Nutzer bisher erreicht hat, vermerkt.   
