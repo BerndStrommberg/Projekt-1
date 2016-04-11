@@ -1,17 +1,85 @@
-﻿Projektidee:
+﻿Projektidee: Endless Fight
 
-In meinem Projekt möchte ich ein kleines Spiel umsetzen.
-Der Nutzer soll dabei über Hindernisse springen, die auf ihn zukommen. 
-Die einzige Eingabe, die der Spieler vornehmen muss ist ein Klick oder ein Tippen auf den Bildschirm um zu springen. 
-Die Hindernisse bewegen sich von alleine auf ihn zu. 
-Die Höhe des Sprungs ist festgelegt. Es kommt also auf das korrekte Timing des Sprungs an um die Hindernisse zu überwinden. 
-Neben einem einfachen Sprung kann über zwei aufeinanderfolgende Eingaben ein Doppelsprung ausgeführt werden.
+In meinem Projekt möchte ich ein einfaches Rollenspiel umsetzen. Der Spieler spielt einen Helden, 
+der sich kreisförmig durch die Spielwelt bewegt. Er geht auf einer Karte von Punkt zu Punkt.
+Auf jedem der Punkte warten Gegner, die er bekämpfen muss. Das Kampfsystem ist rundenbasiert. 
+Das heißt der Gegner und der Spielen führen Abwechselnd Aktionen aus. Dabei stehen dem Spieler eine 
+Reihe von Aktionen zur verfügung, die eine unterschiedliche Anzahl Aktionspunkte kosten.
 
-Die Hindernisse, die auf den Nutzer zukommen, haben keine Regelmäßigkeit. Es ist also kein Muster zu erkennen. 
-Dabei bleibt aber jedes Hindernis überwindbar. 
-Das Spiel ist in mehrere Abschnitte (Level) aufgeteilt. Nach jeweils 20 überwundenen Hindernissen beginnt ein neuer Level. 
-Das wird dann am rechten oberen Bildschirmrand vermerkt. Die Hindernisse bestehen aus Einer- oder Zweiereinheiten. 
-Die Spielfigur selbst hat die Größe einer Einereinheit. Durch den Doppelsprung ist sie aber in der Lage Zweiereinheiten zu überwinden.
+Der Charakter:
+Der Charakter des Spiels ist die Figur, die der Spieler steuert. Er hat bestimmt Fähigkeiten und Attribute.
 
-Das Spiel wird über ein Menü gestartet. Um das Spiel zu starten muss auf den entsprechenden Button geklickt werden. 
-Unter dem Startbutton ist das höchste Level, dass der Nutzer bisher erreicht hat, vermerkt.   
+
+Attribute:
+Die Basis-Attribute des Charakters sind die Lebenspunkte und die Aktionspunkte.
+Erfahrungspunkte, sein Level, so wie sein Stärkewert und sein Verteidigungswert, sind ebenfalls Werte die den Charakter
+beschreiben. Durch Kämpfe erhält der Charakter, je nach schwierigkeit des Gegners
+Erfahrungspunkte. Ab einer gewissen Anzahl an Erfahrungspunkten steigt das Level des Charakters.
+Pro Level-Aufstieg erhält der Charakter drei Fertigkeitspunkte(FP) und einen Attributpunkt(ABP).
+Die FP kann er in die zu erlernenden Fähigkeiten investieren um diese entweder zu verbessern, oder neue
+zu erlernen. Die ABP können entweder eingesetzt werden um die Anzahl der Aktionspunkte oder 
+die Anzahl der Lebenspunkte um eine Einheit zu erhöhen.
+Mit jedem Level-Aufstieg werden automatisch der Stärke- und der Verteidugungswert erhöt.
+
+Kampf - Stärkewert und Verteidigungswert:
+Der Kampf ist rundenbasiert, das heißt, Spieler und Gegner führen Abwechselnd Aktionen aus. Hier beginnt der mit dem niedrigeren Stärkewert.
+Der Stärkewert entspricht den Punkten, die der Gegner, oder der Spieler bei einem Angriff durch den jeweils anderen verlieren.
+Zuerst werden aber die Verteidigungspunkte von den Stärkepunkten abgezogen. Ist der Stärkewert also 5 und der Verteidigungswert 3, verliert der 
+Charakter 2 Lebenspunkte. Ist der Verteidigungswert höher als der Stärkewert, verliert er keinen Lebenspunkt. Allerdings werden in Kämpfen mit
+solchen Gegnern keine Erfahrungspunkte gesammelt, so dass der Spieler weitergehen muss. Waffen und Rüstungen können Stärke- und Verteidigungswert erhöhen.
+
+Fähigkeiten: 
+Die Fähigkeiten haben drei verschiedene Funktionen. Sie können die Lebenspunkte des Gegners 
+minimieren, die Lebenspunkte des Spielers wiederherstellen, oder Effekte auf den Gegner oder den Spieler legen. 
+Diese Effekte können den Stärkewert kurzzeitig verringern, die Aktionspunkte des Gegners verringern, oder die Aktionspunkte des Spielers wiederherstellen.
+
+Die Aktionspunkte:
+Aktionspunkte werden mit dem Einsatz von Fähigkeiten verbraucht. Sie regenerieren sich automatisch. Pro Runde im Kampf 
+erhält der Spieler 2 Aktionspunkte zurück. Das ist die Anzahl, die für den Standart-Angriff (erteilt den geringsten Schaden)
+verbraucht wird. 
+Aktionspunkte werden nicht nur bei dem Einsatz von Fähigkeiten verbraucht, sondern auch bei der Verwendung von Gegenständen, die
+die Werte des Spielers beeinflussen. 
+
+Gegenstände:
+Zum Einen gibt es Gegenstände, die Die Basis-Attribute des Spielers (des Charakters)bis zu ihrem Maximalwert ändern können. Hierzu gehören Heiltränke und AP-Tränke.
+Erstere füllen die Lebenspunkte des Charakters wieder auf, Letztere die Aktionspunkte. Für das Einnehmen eines Trankes wird in einem Kampf eine Runde 
+gebraucht. Es kann also währenddessen nicht gekämpft werden.
+Auch gibt es Waffen und Rüstungen. Die Waffen erhöhen den Stärkewert des Spielers um einen bestimmten Prozentsatz und die Rüstungen entsprechend 
+den Verteidigungswert. Gegenstände erhält der Spieler manchmal nach einem Kampf. Ob ein Gegenstand "fallen gelassen" wird ist zufällig, es passiert aber seltener,
+als dass es nicht passiert. Auch lassen schwache Gegner(Gegner mit niederigen Stärke- und Verteidgungswerten) auch nur schwache Gegenstände fallen(--"--).
+Heil- und Ap-Tränke werden öfter fallen gelassen.
+
+//Aufbau
+
+###Spielwelt###
+In der Spielwelt bewegt sich eine kleine Figur auf einem Kreis. Dieser Kreis ist in 30 Punkte unterteilt zwischen denen die Spielfigur vor 
+und zurück springen kann. Auf jedem Kreis findet ein Kampf statt. Die Gegner werden von Kampf zu kampf stärker. 
+Alle 10 Punkte kämpft der Spieler gegen einen wesentlich stärkeren Gegner, wobei auch die im Uhrzeigersinn immer stärker werden.
+Jede "Umrundung" des Kreises wir vermerkt. Und die Werte aller Gegner werden höher gesetzt.
+
+
+###Spiel-Menü:###
+Die Punkte, die der Charakter mit jedem Level-Aufstieg erhält werden in einem eigenen Menü verteilt.
+Dieses ist in vier Untermenüs gegliedert, die über Reiter am oberen Bildschirmrand gewechselt werden können. 
+Folgende Untermenüs sind im Spiel-Menü zu finden:
+
+Statistik:
+Diese zeigt die Lebenspukte(Maximalwert und aktuellen Wert), die Aktionspunkte(Maximalwert und aktuellen Wert), 
+den Stärke- und den Verteidigungswert und das Geld an. 
+
+Inventar:
+Hier sind alle Gegenstände und ihr Stärke- und Verteidigungswert aufgelistet.
+
+Fähigkeiten Menü:
+In der oberen Zeile sind die Basis-Attribute mit ihrem Maximalwert aufgelistet.
+Daneben befindet sich ein Button mit dem die Basis-Attribute bei entsprechender Punktzahl erhöt werden können.
+In der unteren Zeile befinden sich die Fähigkeiten mit ihren jeweiligen Effekten.(z.B Stärke +1)
+
+Speichermenü:
+Hier befindet sich ein Speicherknopf, mit dem das Spiel gespeichert werden kann.
+
+
+//Hinweis:
+Ich habe aufgrund des Feedbacks und einer neuen Idee, meine alte Idee verworfen. 
+Ich muss als nächsten Schritt die genauen Werte und Wertveränderungen festlegen, was ziemlich kompliziert werden dürfte. 
+Da ich aber nicht genau weiß, wann sie sich die Projektidee ansehen, lade ich es jetzt schon mal hoch:)
