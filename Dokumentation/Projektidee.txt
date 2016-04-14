@@ -1,45 +1,88 @@
 ﻿=== Projektidee BerndStromberg, 2016-04-12 ===
 
+===Projektidee: Endless Fight===
 
-Alpers:
------
-- Lesen Sie bitte zuerst das allgemeine Feedback, das Sie am Ende dieser Datei finden.
------
+In meinem Projekt möchte ich ein einfaches Rollenspiel umsetzen. 
+Der Spieler spielt einen Helden, der sich ringförmig durch die Spielwelt bewegt. 
+
+===Interaktion===
+(Elemente, die eine Eingabe des Benutzers erfordern sind mit einem !... gekennzeichnet)
+
+-Es gibt eine Einlogg-Maske. Hier müssen !Benutzername und !Passwort eingegeben werden.
+	-es gibt einen !Button zur Bestätigung der Eingaben und zum Einloggem
+
+-Die Spielwelt ist in !Punkte unterteilt. Es gibt einen Start- und einen Endpunkt und dazwischen mehrere Punkte zwischen denen sich hin und her bewegt werden kann. Der Spieler muss diese anwählen.
+	-Der Start- Punkt ist der Endpunkt, somit kann hier von so etwas wie einem Ring gesprochen werden, ohne die Darstellung beschreiben zu wollen.
+	-durch auswählen der Punkte kann der Spieler seine Figur nur einen Punkt weiter nach rechts, oder links verschieben
+	-Somit rotiert der Spieler auf diesem "Ring" und kann nie aus ihm heraus navigieren
+
+-Es gibt einen !Button um das Spiel zu verlassen. Wird dieser ausgewählt, kann zwischen der Auswahl zweier !Buttons gewählt werden. 
+	-!Button zur beendeigung , oder !Button zum Weiterspielen
+
+-Es gibt ein !Button zum öffnen des Menüs, hier gibt es !4 Buttons für die jeweiligen Untermenüs
+	-in jedem Untermenü gibt es eine Reihe von weiteren !Buttons um dem Menü entsprechende Aktionen auszuführen (siehe .Funktionalität)
+
+-Es gibt eine Kampfansicht. Hier gibt es eine Reihe von !Buttons, die ausgewählt werden müssen um gewisse Aktionen auszuführen. (welche Aktionen siehe .Funktionalität)
+	-Die Anzahl der Buttons variiert, je nach Anzahl der Fähigkeiten (siehe .Funktionalität)
+	-Maximal können es 4 sein.
+	
 
 
-= Projektidee: Endless Fight
 
-> In meinem Projekt möchte ich ein einfaches Rollenspiel umsetzen. 
-> Der Spieler spielt einen Helden, der sich kreisförmig durch die Spielwelt bewegt. 
+===Darstellung=== (Zusammenfassung, aller Bereiche der Darstellung, die bis jetzt beschrieben wurden)
 
-Alpers: 
-- Was meinen Sie mit kreisförmig? Ein Kreis ist eine Fläche.
-- Leiten Sie hier bitte die Interaktionsmöglichkeiten für Spieler ab: Steuerung nach links/rechts/oben/unten/in die Tiefe/Rotation/usw.
+	>Er geht auf einer Karte von Punkt zu Punkt. 
+	Alpers:
+	- Das geht dann schon eher in die Richtung der Darstellung.
 
-> Er geht auf einer Karte von Punkt zu Punkt.
+	//Aufbau
 
-Alpers:
-- Das geht dann schon eher in die Richtung der Darstellung.
+	> ###Spielwelt###
+	> In der Spielwelt bewegt sich eine kleine Figur auf einem Kreis.
+	> Dieser Kreis ist in 30 Punkte unterteilt zwischen denen die Spielfigur vor und zurück springen kann.
+	> Auf jedem Kreis findet ein Kampf statt. Die Gegner werden von Kampf zu kampf stärker. 
+	> Alle 10 Punkte kämpft der Spieler gegen einen wesentlich stärkeren Gegner, wobei auch die im Uhrzeigersinn immer stärker werden.
+	> Jede "Umrundung" des Kreises wir vermerkt. Und die Werte aller Gegner werden höher gesetzt.
 
-> Auf jedem der Punkte warten Gegner, die er bekämpfen muss. 
-> Das Kampfsystem ist rundenbasiert. 
 
-Alpers:
-- Das geht eher in Richtung Funktionalität des Spiels.
+	> ###Spiel-Menü:###
+	> Die Punkte, die der Charakter mit jedem Level-Aufstieg erhält werden in einem eigenen Menü verteilt.
+	> Dieses ist in vier Untermenüs gegliedert, die über Reiter am oberen Bildschirmrand gewechselt werden können. 
+	> Folgende Untermenüs sind im Spiel-Menü zu finden:
 
-> Das heißt der Gegner und der Spielen führen Abwechselnd Aktionen aus. 
-> Dabei stehen dem Spieler eine Reihe von Aktionen zur verfügung, die eine unterschiedliche Anzahl Aktionspunkte kosten.
+	> Statistik:
+	> Diese zeigt die Lebenspukte(Maximalwert und aktuellen Wert),
+	> die Aktionspunkte(Maximalwert und aktuellen Wert),
+	> den Stärke- und 
+	> den Verteidigungswert 
+	> und das Geld an. 
 
-Alpers:
-- Reduzieren Sie das bitte auf die eigentliche Interaktion. Sprich notieren Sie, wie Aktionen aufgerufen werden, aber ohne dabei Details wie "per Mausklick" oder ähnliches festzulegen.
+	> Inventar:
+	> Hier sind alle Gegenstände und ihr Stärke- und Verteidigungswert aufgelistet.
 
-> Der Charakter:
-> Der Charakter des Spiels ist die Figur, die der Spieler steuert. Er hat bestimmt Fähigkeiten und Attribute.
+	> Fähigkeiten Menü:
+	> In der oberen Zeile sind die Basis-Attribute mit ihrem Maximalwert aufgelistet.
+	> Daneben befindet sich ein Button mit dem die Basis-Attribute bei entsprechender Punktzahl erhöt werden können.
+	> In der unteren Zeile befinden sich die Fähigkeiten mit ihren jeweiligen Effekten.(z.B Stärke +1)
+
+	> Speichermenü:
+	> Hier befindet sich ein Speicherknopf, mit dem das Spiel gespeichert werden kann.
+
+
+
+
 
 Alpers:
 - Das haben Sie ja oben schon festgelegt. Achten Sie darauf, dass bei der Aufstellung gleiche Definitionen nicht an unterschiedlichen Stellen des Dokuments auftauchen, um später unnötige Mehrarbeit zu vermeiden. Im schlimmsten Falle erreichen Sie dadurch, dass Fehler entstehen, weil unterschiedliche Teile Ihres Programms sich gegenseitig torpedieren.
 - Die folgenden Punkte beziehen sich fast ausschließlich auf die Funktionalität des Spiels. Sie haben hier bereits vieles gut ausgearbeitet auch wenn es streckenweise zu detailliert ist. (Dazu kommen wir aber später im Projekt.)
 - Daneben haben Sie noch einiges zur Darstellung oder dem Inhalt das Spiels geschrieben.
+
+
+
+
+
+===Funktionalität usw.===
+
 
 > Attribute:
 > Die Basis-Attribute des Charakters sind die Lebenspunkte und die Aktionspunkte.
@@ -85,44 +128,8 @@ Alpers:
 > Auch lassen schwache Gegner(Gegner mit niederigen Stärke- und Verteidgungswerten) auch nur schwache Gegenstände fallen(--"--).
 > Heil- und Ap-Tränke werden öfter fallen gelassen.
 
-> //Aufbau
+> 
 
-> ###Spielwelt###
-> In der Spielwelt bewegt sich eine kleine Figur auf einem Kreis.
-> Dieser Kreis ist in 30 Punkte unterteilt zwischen denen die Spielfigur vor und zurück springen kann.
-> Auf jedem Kreis findet ein Kampf statt. Die Gegner werden von Kampf zu kampf stärker. 
-> Alle 10 Punkte kämpft der Spieler gegen einen wesentlich stärkeren Gegner, wobei auch die im Uhrzeigersinn immer stärker werden.
-> Jede "Umrundung" des Kreises wir vermerkt. Und die Werte aller Gegner werden höher gesetzt.
-
-
-> ###Spiel-Menü:###
-> Die Punkte, die der Charakter mit jedem Level-Aufstieg erhält werden in einem eigenen Menü verteilt.
-> Dieses ist in vier Untermenüs gegliedert, die über Reiter am oberen Bildschirmrand gewechselt werden können. 
-> Folgende Untermenüs sind im Spiel-Menü zu finden:
-
-> Statistik:
-> Diese zeigt die Lebenspukte(Maximalwert und aktuellen Wert),
-> die Aktionspunkte(Maximalwert und aktuellen Wert),
-> den Stärke- und 
-> den Verteidigungswert 
-> und das Geld an. 
-
-> Inventar:
-> Hier sind alle Gegenstände und ihr Stärke- und Verteidigungswert aufgelistet.
-
-> Fähigkeiten Menü:
-> In der oberen Zeile sind die Basis-Attribute mit ihrem Maximalwert aufgelistet.
-> Daneben befindet sich ein Button mit dem die Basis-Attribute bei entsprechender Punktzahl erhöt werden können.
-> In der unteren Zeile befinden sich die Fähigkeiten mit ihren jeweiligen Effekten.(z.B Stärke +1)
-
-> Speichermenü:
-> Hier befindet sich ein Speicherknopf, mit dem das Spiel gespeichert werden kann.
-
-
-> //Hinweis:
-> Ich habe aufgrund des Feedbacks und einer neuen Idee, meine alte Idee verworfen. 
-> Ich muss als nächsten Schritt die genauen Werte und Wertveränderungen festlegen, was ziemlich kompliziert werden dürfte. 
-> Da ich aber nicht genau weiß, wann sie sich die Projektidee ansehen, lade ich es jetzt schon mal hoch:)
 
 === Feedback Alpers, 2016-04-14 ===
 
