@@ -8,6 +8,7 @@
 	</head>
 
 	<body>
+		//Element Loginmaske
 		<loginmaske>
 			<header>Titel</header>
 			<textfeld>username eingeben</textfeld>
@@ -16,26 +17,30 @@
 		</loginmaske>
 	
 		<main>	
-
+			//Element zur Navigation
 			<nav>
 				<button>Spiel verlassen, öffnet Bestätigungsabfrage</button>
 				<button>Menü öffnen</button>
 			</nav>
 
+			//Element zur endgültigen Beendigung der Anwendung, öffnet sich durch Button aus dem Element der Navigation
 			<Schaltflaeche>
 				<button>beendet Anwendung, öffnet loginmaske</button>
 				<button>beendet schaltfläche, zurück zum spielbereich</button>
 			</Schaltflache>
 
 
-
+			//Der Bereich in dem das eigentliche Spiel stattfindet, Bild
 			<spielbereich>
+				//Der Charakter selber, Bild 
 				<charakter>
 					-kann ausgewählt werden öffnet info
+					//InfoTextfeld statisch
 					<info>
 						-hier stehen Lebens- und Aktionspunkte
 					</info>	
-				</charakter>		
+				</charakter>
+				//Die Einzelenen Punkte, bei auswahl verschiebt sich das Charakterelement hier hin, Element Kampansicht wird aufgerufen		
 				<punkt>beginnt kampf, erhöt schwierigkeit aller Gegner</punkt>
 				<punkt>auswählen um Kampf zu beginnen,öffnet kampsansicht</punkt>
 				<punkt>-"-</punkt>
@@ -69,23 +74,63 @@
 				<punkt>-"-</punkt>
 			</spielbereich>
 
+			//Die Kampansicht 
 			<kampfansicht>
+				//Bild des Gegners
 				<bild>Gegner</bild>
+				//Bild des Charakters
 				<bild>Charakter</bild>
+				//Buttons für Kampfrelevante Aktionen
 				<button>um aktionen auszuführen</button>
 				<button>um aktionen auszuführen</button>
 				<button>um aktionen auszuführen</button>
 				<button>um aktionen auszuführen</button>
 			</kampfansicht>
 
+			//Status
 			<status>
 				<anzeige>zeigt Lebenspunkte</anzeige>
 				<anzeige>zeigt Aktionspunkte</anzeige>
 				<anzeige>zeigt Level</anzeige>
 				<anzeige>zeigt Erfahrungspunkte</anzeige>
-			</status>	
+			</status>
 
+			//Hauptmenue überischt der vier Untermenüs, werden über den Button aufgerufen
+			<hauptmenue>
+				<button>öffnet Untermenü Inventar</button>
+				<button>öffnet Untermenü Fähigkeiten</button>
+				<button>öffnet Untermenü Statistik</button>
+				<button>öffnet Untermenü Speichern</button>				
+			</hauptmenue>	
+
+			//Untermenü Inventar
+			<untermenue1>
+				<textfeld>Textfelder zeigen die Gegenstände und ihre Attribute an</textfeld>
+			</untermenue1>
+			
+			//Untermenü Fähigkeiten
+			<untermenue2>
+				<textfeld>Textfelder zeigen die Fähigkeiten und Basis-Attribute an</textfeld>
+				<button>verändern die Attribute der Fähigkeiten</button>
+			</untermenue2>
+			
+			//Untermenü Statistik
+			<untermenue3>
+				<textfeld>Zeigen attribute des Charalters an(mehr als das Infotextfeld)</textfeld>
+			</untermenue3>
+			
+			//Untermenü Speichen
+			<untermenue1>
+				<textfeld>Speicherstand benennen</textfeld>
+				<button>eingabe bestätigen und Speichern</button>
+			</untermenue1>
+			
+			
+		
 		</main>	
 
 	</body>
 </html>	
+
+
+//Ich habe versucht die Strukturierung mit "Pseudo-Code" auszuarbeiten um ein gespür für Html zu bekommen und weil es wesentlich übersichtlicher ist:)
