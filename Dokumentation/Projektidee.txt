@@ -1,11 +1,13 @@
-﻿=== Projektidee BerndStromberg, 2016-04-12 ===
+﻿==============================================
+=== Projektidee BerndStromberg, 2016-04-12 ===
+==============================================
 
-===Projektidee: Endless Fight===
+=== Projektidee: Endless Fight ===
 
 In meinem Projekt möchte ich ein einfaches Rollenspiel umsetzen. 
 Der Spieler spielt einen Helden, der sich ringförmig durch die Spielwelt bewegt. 
 
-===Interaktion===
+=== Interaktion ===
 (Elemente, die eine Eingabe des Benutzers erfordern sind mit einem !... gekennzeichnet)
 
 -Es gibt eine Einlogg-Maske. Hier müssen !Benutzername und !Passwort eingegeben werden.
@@ -25,64 +27,52 @@ Der Spieler spielt einen Helden, der sich ringförmig durch die Spielwelt bewegt
 -Es gibt eine Kampfansicht. Hier gibt es eine Reihe von !Buttons, die ausgewählt werden müssen um gewisse Aktionen auszuführen. (welche Aktionen siehe .Funktionalität)
 	-Die Anzahl der Buttons variiert, je nach Anzahl der Fähigkeiten (siehe .Funktionalität)
 	-Maximal können es 4 sein.
-	
+
+=== Darstellung === (Zusammenfassung, aller Bereiche der Darstellung, die bis jetzt beschrieben wurden)
+
+>Er geht auf einer Karte von Punkt zu Punkt. 
+Alpers:
+- Das geht dann schon eher in die Richtung der Darstellung.
+
+//Aufbau
+
+> ###Spielwelt###
+> In der Spielwelt bewegt sich eine kleine Figur auf einem Kreis.
+> Dieser Kreis ist in 30 Punkte unterteilt zwischen denen die Spielfigur vor und zurück springen kann.
+> Auf jedem Kreis findet ein Kampf statt. Die Gegner werden von Kampf zu kampf stärker. 
+> Alle 10 Punkte kämpft der Spieler gegen einen wesentlich stärkeren Gegner, wobei auch die im Uhrzeigersinn immer stärker werden.
+> Jede "Umrundung" des Kreises wir vermerkt. Und die Werte aller Gegner werden höher gesetzt.
 
 
+> ###Spiel-Menü:###
+> Die Punkte, die der Charakter mit jedem Level-Aufstieg erhält werden in einem eigenen Menü verteilt.
+> Dieses ist in vier Untermenüs gegliedert, die über Reiter am oberen Bildschirmrand gewechselt werden können. 
+> Folgende Untermenüs sind im Spiel-Menü zu finden:
 
-===Darstellung=== (Zusammenfassung, aller Bereiche der Darstellung, die bis jetzt beschrieben wurden)
+> Statistik:
+> Diese zeigt die Lebenspukte(Maximalwert und aktuellen Wert),
+> die Aktionspunkte(Maximalwert und aktuellen Wert),
+> den Stärke- und 
+> den Verteidigungswert 
+> und das Geld an. 
 
-	>Er geht auf einer Karte von Punkt zu Punkt. 
-	Alpers:
-	- Das geht dann schon eher in die Richtung der Darstellung.
+> Inventar:
+> Hier sind alle Gegenstände und ihr Stärke- und Verteidigungswert aufgelistet.
 
-	//Aufbau
+> Fähigkeiten Menü:
+> In der oberen Zeile sind die Basis-Attribute mit ihrem Maximalwert aufgelistet.
+> Daneben befindet sich ein Button mit dem die Basis-Attribute bei entsprechender Punktzahl erhöt werden können.
+> In der unteren Zeile befinden sich die Fähigkeiten mit ihren jeweiligen Effekten.(z.B Stärke +1)
 
-	> ###Spielwelt###
-	> In der Spielwelt bewegt sich eine kleine Figur auf einem Kreis.
-	> Dieser Kreis ist in 30 Punkte unterteilt zwischen denen die Spielfigur vor und zurück springen kann.
-	> Auf jedem Kreis findet ein Kampf statt. Die Gegner werden von Kampf zu kampf stärker. 
-	> Alle 10 Punkte kämpft der Spieler gegen einen wesentlich stärkeren Gegner, wobei auch die im Uhrzeigersinn immer stärker werden.
-	> Jede "Umrundung" des Kreises wir vermerkt. Und die Werte aller Gegner werden höher gesetzt.
-
-
-	> ###Spiel-Menü:###
-	> Die Punkte, die der Charakter mit jedem Level-Aufstieg erhält werden in einem eigenen Menü verteilt.
-	> Dieses ist in vier Untermenüs gegliedert, die über Reiter am oberen Bildschirmrand gewechselt werden können. 
-	> Folgende Untermenüs sind im Spiel-Menü zu finden:
-
-	> Statistik:
-	> Diese zeigt die Lebenspukte(Maximalwert und aktuellen Wert),
-	> die Aktionspunkte(Maximalwert und aktuellen Wert),
-	> den Stärke- und 
-	> den Verteidigungswert 
-	> und das Geld an. 
-
-	> Inventar:
-	> Hier sind alle Gegenstände und ihr Stärke- und Verteidigungswert aufgelistet.
-
-	> Fähigkeiten Menü:
-	> In der oberen Zeile sind die Basis-Attribute mit ihrem Maximalwert aufgelistet.
-	> Daneben befindet sich ein Button mit dem die Basis-Attribute bei entsprechender Punktzahl erhöt werden können.
-	> In der unteren Zeile befinden sich die Fähigkeiten mit ihren jeweiligen Effekten.(z.B Stärke +1)
-
-	> Speichermenü:
-	> Hier befindet sich ein Speicherknopf, mit dem das Spiel gespeichert werden kann.
-
-
-
-
+> Speichermenü:
+> Hier befindet sich ein Speicherknopf, mit dem das Spiel gespeichert werden kann.
 
 Alpers:
 - Das haben Sie ja oben schon festgelegt. Achten Sie darauf, dass bei der Aufstellung gleiche Definitionen nicht an unterschiedlichen Stellen des Dokuments auftauchen, um später unnötige Mehrarbeit zu vermeiden. Im schlimmsten Falle erreichen Sie dadurch, dass Fehler entstehen, weil unterschiedliche Teile Ihres Programms sich gegenseitig torpedieren.
 - Die folgenden Punkte beziehen sich fast ausschließlich auf die Funktionalität des Spiels. Sie haben hier bereits vieles gut ausgearbeitet auch wenn es streckenweise zu detailliert ist. (Dazu kommen wir aber später im Projekt.)
 - Daneben haben Sie noch einiges zur Darstellung oder dem Inhalt das Spiels geschrieben.
-
-
-
-
-
-===Funktionalität usw.===
-
+ 
+=== Funktionalität usw. ===
 
 > Attribute:
 > Die Basis-Attribute des Charakters sind die Lebenspunkte und die Aktionspunkte.
@@ -128,10 +118,9 @@ Alpers:
 > Auch lassen schwache Gegner(Gegner mit niederigen Stärke- und Verteidgungswerten) auch nur schwache Gegenstände fallen(--"--).
 > Heil- und Ap-Tränke werden öfter fallen gelassen.
 
-> 
-
-
+===================================
 === Feedback Alpers, 2016-04-14 ===
+===================================
 
 Da Sie eine sehr umfangreiche Projektidee formuliert haben, habe ich mein Feedback zu einzelnen Punkten direkt oben eingefügt.
 
@@ -145,78 +134,30 @@ Zusätzlich noch ein gerelles Feedback und eine kleine Aufgabenstellung:
 
 - Natürlich sollen Sie die übrigen Notizen nicht löschen; Sie haben da ja bereits gut vorgearbeitet. Trennen Sie die Interaktionsmöglichkeiten einfach vom Rest, indem Sie eine Überschrift === Interaktion === und eine Überschrift === Funktionalität usw. === einfügen.
 
+===============================================================
 === Zweiter Aufgabenblock (identisch für alle Studierenden) ===
+===============================================================
+(gelöscht, da im Lernraum für alle einsehbar)
 
-Sie haben jetzt gezeigt, dass Sie einfache Arbeiten mit einem Git-Repository beherrschen.
-Als Teil der letzten Aufgabe sollten Sie beschreiben, was Ihre Anwendung tun soll, also was für Funktionalitäten Ihre Anwendung bieten soll.
-Wenn Sie hier nichts angegeben haben, dann werde ich Ihnen einen Vorschlag hochladen, mit dem Sie weiterarbeiten können.
-In der Veranstaltung haben Sie außerdem gelernt, was Markup Languages sind.
+===================================
+=== Feedback Alpers, 2016-05-11 ===
+===================================
 
-Die nächste Aufgabe besteht aus den folgenden Teilen:
+Leider habe ich eine Weile gebraucht, bis ich Ihre aktuelle Beschreibung verstanden habe, weil Sie sich derart auf das Design konzentrieren, dass das eigentliche Spiel praktisch nicht beschrieben wird. So sprechen Sie oben von einer Spielwelt, aber die existiert (in der aktuellen Beschreibung) gar nicht; es sind einfach 30 Felder, die keinen Sinn jenseits des Designs haben.
 
-1.) Lesen Sie mein Feedback durch und setzen Sie die beschriebenen Aufgaben um.
+Was Ihr Spiel ausmacht ist zurzeit folgendes:
+- Spielerfigur kämpft gegen einzelne Gegner mit steigendem Schwierigkeitsgrad.
+- Durch Kämpfe sammelt der Spielcharaker Erfahrung, die in die Verbesserung der Kampfwerte investiert werden kann.
+- In Kämpfen gibt es eine Vielzahl an Schaltflächen, wobei nicht geklärt ist, was Spieler damit tun können.
+- Es gibt Gegenstände, um Eigenschaftswerte (Leben, Ausdauer, usw.) wieder aufzufüllen.
+- Es gibt Gegenstände, um den Höchstwert von Eigenschaftswerten (Leben, Ausdauer, usw.) zu erhöhen.
 
-Für die folgende Aufgabe sollten Sie mindestens eine halbe Stunde investieren. Zwei Stunden wäre aber etwas zu viel des guten.
-Bearbeiten Sie die Aufgaben 2. und 3. bitte innerhalb von 48 Stunden, weil andere Studierende davon abhängen, dass Sie sie beendet haben.
-Bearbeiten Sie die Aufgaben auf jeden Fall in der vorgegebenen Reihenfolge.
-Und bearbeiten Sie eine Aufgabe nicht nachträglich nochmal. (Wenn Sie also z.B. Aufgabe 3. bearbeiten, dann ändern Sie bitte nichts an Aufgabe 1. nachträglich ab. Dafür wird später noch genug Zeit sein.)
+Leider ist das weder webbasiert noch in der geforderten Form interaktiv. (Kurz gesagt ist es damit ein Spiel für einen (oder mehrere) Spieler an einem Computer.) Hier müssen Sie noch deutlich an der Projektidee arbeiten.
 
-2.) Bennen Sie die strukturellen Elemente, aus denen Ihre Anwendung bestehen soll.
-Es ist dabei egal, ob es diese Elemente in HTML gibt.
-Es ist auch egal, ob Sie sich schon in HTML eingearbeitet haben.
-Wichtig ist nur, dass Sie die strukturellen Elemente benennen, aus der die Anwendung bestehen soll.
-Speichern Sie diese Aufstellung als HTML-Kommentar in einer Datei mit dem Namen
-
-strukt.html
-
-, die Sie in Ihrem Repository abspeichern. Wichtig: Die Datei soll nicht im Unterverzeichnis Dokumentation des Repositories gespeichert werden, weil sie die Basis für das erste HTML-Dokument werden wird.
-
-Wenn Sie noch unsicher sind: Strukturelle Elemente können alles mögliche sein:
-- Tabellen
-- Listen
-- Schaltflächen
-- Textfelder
-- Bildbereiche
-- Hintergrundmusik
-- Absätze
-- ...
-
-In anderen Worten: Ein strukturelles Element ist etwas, das ein abgegrenzter Teil der Anwendung ist.
-Notieren Sie kurz, welche Funktion jedes der von Ihnen genannten Elemente haben soll.
-
-Hier einige Beispiele:
-- Schaltfläche (Nutzer können per Klick bestätigen, dass eine Eingabe abgeschickt werden soll.)
-- Textfeld für Namen (Nutzer können Ihren Nachnamen eintragen.)
-- Log-In-Maske (Bereich, in dem Nutzer sich einloggen können.)
-- - Teile der Log-In-Maske:
-- - Textfeld für Username
-- - Textfeld, das die Eingabe nicht anzeigt, fürs Passwort
-- Tabelle, 7 x 5 Felder (Jedes Feld soll ein Bild anzeigen, das ein Feld des Spielbretts ist. Wenn Nutzer ein Feld anwählen, soll ein Menü erscheinen.)
-- - Menü für jedes Feld der Tabelle mit Texteinträgen (Eintrag für "Gebäude abreißen", "Feld kaufen")
-- Hintergrundbild (Hier sollen einzelne Bilder als Diashow eingeblendet werden.)
-- Werbebanner
-- Schaltfläche für die Maskierung von NSFW (NSFW = Not safe for work)(NutzerInnen können über diese Schaltfläche eine andere Anwendung in der Vordergrund einblenden lassen, damit der Chef nicht sieht, dass sie gerade spielen.)
-
-3.) Schauen Sie jetzt in der Liste der Repositories (nicht in der Tabelle der Accounts) nach, welche zehn Repositories vor und nach Ihrem Repository aufgeführt sind und geben Sie den Besitzern dieser Repositories Zugriffsrechte auf Ihr Repository.
-
-Bsp.: Sie haben das Repository BerndStromberg. Dann folgen die zehn Repositories der Nutzer BlackWolf63, Cantinaband, CaptainWeasle, ColePfeiffer, CurvLietzau,
-DangerDulf, dnbdel, Domsche, Eldinox und Eupuco und vor Ihnen gibt es die fünf Repositories der Nutzer 2238867, amelie-beh, Anger21, anita1997 und Asphalon. all diesen Accounts geben Sie jetzt Zugriffsrechte auf Ihr Repository, so wie Sie das schon für mich getan haben. Wenn Sie, wie BerndStrommberg zu weit am Anfang der Liste stehen (hier gibt es ja nur fünf andere Accounts bis zum Anfang der Liste), dann geben Sie zusätzlich noch den Besitzern der letzten fünf Repositories Zugriffsrechte. Es sollten insgesamt 20 Accounts Zugriffsrecht haben.
-
-Für die nächsten zwei Aufgaben sollten Sie pro Repository zwischen zehn Minuten und einer Stunde aufwenden. Weniger ist zu wenig und mehr ist zu viel.
-Beachten Sie dabei bitte, dass Sie hier letzten Endes Kritik an der Arbeit eines/einer anderen üben und das einige von Ihnen noch nie programmiert haben. Arbeiten Sie deshalb bitte daran, alles, was Sie ergänzen so neutral und höflich wie möglich zu formulieren, denn Unwissenheit und mangelndes Verständnis fürs Programmieren sind eben nicht das selbe wie Dummheit oder Faulheit.
-
-Bitte erledigen Sie diese Aufgaben innerhalb der nächsten sieben Tage.
-
-4.) Als nächstes greifen Sie auf die nach Ihrem Repository nachfolgenden fünf Repositories zu und bearbeiten hier die folgende Aufgabe. (Hier hängen Sie also davon ab, dass andere Kommilitonen Aufgabe 3. erledigt haben.) 
-
-Lesen Sie sich die Projektidee durch und machen Sie sich ähnlich wie bei 2. einfache Stichpunkte über strukturelle Elemente, die Sie bei dieser Projektidee sinnvoll finden. (Hier erstmal nur Stichpunkte, Details arbeiten Sie unter 5. aus.)
-
-5.) Öffnen Sie jetzt die Datei strukt.html des Repositories, das Sie gerade bearbeiten. Ergänzen Sie Elemente, die Sie unter 4. notiert haben und die noch nicht eingetragen sind in der unter 2. beschriebenen Form.
-
-Abschließender Hinweis zu 4. und 5.:
-
-Auch wenn das nirgends explizit steht sollen Sie Änderungen in das Repository pushen, aus dem sie die Datei strukt.html gepullt haben.
-Es ist dabei sehr wahrscheinlich, dass Sie (vielleicht auch erst später während der Projektbearbeitung) einen merge durchführen müssen. Wenn Sie sich noch nicht angesehen haben, wie das geht, dann tun Sie es jetzt.
-
-Viele Grüße,
-Markus Alpers
+Wertung 2: Projektbeschreibung: gesamt: 1 / 10
+- Pro Interaktionsmöglichkeit: 0 
+- Knappe aber klare Beschreibung: 1 
+- Werbeslogans u.ä.: 0 
+- Designaspekte: 0 
+- Voraussetzung bekannten Wissens: 0 
+(Bitte beachten Sie, dass das die Wertung zum aktuellen Zeitpunkt und keine abschließende Wertung Ihrer Beschreibung ist.)
