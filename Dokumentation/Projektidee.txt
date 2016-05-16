@@ -7,30 +7,40 @@ Projektidee:
 	In Projekt 1 möchte ich ein Rollenspiel umsetzen, dessen Ziel es ist, jedem Spieler eine andere Spielerfahrung zu bieten.
 	Außerdem soll das Spiel den Spieler dazu bringen, seine Spielweise regelmäßig zu überdenken und sich neue Herangehensweisen auszudenken.
 	
-	Der Spieler hat einen Account, in dem sein bisheriger Fortschritt gespeichert ist. Er spielt einen Charakter, mit dem er in Kämpfen
-	immer schwerer werdende Gegner besiegen muss. Hierbei stehen ihm fünf Fähigkeiten zur verfügung, wovon er zwischen den Kämpfen vier aus einem 
+	Der Spieler hat einen (1)Account, in dem sein bisheriger Fortschritt gespeichert ist. Er spielt einen Charakter, mit dem er in Kämpfen
+	immer schwerer werdende Gegner besiegen muss. (2)Hierbei stehen ihm fünf Fähigkeiten zur verfügung, wovon er zwischen den Kämpfen vier aus einem 
 	wachsenden Fähigkeitenpool auswählen kann. In den Kämpfen führen der Gegner und der Spieler abwechselnd ihre Fähigkeiten aus. 
 	Es gibt Stufen die in eine bestimmte Anzahl Kämpfe unterteilt sind und die jeweils zwei Bosskämpfe beinhalten. 
 	Hat der Spieler einen Kampf erfolgreich abgeschlossen erhält er dafür Erfahrungspunkte, die er in Menüs in die Werte seines Charakters investieren kann, um diese zu erhöhen.
-	Der Spieler hat nach einem Kampf die Wahl den selben, oder den vorherigen Kampf zu wiederholen, oder den nächsten Kampf zu beginnen. 
+	(3)Der Spieler hat nach einem Kampf die Wahl den selben, oder den vorherigen Kampf zu wiederholen, oder den nächsten Kampf zu beginnen. 
 
 	Die Bossgegner werden nicht wie die normalen Gegner stärker, in dem sich lediglich ihre Werte erhöhen, sondern werden basierend auf dem bisherigen 
 	Spielverhalten des Spielers errechnet. Daraus resultieren Immunitäten gegen gewisse Fähigkeiten, das blockieren gewisser Fähigkeiten, oder das 		
 	zeitweise Ändern von Werten des Spielercharakters. Ist ein Bosskampf erfolgreich absolviert, erhält der Spieler einen Gegenstand, der entweder 
 	seine Verteidigung, oder seinen Angriff erhöht. 
-	Über ein Menü, kann er aus den bisher erhaltenen Gegenständen einen aus jeder Kategorie auswählen und anlegen.
+	(4)Über ein Menü, kann er aus den bisher erhaltenen Gegenständen einen aus jeder Kategorie auswählen und anlegen.
 
 	Stirbt der Spieler (was durchaus oft vorkommen sollte), ist er gezwungen wieder von vorne anzufangen.
 	Seine gesamten Werte werden auf die Anfangswerte zurückgesetzt und er beginnt wieder in der ersten Stufe. 
 	
 	Hat der Spieler alle Kämpfe einer Stufe absolviert, geht er zur nächsten Stufe über und erhält basierend auf seiner bisherigen Spielweise eine neue Fähigkeit,
-	die er aus drei Vorschlägen auswählen kann. 
+	die er aus drei Vorschlägen auswählen kann(5). 
 
-	In jeder Stufe begegnet der Charakter des Spielers verschiedenen Nicht-Spieler-Charakteren. In diesen Begegnungen muss der Spieler Entscheidungen treffen,
+	In jeder Stufe begegnet der Charakter des Spielers verschiedenen Nicht-Spieler-Charakteren. (6)In diesen Begegnungen muss der Spieler Entscheidungen treffen,
 	die ihm entweder Vor- oder Nachteile bringen, nachdem ihm eine kurze Handlung erzählt wurde. 
 	Die Begegnunge werden aus den bisherigen Entscheidungen, dem Fortschritt des Spielers und der Spielweise des Spielers generiert.
 	============================================================================================================================================================================
+	
+	Eingabemöglichkeiten(Basierend auf Feedback "2016-04-14")(Die jeweiligen Möglichkeiten sind in der Projektidee mit Nummern versehen):
+	
+	- Auswahl aus mehreren Optionen
+		- (2),(3),(4),(5),(6)
+	
+	- Eingabe von Benutzername und Passwort 
+		- (1)
 
+	*Strukturelle ELemente siehe strukt.html*
+	
 
 	**Frage: Ist es sinnvoll den Unten stehenden Teil zu löschen? Ich habe ja einiges geändert.**
 
