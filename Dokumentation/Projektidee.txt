@@ -1,8 +1,8 @@
-﻿==============================================
-=== Projektidee BerndStromberg, 2016-04-12 ===
-==============================================
+﻿
 
-Projektidee:
+==============================================
+=== Projektidee BerndStromberg, 2016-05-16 ===
+==============================================
 	============================================================================================================================================================================
 	In Projekt 1 möchte ich ein Rollenspiel umsetzen, dessen Ziel es ist, jedem Spieler eine andere Spielerfahrung zu bieten.
 	Außerdem soll das Spiel den Spieler dazu bringen, seine Spielweise regelmäßig zu überdenken und sich neue Herangehensweisen auszudenken.
@@ -39,22 +39,34 @@ Projektidee:
 	- Eingabe von Benutzername und Passwort 
 		- (1)
 
-	*Strukturelle ELemente siehe strukt.html*
+***************************************
+Strukturelle ELemente siehe strukt.html
+***************************************	
+
+
+
+
+
+*************************
+(Notiz zur Dokumentation)
+*************************
+Hinweis: Anstehend befindet sich die erste Fassung Projektidee. 
+Aus folgenden Gründen habe ich diese verworfen/überarbeitet:
+
+	-Es wird nicht auf den Spieler eingegangen (Hingegen oben: Spielverhalten des Spielers bestimmt das Spiel.
+	 Er wird immer wieder herausgefordert.)
+	-Ich habe die Anwendung nicht ausreichend durchdacht bevor ich die Idee formuliert habe
+	-Das Spiel bleibt immer gleich schwer, stellt schnell keine Herausforderung mehr dar, somit gäbe es nichts,
+	 dass den Spieler bei dem Spiel hält
 	
 
-	**Frage: Ist es sinnvoll den Unten stehenden Teil zu löschen? Ich habe ja einiges geändert.**
 
-
-
-
-
-
-
-
-
-
-
-
+*****************************
+verworfen, siehe weiter oben.
+*****************************
+==============================================
+=== Projektidee BerndStromberg, 2016-04-12 ===
+==============================================
 
 === Projektidee: Endless Fight ===
 
