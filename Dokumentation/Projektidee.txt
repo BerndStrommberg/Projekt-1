@@ -36,7 +36,6 @@
 	Die Spieler spielen im Mehrspielermodus die Charaktere, die sie auch im Einzelspielermodus gespielt haben. Entweder kann das Team, in dem der 
 	Mehrspielermodus gespielt werden soll aus einer Freundesliste ausgewählt werden, oder die Spieler werden nach ihrem jeweiligen Level zusammengebracht.
 
-
 	============================================================================================================================================================================
 	
 	Eingabemöglichkeiten(Basierend auf Feedback "2016-04-14")(Die jeweiligen Möglichkeiten sind in der Projektidee mit Nummern versehen):
