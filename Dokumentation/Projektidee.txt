@@ -30,7 +30,8 @@
 	die ihm entweder Vor- oder Nachteile bringen, nachdem ihm eine kurze Handlung erzählt wurde. 
 	Die Begegnunge werden aus den bisherigen Entscheidungen, dem Fortschritt des Spielers und der Spielweise des Spielers generiert.
 	
-	Es gibt einen Arenamodus. In diesem werden zwei Spieler einer ähnlichen Stufe zusammengebracht und müssen in einem rundenbasierten Kampf gegeneinander antreten. Der Gewinner erhält eine große Menge Erfahrungspunkte und einen starken Gegenstand. Der Verlierer stirbt und muss auch im normalen Modus wieder ganz von vorne anfangen.
+	Es gibt einen Arenamodus. In diesem werden zwei Spieler einer ähnlichen Stufe zusammengebracht und müssen in einem rundenbasierten Kampf gegeneinander antreten. Der Gewinner erhält eine große Menge Erfahrungspunkte und einen starken 
+	Gegenstand. Der Verlierer stirbt und muss auch im normalen Modus wieder ganz von vorne anfangen.
 	============================================================================================================================================================================
 	
 	Eingabemöglichkeiten(Basierend auf Feedback "2016-04-14")(Die jeweiligen Möglichkeiten sind in der Projektidee mit Nummern versehen):
