@@ -35,6 +35,8 @@
 	und mit mehrern Spielern schaffbar sein. Auch hier soll es wieder mehrere Kämpfe pro Stufe geben. Auch soll es wieder zwei Bosse geben. 
 	Die Spieler spielen im Mehrspielermodus die Charaktere, die sie auch im Einzelspielermodus gespielt haben. Entweder kann das Team, in dem der 
 	Mehrspielermodus gespielt werden soll aus einer Freundesliste ausgewählt werden, oder die Spieler werden nach ihrem jeweiligen Level zusammengebracht.
+	Anders als im Einzelspielermodus verliert der Spieler seinen Charakter nicht wenn er stirbt. Sein Fortschritt im Einzelspielermodus bleibt erhalten. 
+	Lediglich der Fortschritt im Mehrspielermodus geht verloren.
 
 	============================================================================================================================================================================
 	
