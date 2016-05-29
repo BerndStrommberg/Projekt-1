@@ -1,4 +1,144 @@
-﻿
+﻿==============================================
+=== Projektidee BerndStromberg, 2016-05-29 ===
+==============================================
+-----------------------------
+--- Grobe Zusammenfassung ---
+-----------------------------
+In Projekt 1 möchte ich ein Rollenspiel umsetzen. Der Spieler spielt einen Charakter, mit dem er durch Kämpfe verschiedene Abschnitte durchspielt. 
+So bewegt er sich immer weiter durch die Spielwelt und verbessert dabei stetig seinen Charakter. Ziel ist es, auf den Spieler zu reagieren und 
+zu verhindern, dass dieser eine "Standart-Vorgehensweise" entwickelt. Außerdem soll das Spiel mit mehreren Spielern kooperativ spielbar sein. 
+Es soll die Möglichkiet geben den selben Fortschritt wie im Einzelspielermodus, auch im Mehrspielermodus zu erreichen.
+Der Spieler kann nach dem Log-In entscheiden, ob er im Mehrspieler- oder Einzelspielermodus spielen möchte.
+
+--- Die Spielwelt ---
+---------------------
+Die Spielwelt ist in Abschnitte unterteilt, die eine bestimmte Anzahl an Leveln (siehe "Die Level") beinhalten.
+Es ist zwar möglich die Level in einer beliebigen Reihenfolge zu betreten und zu Spielen, doch ergibt sich durch eine steigende 
+Schwierigkeit der Level eine empfohlene Reihenfolge, in der die Level gespielt werden sollten. Wobei es hier ein Boss-Level gibt. 
+In diesem muss der Spieler noch einmal gegen alle Bossgegner (siehe "Die Level") aus den bisher gespielten Leveln antreten. 
+Diese haben zwar den selben Namen wie vorher, werden aber nach dem selben Prinzip
+neu errechnet um die Schwierigkeit imens zu erhöhen. Dieses Level kann erst gespielt werden, wenn alle vorherigen Level abgeschlossen sind. 
+
+Hat der Spieler alle Level aus einem Abschnitt (den Boss-Level) absolviert, erhält er einen Gegenstand und die Möglichkeit diesen zu verlassen 
+und einen neuen Abschnitt freizuschalten. Dieser ist nach den selben Regeln aufgebaut, variiert jedoch in der Schwierigkeit. 
+Auch besteht die Möglichkeit neue Gegenstände (siehe "Die Level" und "Charakter verbessern") zu erspielen. 
+
+Es besteht zu jeder Zeit die Möglichkeit bereits durchgespielte Abschnitte erneut zu betreten und die darin entahltenen Level erneut zu spielen.
+Allerdings werden die Bosse, die bereits besiegt wurden, nicht erneut errechnet. Der Gegenstand, der bei Abschluss des Levels erhalten werden kann, 
+ist dann genau der selbe wie beim ersten Durchlauf. So soll ein Anreiz entstehen in den Leveln und Abschnitten weiter zu gehen.
+
+
+--- Die Level ---
+-----------------
+Die Level bestehen aus einer bestimmten Anzahl von Kämpfen gegen Gegner. Hier gibt es einmal normale Gegner, die mit fortschritt der Kämpfe immer stärker werden
+und Boss-Gegner. Diese errechnen sich aus dem bisherigen Spielverhalten des Spielers und versuchen dieses zu blockieren. Ist ein Level abgeschlossen erhält der 
+Spieler einen Gegenstand. Dessen Funktion wird aus dem Charakterlevel des Spielers errechnet. 
+Stirbt der Charakter in einem Level, wird er in der Spielwelt wiederbelebt. Der Fortschritt innerhalb des Levels wird dann zurückgesetzt.
+
+
+--- Die Kämpfe ---
+------------------
+Die Kämpfe in den Leveln folgen dirket aufeinander. Hier hat der Spieler nicht die Möglichkeit sich frei zu bewegen, sondern geht automatisch 
+zum nächsten Kampf über. Vor jedem neuen Kampf werden die Lebenspunkte und Aktionspunkte des Charakters wieder aufgefüllt.
+Die Kämpfe sind rundenbasiert. Der Gegner und der Spieler führen nacheinander Fähigkeiten aus. Dem Spieler stehen dazu in den Kämpfen vier 
+Fähigkeiten zur verfügung. Beendet der Spieler einen Kampf erfolgreich (reduziert er die Lebenspunkte seines Gegners auf null), erhält er 
+eine bestimmte Menge Erfahrungspunkte. 
+
+
+--- Charakter verbessern ---
+----------------------------
+Erfahrungspunkte kann der Spieler in die Verbesserung der Charakterwerte investieren.
+
+Eine bestimmte Anzahl Erfahrungspunkte entspricht einem Charakterlevel. Bei jedem neuen Charakterlevel erhält der Spieler eine neue Fähigkeit, 
+die auf seinem bisherigen Spielverhalten basiert. 
+Die Fähigkeiten werden in einem Pool gesammelt. Der Spieler kann vier davon für die Kämpfe auswählen.
+
+Gegenstände kann der Spieler ausrüsten oder ablegen. Diese beeinflussen die Charakterwerte für die Zeit, in der sie ausgerüstet sind.
+Das Verbessern des Charakters kann nicht in den Leveln, sondern nur in der Spielwelt vorgenommen werden.
+
+
+
+----------------------------
+--- Der Mehrspielermodus ---
+----------------------------
+Entscheidet er sich für den Mehrspielermodus, hat der Spieler die Möglichkeit mit seinen Freunden oder mit ausgewählten unbekannten Spielern zu spielen. 
+
+
+--- Account ---
+---------------
+Jeder Spieler muss einen Account anlegen, in dem sein Fortschritt gespeichert ist. Er muss einen Benutzernamen angeben.
+
+
+--- Freunde ---
+---------------
+Über den Benutzernamen kann der Spieler Freunde zu seiner Freundesliste hinzufügen. Wird er mit anderen Spielern zufällig in einem Team zusammengebracht,
+hat er die möglichkeit diese direkt als Freund hinzuzufügen.
+
+
+--- Ein Mehrspieler-Spiel erstellen ---
+---------------------------------------
+Entscheidet sich der Spieler mit Freunden zu spielen, kann er aus einer Liste der Freunde, die gerade online sind Einladungen verschicken. 
+Die Spieler werden dann gefragt, ob sie die Einladung annehmen wollen. Falls sie das tun, werden sie der Gruppe hinzugefügt und ihr aktuelles Spiel wird
+unterbrochen. 
+Falls der Spieler sich Entscheidet mit fremden Spielern zu spielen hat er die Wahl ein Spiel zu erstellen, oder einem beizutreten. Erstellt er ein Spiel
+werden Spieler mit ähnlichem Charakterlevel dem Spiel hinzugefügt, die angegeben haben, einem Spiel beitreten zu wollen.
+
+Der Host (Der Spieler, der das Spiel erstellt hat) bestimmt wann das Spiel gestartet werden soll und in welchem Abschnitt die Gruppe starten soll. 
+Hier wählt er aus den Abschnitten, die für alle Spieler der Gruppe im Einzelspielermodus verfügbar sind. 
+
+
+--- Bewegung in der Spielwelt, Kommunikation, starten eines Levels ---
+----------------------------------------------------------------------
+Im Mehrspielermodus bewegen sich die Spieler gleichzeitig durch die Spielwelt. Über einen Chat können sie miteinander kommunizieren. Begeben sich
+alle Spieler mit ihren Charakteren gleichzeitig zu einem Level und bestätigen sie dieses spielen zu wollen, spielt die Gruppe den Level.
+
+
+--- Kämpfe im Mehrspielermodus ---
+----------------------------------
+Die Kämpfe funktionieren ähnlich wie im Einzelspielermodus. Nur welchseln sich hier alle Spieler und der Gegner ab. Die Bossgegner werden nun aus dem Konsenz
+des bisherigen Spielverhaltens der Spieler berechnet. Für die Gruppe ergibt sich also ein Mittelwert.
+
+
+--- Gegenstände im Mehrspielermodus ---
+---------------------------------------
+Die Gegenstände am Ende des Levels bieten den Spielern einen wesentlich größeren Vorteil, als die, die im Einzelspielermodus verfügbar sind.
+Jedes Gruppenmitglied bekommt basierend 
+
+
+--- Abschnitte und Level wiederholen im Mehrspielermodus ---
+------------------------------------------------------------
+Wird im Mehrspielermodus ein Level wiederholt, besteht die Möglichkeit einen neuen Gegenstand zu bekommen. 
+Auch die Bosse werden bei jedem neuen Durchlauf neu errechnet.
+
+
+--- Tauschen ---
+----------------
+Im Mehrspielermdus gibt es die Möglichkeit zu Tauschen. Spieler können sich eine Tauschanfrage senden. Bestätigt der Mitspieler diese,
+entsteht die Möglichkeit zu tauschen. Es können Gegenstände, aber auch Fähigkeiten getauscht werden. Das ist auch nur außerhalb der 
+Level möglich.
+
+
+--- Fortschritt Mehrspieler- und Einzelspielermodus ---
+-------------------------------------------------------
+Schaltet eine Gruppe von Spielern im Mehrspielermodus gemeinsam einen neuen Abschnitt frei, ist dieser für alle Gruppenmitglieder auch im
+Einzelspielermodus verfügbar.
+
+
+
+*************************
+(Notiz zur Dokumentation)
+*************************
+Hinweis: Anstehend befindet sich die zweite Fassung Projektidee. 
+Aus folgenden Gründen habe ich diese verworfen/überarbeitet:
+
+	- Ich habe noch etwas zu klein gedacht. Jetzt existiert eine Spielwelt
+	- Es war keine Anwendung mit einer Webbasierung. Deswegen habe ich einen Multiplayermodus eingebaut, der das Spiel ausmachen soll.
+		-Es gibt eine Möglichkeit zu kommunizieren und zu handeln
+	  Ein Einzelspielermodus besteht deswegen nach wie vor, damit Spieler auch ohne Freunde spielen können und sich alleine verbessern können	
+	- Ich habe das Stufensystem ausgebaut. Es werden jetzt Abschnitte durchgespielt, in dem die darin enthaltenen Levelstufen bestanden werden müssen
+
+
+
 
 ==============================================
 === Projektidee BerndStromberg, 2016-05-16 ===
@@ -31,7 +171,7 @@
 	Die Begegnunge werden aus den bisherigen Entscheidungen, dem Fortschritt des Spielers und der Spielweise des Spielers generiert.
 
 	Außerdem gibt es einen Mehrspielermodus. In diesem können Spieler gemeinsam spielen. Das Stufensystem ist hier ähnlich aufgebaut wie im 
-	Einzelspielermodus. Jedoch können hier bis zu 4 Spieler gleichzeitig kämpfen. Die Kämpfe sind im Mehrspielermodus, sollen nur bei gutem Zusammenspiel 
+	Einzelspielermodus. Jedoch können hier bis zu 4 Spieler gleichzeitig kämpfen. Die Kämpfe im Mehrspielermodus, sollen nur bei gutem Zusammenspiel 
 	und mit mehrern Spielern schaffbar sein. Auch hier soll es wieder mehrere Kämpfe pro Stufe geben. Auch soll es wieder zwei Bosse geben. 
 	Die Spieler spielen im Mehrspielermodus die Charaktere, die sie auch im Einzelspielermodus gespielt haben. Entweder kann das Team, in dem der 
 	Mehrspielermodus gespielt werden soll aus einer Freundesliste ausgewählt werden, oder die Spieler werden nach ihrem jeweiligen Level zusammengebracht.
