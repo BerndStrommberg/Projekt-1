@@ -31,7 +31,7 @@
 	Die Begegnunge werden aus den bisherigen Entscheidungen, dem Fortschritt des Spielers und der Spielweise des Spielers generiert.
 
 	Außerdem gibt es einen Mehrspielermodus. In diesem können Spieler gemeinsam spielen. Das Stufensystem ist hier ähnlich aufgebaut wie im 
-	Einzelspielermodus. Jedoch können hier bis zu 4 Spieler gleichzeitig kämpfen. Die Kämpfe sind im Mehrspielermodus, sollen nur bei gutem Zusammenspiel 
+	Einzelspielermodus. Jedoch können hier bis zu 4 Spieler gleichzeitig kämpfen. Die Kämpfe im Mehrspielermodus, sollen nur bei gutem Zusammenspiel 
 	und mit mehrern Spielern schaffbar sein. Auch hier soll es wieder mehrere Kämpfe pro Stufe geben. Auch soll es wieder zwei Bosse geben. 
 	Die Spieler spielen im Mehrspielermodus die Charaktere, die sie auch im Einzelspielermodus gespielt haben. Entweder kann das Team, in dem der 
 	Mehrspielermodus gespielt werden soll aus einer Freundesliste ausgewählt werden, oder die Spieler werden nach ihrem jeweiligen Level zusammengebracht.
