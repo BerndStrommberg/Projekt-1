@@ -4,26 +4,58 @@
 -----------------------------
 --- Grobe Zusammenfassung ---
 -----------------------------
-In Projekt 1 möchte ich ein Rollenspiel umsetzen. Der Spieler spielt einen Charakter, mit dem er verschiedene Abschnitte durchspielt. 
-So bewegt er sich über verschiedene Level immer weiter durch die Spielwelt und verbessert dabei stetig seinen Charakter. Ziel ist es, auf den Spieler 
-zu reagieren und zu verhindern, dass dieser eine "Standart-Vorgehensweise" entwickelt. 
-Außerdem soll das Spiel mit mehreren Spielern kooperativ spielbar sein. 
-Es soll die Möglichkeit geben den selben Fortschritt wie im Einzelspielermodus, auch im Mehrspielermodus zu erreichen.
-Der Spieler kann nach dem Log-In entscheiden, ob er im Mehrspieler- oder Einzelspielermodus spielen möchte.
+Ich möchte in Projekt 1 ein Rollenspiel umsetzen. Der Spieler soll einen Charakter spielen, mit dem er sich frei durch die einzelnen
+Abschnitte einer Spielwelt bewegen kann. Er kann in den Abschnitten in Level eintreten, in denen er in Rundenbasierten Kämpfen 
+gegen stärker werdende Gegner kämpft. Ziel des Spiels ist es den Spieler stark zu fordern, 
+in dem das Kampfverhalten des Spielers aufgezeichnet wird und die Bossgegner versuchen die übliche Spielweise des Spielers zu 
+verhindern und ihn dazu zu zwingen diese zu überdenken und seinen Charakter stetig mit, durch Kämpfe gewonnenen Erfahrungspunktenzu verbessern. 
+Das Spiel soll gemeinsam mit Freunden und alleine spielbar sein.
+
+---------------------------
+--- Konkrete Konzeption ---
+---------------------------
+
+--- Übersicht ---
+-----------------
+1. Das Spiel
+	1.1. Die Spielwelt
+	1.2. Die Level
+	1.3. Die Kämpfe
+	1.4. Charakter verbessern
+
+2. Der Mehrspielermodus
+	2.1 Account
+	2.2 Freunde
+	2.3 Ein Mehrspieler-Spiel erstellen
+	2.4 Bewegung in der Spielwelt, Kommunikation, starten eines Levels
+	2.5 Kämpfe im Mehrspielermodus
+	2.6 Gegenstände im Mehrspielermodus
+	2.7 Abschnitte und Level wiederholen im Mehrspielermodus
+	2.8 Tauschen
+	2.9 Fortschritt Mehrspieler- und Einzelspielermodus
+
+3. Übersicht der Interaktion zwischen Spiel und Spieler
+	3.1 sichtbare
+	3.2 unsichtbare
+
+
+-----------------
+--- Das Spiel ---
+-----------------
 
 --- Die Spielwelt ---
 ---------------------
 Die Spielwelt ist in Abschnitte unterteilt, die eine bestimmte Anzahl an Leveln (siehe "Die Level") beinhalten. In den einzelnen Abschnitten kann sich der 
 Spieler frei bewegen und von dort aus die Level "betreten".
 Es ist zwar möglich die Level in einer beliebigen Reihenfolge zu betreten und zu spielen, doch ergibt sich durch eine steigende 
-Schwierigkeit der Level eine empfohlene Reihenfolge, in der die Level gespielt werden sollten. Wobei es hier ein Boss-Level gibt. 
+Schwierigkeit der Level eine empfohlene Reihenfolge, in der die Level gespielt werden sollten. Wobei es hier einen Boss-Level gibt. 
 In diesem muss der Spieler noch einmal gegen alle Bossgegner (siehe "Die Level") aus den bisher gespielten Leveln antreten. 
 Diese haben zwar den selben Namen wie vorher, werden aber nach dem selben Prinzip
 neu errechnet um die Schwierigkeit imens zu erhöhen. Dieses Level kann erst gespielt werden, wenn alle vorherigen Level abgeschlossen sind. 
 
 Hat der Spieler alle Level aus einem Abschnitt (den Boss-Level) absolviert, erhält er einen Gegenstand und die Möglichkeit diesen zu verlassen 
 und einen neuen Abschnitt freizuschalten. Dieser ist nach den selben Regeln aufgebaut, variiert jedoch in der Schwierigkeit. 
-Auch besteht die Möglichkeit neue Gegenstände (siehe "Die Level" und "Charakter verbessern") zu erspielen. 
+Auch besteht die Möglichkeit in einem neuen Abschnitt neue Gegenstände (siehe "Die Level" und "Charakter verbessern") zu erspielen. 
 
 Es besteht zu jeder Zeit die Möglichkeit bereits durchgespielte Abschnitte erneut zu betreten und die darin entahltenen Level erneut zu spielen.
 Allerdings werden die Bosse, die bereits besiegt wurden, nicht erneut errechnet. Der Gegenstand, der bei Abschluss des Levels erhalten werden kann, 
@@ -35,17 +67,18 @@ ist dann genau der Selbe wie beim ersten Durchlauf. So soll ein Anreiz entstehen
 Die Level bestehen aus einer bestimmten Anzahl von Kämpfen gegen Gegner. Hier gibt es einmal normale Gegner, 
 die mit fortschritt der Kämpfe immer stärker werden und Boss-Gegner. 
 Diese errechnen sich aus dem bisherigen Spielverhalten des Spielers und versuchen dieses zu blockieren. Ist ein Level abgeschlossen erhält der 
-Spieler einen Gegenstand. Dessen Funktion wird aus dem Charakterlevel des Spielers errechnet.(siehe "Charakter verbessern") 
+Spieler einen Gegenstand. Dessen Funktion wird aus dem Charakterlevel des Spielers errechnet und bietet diesem einen erheblichen Vorteil.(siehe "Charakter verbessern") 
 Stirbt der Charakter in einem Level, wird er in der Spielwelt wiederbelebt. Der Fortschritt innerhalb des Levels wird dann zurückgesetzt.
 
 
 --- Die Kämpfe ---
 ------------------
 Die Kämpfe in den Leveln folgen dirket aufeinander. Hier hat der Spieler nicht die Möglichkeit sich frei zu bewegen, sondern geht automatisch 
-zum nächsten Kampf über. Vor jedem neuen Kampf werden die Lebenspunkte und Aktionspunkte des Charakters wieder aufgefüllt.
+zum nächsten Kampf über, wenn der alte beendet ist. Vor jedem neuen Kampf werden die Lebenspunkte und Aktionspunkte des Charakters wieder aufgefüllt.
 Die Kämpfe sind rundenbasiert. Der Gegner und der Spieler führen nacheinander Fähigkeiten aus. Dem Spieler stehen dazu in den Kämpfen vier 
-Fähigkeiten zur verfügung. Beendet der Spieler einen Kampf erfolgreich (reduziert er die Lebenspunkte seines Gegners auf null), erhält er 
-eine bestimmte Menge Erfahrungspunkte. 
+Fähigkeiten zur verfügung. Eine Fähigkeit wird über eine Schaltfläche ausgewählt und ausgeführt. Blockiert ein Bossgegner eine Fähigkeit des Spielers, 
+wird dieser darüber in einer Textausgabe informiert.
+Beendet der Spieler einen Kampf erfolgreich (reduziert er die Lebenspunkte seines Gegners auf null), erhält er eine bestimmte Menge Erfahrungspunkte. 
 
 
 --- Charakter verbessern ---
@@ -75,7 +108,7 @@ Jeder Spieler muss einen Account anlegen, in dem sein Fortschritt gespeichert is
 --- Freunde ---
 ---------------
 Über den Benutzernamen kann der Spieler Freunde zu seiner Freundesliste hinzufügen. Wird er mit anderen Spielern zufällig in einem Team zusammengebracht,
-hat er die möglichkeit diese direkt als Freund hinzuzufügen.
+hat er die Möglichkeit diese direkt als Freund hinzuzufügen.
 
 
 --- Ein Mehrspieler-Spiel erstellen ---
@@ -92,8 +125,8 @@ Hier wählt er aus den Abschnitten, die für alle Spieler der Gruppe im Einzelsp
 
 --- Bewegung in der Spielwelt, Kommunikation, starten eines Levels ---
 ----------------------------------------------------------------------
-Im Mehrspielermodus bewegen sich die Spieler gleichzeitig durch die Spielwelt. Über einen Chat können sie miteinander kommunizieren. Begeben sich
-alle Spieler mit ihren Charakteren gleichzeitig zu einem Level und bestätigen sie dieses spielen zu wollen, spielt die Gruppe den Level.
+Im Mehrspielermodus bewegen sich die Spieler gleichzeitig durch die Abschnitte der Spielwelt. Über einen Chat können sie miteinander kommunizieren. 
+Begeben sich alle Spieler mit ihren Charakteren gleichzeitig zu einem Level und bestätigen sie dieses spielen zu wollen, spielt die Gruppe den Level.
 
 
 --- Kämpfe im Mehrspielermodus ---
@@ -127,6 +160,35 @@ Schaltet eine Gruppe von Spielern im Mehrspielermodus gemeinsam einen neuen Absc
 Einzelspielermodus verfügbar.
 
 
+------------------------------------------------------------
+--- Übersicht der Interaktion zwischen Spiel und Spieler ---
+------------------------------------------------------------
+Die Interaktion zwischen Spiel und Spieler gliedert sich in für den Charakter sichtbare und unsichtbare.
+
+--- sichtbare ---
+-----------------
+Der Spieler betätigt Schaltflächen um Entscheidungen zu treffen
+	-Auswahl der Fähigkeiten
+	-Verändern der Charakterwerte
+		-Verbessern des Charakters
+		-Anlegen von Gegenständen
+	
+	-Betreten neuer und abgeschlossener Abschnitte
+	-Betreten neuer und abgeschlossener Level
+
+Hier wird der Spieler über Textfelder über die Änderung informiert. Beispiel: Wählt der Spieler eine Fähigkeit, 
+die die Lebenspunkte des Gegners um 10 verringert erscheint ein Textfeld, dass den Namen der Fähigkeit ausgibt und die 
+Anzeige der Lebenspunkte zeigt die Verringerung an. Beim Betreten eines Levels oder Abschnitt, ändert sich die Ansicht.
+
+
+--- unsichtbare ---
+-------------------
+Das Spiel zeichnet auf, wie der Spieler spielt (siehe "Die Level"). Hier werden z.B. die bevorzugten Gegenstände und Fähigkeiten des Spielers
+aufgezeichnet. Aber auch, welche Charakterwerte am stärksten verbessert sind. Das Geschieht auch im Mehrspielermodus. Hier wird aus den Werten jedes
+einzelnen CHarakters der Gruppe ein Mittelwert gebildet, anhand dessen das Spiel mit dem Spieler interagiert.
+
+
+
 
 *************************
 (Notiz zur Dokumentation)
@@ -134,6 +196,7 @@ Einzelspielermodus verfügbar.
 Hinweis: Anstehend befindet sich die zweite Fassung Projektidee. 
 Aus folgenden Gründen habe ich diese verworfen/überarbeitet:
 
+	- Ausserdem habe ich explizieter die Interaktion zwischen Spiel und Spieler beschrieben
 	- Ich habe noch etwas zu klein gedacht. Jetzt existiert eine Spielwelt
 	- Es war keine Anwendung mit einer Webbasierung. Deswegen habe ich einen Multiplayermodus eingebaut, der das Spiel ausmachen soll.
 		-Es gibt eine Möglichkeit zu kommunizieren und zu handeln
