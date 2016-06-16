@@ -126,15 +126,22 @@
 	-75- Schaltfläche, Option / Handeln
 	-76- Anzeige / Lebenspunkte
 	-77- Anzeige / Aktionspunkte
+	-78- Textfeld / aktiver Charakter in einem Kampf
+
 
 
 
 	 
 	
 
-Hinweis: Bei dem Versuch Gruppen Struktureller Elemente zu erstellen, habe ich Ansichten erstellt. 
-Da mir noch nicht ganz klar ist, was mit Gruppen gemeint ist, bzw. wie ich das genau umsetze, lasse ich diese Gruppierung (auch wenn es keine im Sinne der Aufgabenstellung ist) 
-erst einmal stehen, bis ich mir Hilfe bei Ihnen gesucht habe. 
+Hinweis: Mir fiel es schwer Ansichten und Gruppen zu trennen. In den Gruppen sind jetzt nicht alle Elemente aus dem Katalog oben enthalten.
+Ich habe jetzt die Gruppen erstellt, die an mehreren Stellen zum einsatz kommen. Alles was es nur einmal gibt, fällt für mich unter Ansicht.
+Die Anscihten habe ich noch nicht geschafft, hier sind nur die enthalten, die ich vorher ausversehen als Gruppen definiert hatte. Die also bitte ausser acht
+lassen.
+
+Achso: Es kann sein, dass sich der Katalog während der weiteren Verwendung noch verändert. Es fällt mir leichter bei der Gruppierung und strukturierung 
+Elemente auf ihre sinnhaftigkeit zu beurteilen. Die Basis habe ich allerdings vorher erstellt. Ich hoffe, das ist so in Ordnung.
+ 
 
 ========================================	
 ==== Gruppen struktureller Elemente ====
@@ -147,56 +154,51 @@ erst einmal stehen, bis ich mir Hilfe bei Ihnen gesucht habe.
 		-02- Textfeld / Eingabe Passwort
 		-03- Schaltfläche / Log Inventarmenü
 		-60- Schaltfläche / Neuregistrierung
+		
 	
-	:::::::::::::::::
-	II. Registrierung
-	:::::::::::::::::
-		-61- Textfeld / Username eingeben
-		-62- Textfeld / Email-Adresse
-		-63- Texfeld / Passwort eingeben
-		-64- Textfeld / Passwort wiederholen
-		-65- Bild / Captcha anzeigen
-		-66- Textfeld / Captcha eingeben
-		-67- Schaltfläche / Regsitrierung abschicken
+	:::::::::::::::::::::::	
+	II. Maske Spiel beenden
+	:::::::::::::::::::::::
+		-06- Schaltfläche, Option / Spiel Beenden
+		-07- Schaltfläche, Option / Spiel Beenden bestätigen
+		-08- Schaltfläche, Option / Spiel Beenden abbrechen
+		-09- Schaltfläche, Option / Hauptmenü öffnen
+		
 	
-	:::::::::::::::::::::::
-	III. Auswahl Spielmodus
-	:::::::::::::::::::::::
-		-25- Textfeld / Beschreibung der Schaltflächen,Optionen
-		-53- Schaltfläche, Option / Einzelspielermodus wählen
-		-54- Schaltfläche, Option / Mehrspielermodus wählen
+	::::::::::::::::::::::::::::
+	III. Anzeige Charakterstatus
+	::::::::::::::::::::::::::::
+		-76- Anzeige / Lebenspunkte
+		-77- Anzeige / Aktionspunkte
+		-49- Textfeld / Spielerlevel
+		-47- Textfeld / Username
+		
 
 	::::::::::::::::::::::::::::
-	IV. Mehrspielermodus starten
+	IV. Mehrspielermodus starten (kann von Mehreren Punkten aus ausgeführt werden. Aus dem Startbildschirm und dem Einzelspielermodus)
 	::::::::::::::::::::::::::::
 		-25- Textfeld / Beschreibung der Schaltflächen,Optionen
 		-55- Schaltfläche, Option / Spiel erstellen
 		-56- Schaltfläche, Option / Spiel beitreten
+		
 	
-	:::::::::::::::::::::::::::::
-	V. Mehrspielerspiel erstellen
-	:::::::::::::::::::::::::::::
-		-47- Textfeld / Username
-		-48- Link / Spielerprofil
-		-49- Textfeld / Spielerlevel
-		-57- Tabelle / Anzeige Spieler im Team, enthält Textfelder und Links zu Profilen
+	::::::::::::::::::::
+	V. Merhspieler Lobby //Wird mehrfach vorkommen (Wenn Spieler spiel betritt und wenn er eines erstellt)
+	::::::::::::::::::::
+		VI. Chat 				<- Die Gruppe Chat, ist wiederum bestandteil der Gruppe Mehrspieler-Lobby ->
+		VIII. Teamübersicht 		<- Die Gruppe Teamübersicht, ist wiederum bestandteil der Gruppe Mehrspieler-Lobby ->
 		-68- Schaltfläche, Option / Freunde Einladen
 		-71- Schaltfläche, Option / Mitspieler zufällig auswählen
-		-38- Textfeld / Eingabe Chat
-		-39- Anzeige / Chatverlauf
-		-40- Schaltfläche, Option / Nachricht Senden
 		-58- Schaltfläche, Option / Spiel starten (nur für Host)
+
 	
-	::::::::::::::::::::::::::::::
-	VI. Mehrspielerspiel beitreten
-	::::::::::::::::::::::::::::::
-		-47- Textfeld / Username
-		-48- Link / Spielerprofil
-		-49- Textfeld / Spielerlevel
-		-57- Tabelle / Anzeige Spieler im Team, enthält Textfelder und Links zu Profilen
+	::::::::
+	VI. Chat
+	::::::::
 		-38- Textfeld / Eingabe Chat
 		-39- Anzeige / Chatverlauf
 		-40- Schaltfläche, Option / Nachricht Senden
+		
 
 	::::::::::::::::::
 	VII. Freundesliste
@@ -207,7 +209,71 @@ erst einmal stehen, bis ich mir Hilfe bei Ihnen gesucht habe.
 		-69- Textfeld / Status (online/offline)
 		-70- Schaltfläche, Option / Diesen Freund einladen
 		-51- Liste / Textfelder und Schaltflächen enthalten
+		
+
+	:::::::::::::::::::
+	VIII. Teamübersicht
+	:::::::::::::::::::
+		-47- Textfeld / Username
+		-48- Link / Spielerprofil
+		-49- Textfeld / Spielerlevel
+		-57- Tabelle / Anzeige Spieler im Team, enthält Textfelder und Links zu Profilen
+		-76- Schaltfläche, Option / Handeln
+		-50- Schaltfläche, Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
+		
+
+	::::::::::::::::
+	IX. Spielerprofil
+	::::::::::::::::
+		-47- Textfeld / Username
+		-49- Textfeld / Spielerlevel
+		-76- Schaltfläche, Option / Handeln
+		-50- Schaltfläche, Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
+		-05- Bild / Bild des Charakters
+		
+		
+	:::::::::::::::::::::	
+	X. Navigationsleiste
+	:::::::::::::::::::::
+		-09- Schaltfläche, Option / Hauptmenü öffnen
+		II. Maske Spiel beenden 	<- Die Gruppe Maske Spiel beenden, ist wiederum bestandteil der Gruppe Mehrspieler-Lobby ->
+		
 	
+	::::::::::::::::
+	XI. Level/Kämpfe
+	::::::::::::::::
+	-35- Schaltfläche, Option / Fähigkeit einsetzen
+	-36- Schaltfläche, Option / Level verlassen
+	-37- Schaltfläche, Option / Level neustarten
+	-16- Tabelle / 2x2 Felder jedes Feld beinhaltet eine Schaltfläche, Option und ein Textfeld	
+	-76- Anzeige / Lebenspunkte
+	-77- Anzeige / Aktionspunkte
+	-78- Textfeld / aktiver Charakter in einem Kampf
+	
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+===================	
+==== Ansichten ====
+===================
+	<-späterer Aufgabenteil ->
+
+
 	:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	VIII. Abschnitt Spielwelt mit freier Bewegung - Einzelspieler
 	:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -233,10 +299,7 @@ erst einmal stehen, bis ich mir Hilfe bei Ihnen gesucht habe.
 		-75- Textfeld / Abschnitt Name und Nummer	
 		-45- Schaltfläche, Option / Team ansehen
 		
-		-06- Schaltfläche, Option / Spiel Beenden
-		-07- Schaltfläche, Option / Spiel Beenden bestätigen
-		-08- Schaltfläche, Option / Spiel Beenden abbrechen
-		-09- Schaltfläche, Option / Hauptmenü öffnen
+
 
 		-38- Textfeld / Eingabe Chat
 		-39- Anzeige / Chatverlauf
@@ -244,56 +307,18 @@ erst einmal stehen, bis ich mir Hilfe bei Ihnen gesucht habe.
 		-04- Bild / Hintegrundbild
 		-05- Bild / Bild des Charakters
 		-47- Textfeld / Username
+
+:::::::::::::::::
+	II. Registrierung
+	:::::::::::::::::
+		-61- Textfeld / Username eingeben
+		-62- Textfeld / Email-Adresse
+		-63- Texfeld / Passwort eingeben
+		-64- Textfeld / Passwort wiederholen
+		-65- Bild / Captcha anzeigen
+		-66- Textfeld / Captcha eingeben
+		-67- Schaltfläche / Regsitrierung abschicken
 	
-	::::::::::::::::::::::::::::
-	X. Teamübersicht Mehrspieler
-	::::::::::::::::::::::::::::
-		-47- Textfeld / Username
-		-48- Link / Spielerprofil
-		-49- Textfeld / Spielerlevel
-		-57- Tabelle / Anzeige Spieler im Team, enthält Textfelder und Links zu Profilen
-		-76- Schaltfläche, Option / Handeln
-		-50- Schaltfläche, Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
-	
-	::::::::::::::::
-	XI. Level/Kämpfe
-	::::::::::::::::
-	-35- Schaltfläche, Option / Fähigkeit einsetzen
-	-36- Schaltfläche, Option / Level verlassen
-	-37- Schaltfläche, Option / Level neustarten
-	-16- Tabelle / 2x2 Felder jedes Feld beinhaltet eine Schaltfläche, Option und ein Textfeld	
-	-76- Anzeige / Lebenspunkte
-	-77- Anzeige / Aktionspunkte
-
-	:::::::::::::::::::::::::::::::::::
-	XII. Leve/Kämpfe - Mehrspielermodus
-	:::::::::::::::::::::::::::::::::::
-
-	XIII. Menüs
-
-
-	
-
-
-
-
-
-	
-
-
-
-
-
-
-===================	
-==== Ansichten ====
-===================
-	<-späterer Aufgabenteil ->
-
-
-
-
-
 
 
 	-->
