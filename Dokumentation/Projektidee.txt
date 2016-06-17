@@ -9,7 +9,8 @@ Abschnitte einer Spielwelt bewegen kann. Er kann in den Abschnitten in Level ein
 gegen stärker werdende Gegner kämpft. Ziel des Spiels ist es den Spieler stark zu fordern, 
 in dem das Kampfverhalten des Spielers aufgezeichnet wird und die Bossgegner versuchen die übliche Spielweise des Spielers zu 
 verhindern und ihn dazu zu zwingen diese zu überdenken und seinen Charakter stetig mit, durch Kämpfe gewonnenen Erfahrungspunktenzu verbessern. 
-Das Spiel soll gemeinsam mit Freunden und alleine spielbar sein.
+Das Spiel soll gemeinsam mit Freunden und alleine spielbar sein. Das Spiel gibt keine Story vor. Die Spieler sind ähnlich wie bei einem
+Pen and Paper abenteuer eine eigene Hintergrundgeschichte für ihren Charakter zu erstellen, die von anderen Spielern eingesehen werden kann.
 
 ---------------------------
 --- Konkrete Konzeption ---
@@ -22,17 +23,19 @@ Das Spiel soll gemeinsam mit Freunden und alleine spielbar sein.
 	1.2. Die Level
 	1.3. Die Kämpfe
 	1.4. Charakter verbessern
+	1.5. Hintergrundgeschichte
 
 2. Der Mehrspielermodus
 	2.1 Account
 	2.2 Freunde
 	2.3 Ein Mehrspieler-Spiel erstellen
-	2.4 Bewegung in der Spielwelt, Kommunikation, starten eines Levels
-	2.5 Kämpfe im Mehrspielermodus
-	2.6 Gegenstände im Mehrspielermodus
-	2.7 Abschnitte und Level wiederholen im Mehrspielermodus
-	2.8 Tauschen
-	2.9 Fortschritt Mehrspieler- und Einzelspielermodus
+	2.4 Einem Mehrspieler-Spiel beitreten
+	2.5 Bewegung in der Spielwelt, Kommunikation, starten eines Levels
+	2.6 Kämpfe im Mehrspielermodus
+	2.7 Gegenstände im Mehrspielermodus
+	2.8 Abschnitte und Level wiederholen im Mehrspielermodus
+	2.9 Tauschen
+	2.10 Fortschritt Mehrspieler- und Einzelspielermodus
 
 3. Übersicht der Interaktion zwischen Spiel und Spieler
 	3.1 sichtbare
@@ -69,6 +72,7 @@ die mit fortschritt der Kämpfe immer stärker werden und Boss-Gegner.
 Diese errechnen sich aus dem bisherigen Spielverhalten des Spielers und versuchen dieses zu blockieren. Ist ein Level abgeschlossen erhält der 
 Spieler einen Gegenstand. Dessen Funktion wird aus dem Charakterlevel des Spielers errechnet und bietet diesem einen erheblichen Vorteil.(siehe "Charakter verbessern") 
 Stirbt der Charakter in einem Level, wird er in der Spielwelt wiederbelebt. Der Fortschritt innerhalb des Levels wird dann zurückgesetzt.
+Merkt der Spieler, dass er dem Level nicht gewachsen ist, hat er die Möglichkeit dieses zu verlassen, oder es neu zu starten.
 
 
 --- Die Kämpfe ---
@@ -78,7 +82,9 @@ zum nächsten Kampf über, wenn der alte beendet ist. Vor jedem neuen Kampf werd
 Die Kämpfe sind rundenbasiert. Der Gegner und der Spieler führen nacheinander Fähigkeiten aus. Dem Spieler stehen dazu in den Kämpfen vier 
 Fähigkeiten zur verfügung. Eine Fähigkeit wird über eine Schaltfläche ausgewählt und ausgeführt. Blockiert ein Bossgegner eine Fähigkeit des Spielers, 
 wird dieser darüber in einer Textausgabe informiert.
-Beendet der Spieler einen Kampf erfolgreich (reduziert er die Lebenspunkte seines Gegners auf null), erhält er eine bestimmte Menge Erfahrungspunkte. 
+Beendet der Spieler einen Kampf erfolgreich (reduziert er die Lebenspunkte seines Gegners auf null), erhält er eine bestimmte Menge Erfahrungspunkte.
+Es können nur so lange Fähigkeiten eingesetzt werden, wie der Charakter Aktionspunkte hat. Sind diese leer, muss er eine Runde aussetzen. In jeder Runde,
+in der keine Aktion durchgeführt wird, regeneriert sich ein bestimmte Anzahl Aktionspunkte.
 
 
 --- Charakter verbessern ---
@@ -92,6 +98,11 @@ Die Fähigkeiten werden in einem Pool gesammelt. Der Spieler kann vier davon fü
 Gegenstände kann der Spieler ausrüsten oder ablegen. Diese beeinflussen die Charakterwerte für die Zeit, in der sie ausgerüstet sind.
 Das Verbessern des Charakters kann nicht in den Leveln, sondern nur in der Spielwelt vorgenommen werden.
 
+
+--- Hintegrundgeschichte ---
+----------------------------
+Jeder Spieler hart die Möglichkeit sich eine Hintergrundgeschichte für seinen Charakter auszudenken. Hierbei soll diese in das Unversum des 
+Spiels passen. Die Geschichte des Spiels ist sehr locker gehalten. Es gibt lediglich ein Setting. Das ich noch nicht konretisiert habe.
 
 
 ----------------------------
@@ -122,6 +133,10 @@ werden Spieler mit ähnlichem Charakterlevel dem Spiel hinzugefügt, die angegeb
 Der Host (Der Spieler, der das Spiel erstellt hat) bestimmt wann das Spiel gestartet werden soll und in welchem Abschnitt die Gruppe starten soll. 
 Hier wählt er aus den Abschnitten, die für alle Spieler der Gruppe im Einzelspielermodus verfügbar sind. 
 
+--- Einem Mehrspieler-Spiel beitreten ---
+-----------------------------------------
+Entscheidet sich der Spieler einem Spiel beizutreten, dass jemand anderes erstellt hat, wird er entsprechend seines Levels einem Spiel hinzugefügt. 
+Hier hat dann der jeweilige Spieler, der das Spiel erstellt hat, als einziger die Möglichkeit das Spiel zu starten.
 
 --- Bewegung in der Spielwelt, Kommunikation, starten eines Levels ---
 ----------------------------------------------------------------------
