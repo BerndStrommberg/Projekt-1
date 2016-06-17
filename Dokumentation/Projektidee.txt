@@ -4,6 +4,7 @@
 -----------------------------
 --- Grobe Zusammenfassung ---
 -----------------------------
+<<<<<<< HEAD
 Ich möchte in Projekt 1 ein Rollenspiel umsetzen. Der Spieler soll einen Charakter spielen, mit dem er sich frei durch die einzelnen
 Abschnitte einer Spielwelt bewegen kann. Er kann in den Abschnitten in Level eintreten, in denen er in Rundenbasierten Kämpfen 
 gegen stärker werdende Gegner kämpft. Ziel des Spiels ist es den Spieler stark zu fordern, 
@@ -11,6 +12,17 @@ in dem das Kampfverhalten des Spielers aufgezeichnet wird und die Bossgegner ver
 verhindern und ihn dazu zu zwingen diese zu überdenken und seinen Charakter stetig mit, durch Kämpfe gewonnenen Erfahrungspunktenzu verbessern. 
 Das Spiel soll gemeinsam mit Freunden und alleine spielbar sein. Das Spiel gibt keine Story vor. Die Spieler sind ähnlich wie bei einem
 Pen and Paper abenteuer eine eigene Hintergrundgeschichte für ihren Charakter zu erstellen, die von anderen Spielern eingesehen werden kann.
+=======
+
+Ich möchte in Projekt 1 ein Rollenspiel umsetzen. 
+Der Spieler soll einen Charakter spielen, mit dem er sich frei durch die einzelnen Abschnitte einer Spielwelt bewegen kann. 
+Er kann in den Abschnitten in Level eintreten, in denen er in Rundenbasierten Kämpfen gegen stärker werdende Gegner kämpft. 
+Ziel des Spiels ist es den Spieler stark zu fordern, in dem das Kampfverhalten des Spielers aufgezeichnet wird und 
+die Bossgegner versuchen die übliche Spielweise des Spielers zu verhindern und 
+ihn dazu zu zwingen diese zu überdenken und 
+seinen Charakter stetig mit, durch Kämpfe gewonnenen Erfahrungspunktenzu verbessern. 
+Das Spiel soll gemeinsam mit Freunden und alleine spielbar sein.
+>>>>>>> 06a4370271b48869fcb96bc2f37e5ce3e0be728e
 
 ---------------------------
 --- Konkrete Konzeption ---
@@ -77,6 +89,7 @@ Merkt der Spieler, dass er dem Level nicht gewachsen ist, hat er die Möglichkei
 
 --- Die Kämpfe ---
 ------------------
+<<<<<<< HEAD
 Die Kämpfe in den Leveln folgen dirket aufeinander. Hier hat der Spieler nicht die Möglichkeit sich frei zu bewegen, sondern geht automatisch 
 zum nächsten Kampf über, wenn der alte beendet ist. Vor jedem neuen Kampf werden die Lebenspunkte und Aktionspunkte des Charakters wieder aufgefüllt.
 Die Kämpfe sind rundenbasiert. Der Gegner und der Spieler führen nacheinander Fähigkeiten aus. Dem Spieler stehen dazu in den Kämpfen vier 
@@ -85,17 +98,30 @@ wird dieser darüber in einer Textausgabe informiert.
 Beendet der Spieler einen Kampf erfolgreich (reduziert er die Lebenspunkte seines Gegners auf null), erhält er eine bestimmte Menge Erfahrungspunkte.
 Es können nur so lange Fähigkeiten eingesetzt werden, wie der Charakter Aktionspunkte hat. Sind diese leer, muss er eine Runde aussetzen. In jeder Runde,
 in der keine Aktion durchgeführt wird, regeneriert sich ein bestimmte Anzahl Aktionspunkte.
+=======
+Die Kämpfe in den Leveln folgen dirket aufeinander. 
+Hier hat der Spieler nicht die Möglichkeit sich frei zu bewegen, sondern geht automatisch zum nächsten Kampf über, wenn der alte beendet ist. 
+Vor jedem neuen Kampf werden die Lebenspunkte und Aktionspunkte des Charakters wieder aufgefüllt.
+Die Kämpfe sind rundenbasiert. 
+Der Gegner und der Spieler führen nacheinander Fähigkeiten aus. 
+Dem Spieler stehen dazu in den Kämpfen vier Fähigkeiten zur verfügung. 
+Eine Fähigkeit wird über eine Schaltfläche ausgewählt und ausgeführt. 
+Blockiert ein Bossgegner eine Fähigkeit des Spielers, wird dieser darüber in einer Textausgabe informiert.
+Beendet der Spieler einen Kampf erfolgreich (reduziert er die Lebenspunkte seines Gegners auf null), erhält er eine bestimmte Menge Erfahrungspunkte. 
+>>>>>>> 06a4370271b48869fcb96bc2f37e5ce3e0be728e
 
 
 --- Charakter verbessern ---
 ----------------------------
 Erfahrungspunkte kann der Spieler in die Verbesserung der Charakterwerte investieren.
 
-Eine bestimmte Anzahl Erfahrungspunkte entspricht einem Charakterlevel. Bei jedem neuen Charakterlevel erhält der Spieler eine neue Fähigkeit, 
-die auf seinem bisherigen Spielverhalten basiert. 
-Die Fähigkeiten werden in einem Pool gesammelt. Der Spieler kann vier davon für die Kämpfe auswählen.
+Eine bestimmte Anzahl Erfahrungspunkte entspricht einem Charakterlevel. 
+Bei jedem neuen Charakterlevel erhält der Spieler eine neue Fähigkeit, die auf seinem bisherigen Spielverhalten basiert. 
+Die Fähigkeiten werden in einem Pool gesammelt. 
+Der Spieler kann vier davon für die Kämpfe auswählen.
 
-Gegenstände kann der Spieler ausrüsten oder ablegen. Diese beeinflussen die Charakterwerte für die Zeit, in der sie ausgerüstet sind.
+Gegenstände kann der Spieler ausrüsten oder ablegen. 
+Diese beeinflussen die Charakterwerte für die Zeit, in der sie ausgerüstet sind.
 Das Verbessern des Charakters kann nicht in den Leveln, sondern nur in der Spielwelt vorgenommen werden.
 
 
@@ -113,12 +139,14 @@ Entscheidet er sich für den Mehrspielermodus, hat der Spieler die Möglichkeit 
 
 --- Account ---
 ---------------
-Jeder Spieler muss einen Account anlegen, in dem sein Fortschritt gespeichert ist. Er muss einen Benutzernamen angeben.
+Jeder Spieler muss einen Account anlegen, in dem sein Fortschritt gespeichert ist. 
+Er muss einen Benutzernamen angeben.
 
 
 --- Freunde ---
 ---------------
-Über den Benutzernamen kann der Spieler Freunde zu seiner Freundesliste hinzufügen. Wird er mit anderen Spielern zufällig in einem Team zusammengebracht,
+Über den Benutzernamen kann der Spieler Freunde zu seiner Freundesliste hinzufügen. 
+Wird er mit anderen Spielern zufällig in einem Team zusammengebracht,
 hat er die Möglichkeit diese direkt als Freund hinzuzufügen.
 
 
@@ -456,4 +484,34 @@ Wertung 2: Projektbeschreibung: gesamt: 1 / 10
 - Werbeslogans u.ä.: 0 
 - Designaspekte: 0 
 - Voraussetzung bekannten Wissens: 0 
+(Bitte beachten Sie, dass das die Wertung zum aktuellen Zeitpunkt und keine abschließende Wertung Ihrer Beschreibung ist.)
+
+===================================
+=== Feedback Alpers, 2016-06-17 ===
+===================================
+
+Gute Zusammenfassung am Anfang. Dort geben Sie allerdings bezüglich er Interaktion zwischen Mensch und Programm an, dass das Spiel auf die individuelle Spielweise eingeht, nicht in welcher Art das passieren soll. Unter --- unsichtbare --- haben Sie notiert, welche Daten gespeichert werden, aber in der Beschreibung konnte ich nicht erkennen, wie diese ausgewertet werden.
+
+Ihre Beschreibung geht sehr weit und ist als allgemeine Beschreibung sinnvoll strukturiert. Sehr gut.
+
+"Diese haben zwar den selben Namen wie vorher, werden aber nach dem selben Prinzip neu errechnet um die Schwierigkeit imens zu erhöhen." (1. Absatz von --- Die Spielwelt ---)
+Auf welches Prinzip beziehen Sie sich hier?
+
+Insgesamt schreiben Sie aber doch zu umfangreich und teilweise unklar. Dadurch steigt der Aufwand, basierend auf der Beschreibung das Spiel umzusetzen. Hier ein Beispiel:
+"Der Gegner und der Spieler führen nacheinander Fähigkeiten aus. 
+Dem Spieler stehen dazu in den Kämpfen vier Fähigkeiten zur verfügung. 
+Eine Fähigkeit wird über eine Schaltfläche ausgewählt und ausgeführt. "
+Nach der ersten Zeile stellt sich die Frage: Darf jeder von beiden immer nur genau eine Fähigkeit anwenden oder gibt es da andere Varianten? Wirkt sich eine Fähigkeit immer sofort aus oder wählen Spieler und Spiel zunächst eine Fähigkeit aus und die Auswirkungen beider werden "gleichzeitig" durchgeführt?
+Hier wäre ein Beispiel für eine kurze Beschreibung dieser drei Zeilen:
+- Spieler und Spiel wählen eine Fähigkeit aus, die gleichzeitig ausgewertet wird.
+(Dass Spieler vier Fähigkeiten auswählen können haben Sie ja an anderer Stelle definiert.)
+
+Dieses Beispiel zeigt das nächste Problem: Da in Ihrer Beschreibung Struktur und Funktionalität stark vermischt sind, ist es schwierig, basierend auf der Beschreibung alle strukturellen Elemente auszuarbeiten. Und umgekehrt ist es schwierig, die Beschreibung in der aktuellen Form zu ändern, wenn sich an anderer Stelle zeigt, dass das Projekt angepasst werden muss.
+
+Für ein Softwareprojekt müssten Sie jetzt an dieser Stelle also noch recht viel Arbeit investieren, um eine Beschreibung zu erhalten, die sinnvoll für die Entwicklung des gesamten Projekts ist.
+
+Außerdem fehlt etwas wichtiges, dass Sie mir im Gespräch genannt hatten: Die Begründungen dafür, warum ein Spieler frühere Abschnitte nochmal betreten kann, bzw. dafür, warum die Bossgegner nach dem ersten Kampf nicht erneut angepasst werden.
+
+Wertung 2: Projektbeschreibung: gesamt: 9 / 10
+Hier erfolgt keine Teilwertung nach dem bisherigen Schlüssel, da Sie einerseits die dort genannten Kriterien nicht eindeutig erfüllt haben, aber andererseits klar erkennbar ist, dass Ihre Spielidee die in der Aufgabenstellung geforderten Aspekte weitegehend erfüllt.
 (Bitte beachten Sie, dass das die Wertung zum aktuellen Zeitpunkt und keine abschließende Wertung Ihrer Beschreibung ist.)
