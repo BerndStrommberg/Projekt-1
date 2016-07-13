@@ -47,15 +47,14 @@
 
 	-14- Anzeige / Erfahrungspunkte
 	-15- Anzeige / Charakterlevel
-	-16- Tabelle / 2x2 Felder jedes Feld beinhaltet eine Schaltfläche, Option und ein Textfeld
+	-16- 
 	-17- Schaltfläche, Option / Lebenspunkte erhöhen
 	-18- Schaltfläche, Option / Stärke erhöhen
 	-19- Schaltfläche, Option / Verteidigungspunkte erhöhren
 	-20- Schaltfläche, Option / Aktionspunkte erhöhen
 	-21- Schaltfläche, Option / Erfahrungspunkte erhöhen  <- verworfen, da nicht im Spiel vorhanden ->
 
-	-22- Tabelle / jeder Eintrag beinhaltet eine Schaltfläche, Option und ein Textfeld  
-
+	-22- 
 	-23- Schaltfläche, Option / Gegenstand anlegen
 	-24- Schaltfläche, Option / Gegenstand ablegen
 	-25- Textfeld / Beschreibung der Schaltflächen,Optionen
@@ -80,13 +79,13 @@
 	-39- Anzeige / Chatverlauf
 	-40- Schaltfläche, Option / Nachricht Senden
 	-45- Schaltfläche, Option / Team ansehen
-	-46- Tabelle / enthält Textfelder mit Spielernamen und Link zu deren Profilen
+	-46- 
 	-47- Textfeld / Username
 	-48- Link / Spielerprofil
 	-49- Textfeld / Spielerlevel
 	-50- Schaltfläche, Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
 
-	-51- Liste / Textfelder und Schaltflächen enthalten
+	-51- 
 
 	-52- Schaltfläche, Option / Einladung zu Spiel senden
 	-53- Schaltfläche, Option / Einzelspielermodus wählen
@@ -95,7 +94,7 @@
 	-56- Schaltfläche, Option / Spiel beitreten
 	-57- Tabelle / Anzeige Spieler im Team, enthält Textfelder und Links zu Profilen
 	-58- Schaltfläche, Option / Spiel starten (nur für Host)
-	-59- Tabelle / enthält alle Schaltfächen,Optionen im Kampf 
+	-59- 
 	
 	-60- Schaltfläche / Neuregistrierung
 	-61- Textfeld / Username eingeben
@@ -118,6 +117,7 @@
 	-77- Anzeige / Aktionspunkte
 	-78- Textfeld / aktiver Charakter in einem Kampf
 	-79- Textfeld / Hintegrundgeschichte
+	-80- Schaltfläche, Option / Aussetzen
 
 Hinweis: Mir fiel es schwer Ansichten und Gruppen zu trennen. In den Gruppen sind jetzt nicht alle Elemente aus dem Katalog oben enthalten.
 Ich habe jetzt die Gruppen erstellt, die an mehreren Stellen zum einsatz kommen. Alles was es nur einmal gibt, fällt für mich unter Ansicht.
@@ -132,7 +132,7 @@ Elemente auf ihre sinnhaftigkeit zu beurteilen. Die Basis habe ich allerdings vo
 ========================================
 	
 	:::::::::::::::
-	I. Log-In-Maske
+	I. logIn
 	:::::::::::::::
 		-01- Textfeld / Eingabe Benutzername
 		-02- Textfeld / Eingabe Passwort
@@ -141,16 +141,16 @@ Elemente auf ihre sinnhaftigkeit zu beurteilen. Die Basis habe ich allerdings vo
 		
 	
 	:::::::::::::::::::::::	
-	II. Maske Spiel beenden
+	II. endGame
 	:::::::::::::::::::::::
 		-06- Schaltfläche, Option / Spiel Beenden
 		-07- Schaltfläche, Option / Spiel Beenden bestätigen
 		-08- Schaltfläche, Option / Spiel Beenden abbrechen
-		-09- Schaltfläche, Option / Hauptmenü öffnen
+
 		
 	
 	::::::::::::::::::::::::::::
-	III. Anzeige Charakterstatus
+	III. characterStatus
 	::::::::::::::::::::::::::::
 		-76- Anzeige / Lebenspunkte
 		-77- Anzeige / Aktionspunkte
@@ -159,7 +159,7 @@ Elemente auf ihre sinnhaftigkeit zu beurteilen. Die Basis habe ich allerdings vo
 		
 
 	::::::::::::::::::::::::::::
-	IV. Mehrspielermodus starten (kann von Mehreren Punkten aus ausgeführt werden. Aus dem Startbildschirm und dem Einzelspielermodus)
+	IV. multiplayerStart (kann von Mehreren Punkten aus ausgeführt werden. Aus dem Startbildschirm und dem Einzelspielermodus)
 	::::::::::::::::::::::::::::
 		-25- Textfeld / Beschreibung der Schaltflächen,Optionen
 		-55- Schaltfläche, Option / Spiel erstellen
@@ -167,17 +167,17 @@ Elemente auf ihre sinnhaftigkeit zu beurteilen. Die Basis habe ich allerdings vo
 		
 	
 	::::::::::::::::::::
-	V. Merhspieler Lobby //Wird mehrfach vorkommen (Wenn Spieler spiel betritt und wenn er eines erstellt)
+	V. multiplayerLobby //Wird mehrfach vorkommen (Wenn Spieler spiel betritt und wenn er eines erstellt)
 	::::::::::::::::::::
 		VI. Chat 				<- Die Gruppe Chat, ist wiederum bestandteil der Gruppe Mehrspieler-Lobby ->
-		VIII. Teamübersicht 		<- Die Gruppe Teamübersicht, ist wiederum bestandteil der Gruppe Mehrspieler-Lobby ->
+		VIII. teamübersicht 		<- Die Gruppe Teamübersicht, ist wiederum bestandteil der Gruppe Mehrspieler-Lobby ->
 		-68- Schaltfläche, Option / Freunde Einladen
 		-71- Schaltfläche, Option / Mitspieler zufällig auswählen
 		-58- Schaltfläche, Option / Spiel starten (nur für Host)
-
+		VII. freundesliste
 	
 	::::::::
-	VI. Chat
+	VI. chat
 	::::::::
 		-38- Textfeld / Eingabe Chat
 		-39- Anzeige / Chatverlauf
@@ -185,29 +185,28 @@ Elemente auf ihre sinnhaftigkeit zu beurteilen. Die Basis habe ich allerdings vo
 		
 
 	::::::::::::::::::
-	VII. Freundesliste
+	VII. freundesliste
 	::::::::::::::::::
 		-47- Textfeld / Username
 		-48- Link / Spielerprofil
 		-49- Textfeld / Spielerlevel
 		-69- Textfeld / Status (online/offline)
 		-70- Schaltfläche, Option / Diesen Freund einladen
-		-51- Liste / Textfelder und Schaltflächen enthalten
+		
 		
 
 	:::::::::::::::::::
-	VIII. Teamübersicht
+	VIII. teamübersicht
 	:::::::::::::::::::
 		-47- Textfeld / Username
 		-48- Link / Spielerprofil
 		-49- Textfeld / Spielerlevel
-		-57- Tabelle / Anzeige Spieler im Team, enthält Textfelder und Links zu Profilen
 		-76- Schaltfläche, Option / Handeln
 		-50- Schaltfläche, Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
 		
 
 	::::::::::::::::
-	IX. Spielerprofil
+	IX. spielerprofil
 	::::::::::::::::
 		-47- Textfeld / Username
 		-49- Textfeld / Spielerlevel
@@ -218,24 +217,45 @@ Elemente auf ihre sinnhaftigkeit zu beurteilen. Die Basis habe ich allerdings vo
 		
 
 	:::::::::::::::::::::	
-	X. Navigationsleiste
+	X. navigationsleiste
 	:::::::::::::::::::::
 		-09- Schaltfläche, Option / Hauptmenü öffnen
-		II. Maske Spiel beenden 	<- Die Gruppe Maske Spiel beenden, ist wiederum bestandteil der Gruppe Mehrspieler-Lobby ->
+		II. EndGame 	
 		-45- Schaltfläche, Option / Team ansehen
+		IV. MultiplayerStart
 		
 	
 	::::::::::::::::
-	XI. Level/Kämpfe
+	XI. kämpfe
 	::::::::::::::::
-	-35- Schaltfläche, Option / Fähigkeit einsetzen
-	-36- Schaltfläche, Option / Level verlassen
-	-37- Schaltfläche, Option / Level neustarten
-	-16- Tabelle / 2x2 Felder jedes Feld beinhaltet eine Schaltfläche, Option und ein Textfeld	
-	-76- Anzeige / Lebenspunkte
-	-77- Anzeige / Aktionspunkte
-	-78- Textfeld / aktiver Charakter in einem Kampf
+		-35- Schaltfläche, Option / Fähigkeit einsetzen
+		-36- Schaltfläche, Option / Level verlassen
+		-37- Schaltfläche, Option / Level neustarten
+		-80- Schaltfläche, Option / Aussetzen
+		III. Charakterstatus
+		-78- Textfeld / aktiver Charakter in einem Kampf
 	
+	:::::::::
+	XII. mainMenu	
+	:::::::::
+		-10- Schaltfläche, Option / Charaktermenü öffnen
+		-11- Schaltfläche, Option / Inventar öffnen
+		-12- Schaltfläche, Option / Fähigkeitenmenü öffnen
+		-13- Schaltfläche, Option / Speichermenü öffnen
+		
+		<- Die einzelnen Menüs werden dann nur Ansichten->
+	
+	:::::::::::::::::::::
+	XIII. AbschnittAnsicht
+	:::::::::::::::::::::
+		III. Charakterstatus
+		-04- Bild / Hintegrundbild
+		-05- Bild / Bild des Charakters
+		X. Navigationsleiste
+		-34- Schaltfläche, Option / Level betreten
+		-74- Textfeld / Level Name und Nummer
+		-75- Textfeld / Abschnitt Name und Nummer
+		
 
 
 
@@ -257,37 +277,24 @@ Elemente auf ihre sinnhaftigkeit zu beurteilen. Die Basis habe ich allerdings vo
 ===================	
 ==== Ansichten ====
 ===================
-	<-späterer Aufgabenteil ->
+	
 	----------------------------------
 	--- view_PlayfieldSinglePlayer ---
 	----------------------------------
 		-72- Option / zu Mausklick oder Fingertipp gehen
-		-34- Schaltfläche, Option / Level betreten
-		-74- Textfeld / Level Name und Nummer
-		-75- Textfeld / Abschnitt Name und Nummer
-		-04- Bild / Hintegrundbild
-		-05- Bild / Bild des Charakters
-
-		X. Navigationsleiste
+		XIII. AbschnittAnsicht
 
 	----------------------------------
 	--- view_PlayfieldMultiPlayer ---
 	----------------------------------
 		-72- Option / zu Mausklick oder Fingertipp gehen
-		-34- Schaltfläche, Option / Level betreten
-		-74- Textfeld / Level Name und Nummer
-		-75- Textfeld / Abschnitt Name und Nummer	
-		
+		XIII. AbschnittAnsicht
 		VI. Chat			
-		X. Navigationsleiste
-		
-		-04- Bild / Hintegrundbild
-		-05- Bild / Bild des Charakters
 		-47- Textfeld / Username
 
-	:::::::::::::::::
-	II. Registrierung
-	:::::::::::::::::
+	--------------------------
+	--- view_Registrierung ---
+	--------------------------
 		-61- Textfeld / Username eingeben
 		-62- Textfeld / Email-Adresse
 		-63- Texfeld / Passwort eingeben
@@ -296,8 +303,26 @@ Elemente auf ihre sinnhaftigkeit zu beurteilen. Die Basis habe ich allerdings vo
 		-66- Textfeld / Captcha eingeben
 		-67- Schaltfläche / Regsitrierung abschicken
 	
-
-
+	-------------------
+	--- view_Log-In ---
+	-------------------
+		I. Log-In
+		
+	------------------	
+	---	view_Lobby ---
+	-----------------
+		V. MultiplayerLobby
+		
+	------------------	
+	--- view_fight ---
+	------------------
+		XI. Kämpfe
+	
+	
+		
+		
+		
+		
 	-->
 
 
