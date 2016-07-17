@@ -94,7 +94,7 @@ Es ist zwar möglich die Level in einer beliebigen Reihenfolge zu betreten und z
 Schwierigkeit der Level eine empfohlene Reihenfolge, in der die Level gespielt werden sollten. 
 Wobei es hier einen Boss-Level gibt. 
 In diesem muss der Spieler noch einmal gegen alle Bossgegner (siehe "Die Level") aus den bisher gespielten Leveln antreten. 
-Diese haben zwar den selben Namen wie vorher, werden aber nach dem selben Prinzip.
+Diese haben zwar den selben Namen wie vorher, werden aber nach dem selben Prinzip
 neu errechnet um die Schwierigkeit imens zu erhöhen. Dieses Level kann erst gespielt werden, wenn alle vorherigen Level abgeschlossen sind. 
 
 Hat der Spieler alle Level aus einem Abschnitt (den Boss-Level) absolviert, erhält er einen Gegenstand und die Möglichkeit diesen zu verlassen 
@@ -150,14 +150,18 @@ Merkt der Spieler, dass er dem Level nicht gewachsen ist, hat er die Möglichkei
 		(iii) - Der Charakter wird darüber informiert, wenn ein Bossgegner seine Fähigkeiten blockiert
 		(iv)  - Die Kämpfe sind rundenbasiert
 		(v)   - Der Spieler kann eine Runde aussetzen
+		(vi)  - Es gibt Erfahrungspunkte
 
 	Funktionalität: 
 		(i)   - Sind die Lebenspunkte des Spieler-, oder des Nicht-Spieler-Charakters bei 0 angelangt ist dieser tot
 		      - Fähigkeiten kosten Aktionspunkte und können nur eingesetzt werden, so lange der Spieler diese zur Verfügung hat
-		(ii)  - Die Fähigkeiten haben einen Effekt auf die Werte des Gegners, oder den Spieler selbst (z.B. Lebenspunkte wiederherstellen, Lebenspunkte dezimieren, zum aussetzen zwinge etc.
+		(ii)  - Die Fähigkeiten haben einen Effekt auf die Werte des Gegners, oder den Spieler selbst (z.B. Lebenspunkte wiederherstellen, Lebenspunkte dezimieren, zum aussetzen zwinge etc.)
 		(iii) - Sollte eine Fähigkeit, ein Charakterwert oder ein Gegenstand durch einen Bossgegner blockiert werden, wird der Spieler darüber informiert(siehe 1.2 "Die Level")
-		(iv)  - Spieler und Gegner führen abwechselnd Fähigkeiten aus. Diese werden direkt nach dem Einsetzen ausegwertet.
+		(iv)  - Spieler und Gegner führen abwechselnd eine Fähigkeiten aus. Diese werden direkt nach dem Einsetzen ausegwertet.
 		(v)   - Setzt der Spieler eine Runde aus, erhält er eine bestimmte Anzahl Aktionspunkte zurück
+		(vi)  - Für das Besiegen eines Gegners erhält der Spieler Erfahrungspunkte. Die Menge dieser variiert nach Schwierigkeit des Kampfes.
+		      - Die Schwierigkeit eines Kapfes ergibt sich aus der Stärke des Gegners in Relation zur Stärke des Spielers, gemessen am Charakterlevel
+
 
 Die Kämpfe in den Leveln folgen dirket aufeinander. Hier hat der Spieler nicht die Möglichkeit sich frei zu bewegen, sondern geht automatisch 
 zum nächsten Kampf über, wenn der alte beendet ist. Vor jedem neuen Kampf werden die Lebenspunkte und Aktionspunkte des Charakters wieder aufgefüllt.
@@ -174,6 +178,19 @@ in der keine Aktion durchgeführt wird, regeneriert sich ein bestimmte Anzahl Ak
 --- Charakter verbessern ---
 ----------------------------
 
+	Struktur:
+		(i)   - Es gibt Erfahrungspunkte
+		(ii)  - Es gibt Charakterlevel
+		(iii) - Es gibt einen wachsenden Fähigkeitenpool aller Fähigkeiten
+		(iv)  - Es gibt Gegenstände 
+		(v)   - Es gibt ein Charaktermenü
+	
+	Funktionalität:
+		(i)   - Die Erfahrungspunkte können in die Verbesserung der Charakterwerte investiert werden
+		(ii)  - Eine bestimmte Anzahl an Erfahrungspunkten entspricht einem bestimmten Charakterlevel
+		(iii) - Mit jedem neuen Charakterlevel wächst der Fähigkeitenpool um eine Fähigkeit, die basierend auf dem Spielerverhalten des Spielers für einen Vorteil sorgen soll. Aus diesem Pool werden vier für den Kmpf ausgewählt.
+		(iv)  - Gegenstände können ausgerüstet werden und erhöhen oder senken bestimmte Charakterwerte. 
+		(v)   - Im Charaktermenü, kann der Spieler seinen Charakter verbessern, Gegenstände an oder ablegen und die Fähigkeiten für den Kampf auswählen.
 	
 Erfahrungspunkte kann der Spieler in die Verbesserung der Charakterwerte investieren.
 
