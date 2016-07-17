@@ -61,15 +61,15 @@
 	
 	-26- <- Verworfen ->
 
-	-27- Schaltfäche / Fähigkeit ausrüsten
+	-27- Schaltfläche, Option / Fähigkeit ausrüsten
 	-28- Schaltfläche, Option / Fähigkeit ablegen
 
 	-29- Schaltfläche, Option / Spielstand Speichern
 
-	-30- Schaltfläche, Option / Zum Hauptmenü zurück
-	-31- Schaltfläche, Option / Zur Hauptansicht zurück
+	-30- 
+	-31- 
 
-	-32- Schaltfläche, Option / Option auswählen <- verworfen ->   
+	-32-  
 	-33- Textfelder / statische Textfelder, die die Funktion einer Schaltfläche, Option für den Spieler beschreiben
 	-34- Schaltfläche, Option / Level betreten
 	-35- Schaltfläche, Option / Fähigkeit einsetzen
@@ -121,8 +121,15 @@
 	-81- Schaltfläche, Option / Zurück zum Spiel
 	-82- Schaltfläche, Option / Zurück zum Hauptmenü
 	
-	-83- Textfeld / 
-
+	-83- Textfeld / Stärke
+	-84- Textfeld / Verteidigung
+	-85- Textfeld / Aktionspunkte
+	-86- Textfeld / Schaden
+	-87- Textfeld / Rüstungswert
+	
+	-88- Textfeld / Fähigkeit
+	-89- Schaltfläche, Option / Musik an/aus
+	-90- Schaltfläche, Option / ausloggen
 
  
 ========================================	
@@ -130,7 +137,7 @@
 ========================================
 	
 	:::::::::::::::
-	I. logIn
+	I. login
 	:::::::::::::::
 		-01- Textfeld / Eingabe Benutzername
 		-02- Textfeld / Eingabe Passwort
@@ -139,7 +146,7 @@
 		
 	
 	:::::::::::::::::::::::	
-	II. endGame
+	II. endgame
 	:::::::::::::::::::::::
 		-06- Schaltfläche, Option / Spiel Beenden
 		-07- Schaltfläche, Option / Spiel Beenden bestätigen
@@ -148,7 +155,7 @@
 		
 	
 	::::::::::::::::::::::::::::
-	III. characterStatus
+	III. characterstatus
 	::::::::::::::::::::::::::::
 		-76- Anzeige / Lebenspunkte
 		-77- Anzeige / Aktionspunkte
@@ -157,7 +164,7 @@
 		
 
 	::::::::::::::::::::::::::::
-	IV. multiplayerStart (kann von Mehreren Punkten aus ausgeführt werden. Aus dem Startbildschirm und dem Einzelspielermodus)
+	IV. multiplayerstart (kann von Mehreren Punkten aus ausgeführt werden. Aus dem Startbildschirm und dem Einzelspielermodus)
 	::::::::::::::::::::::::::::
 		-25- Textfeld / Beschreibung der Schaltflächen,Optionen
 		-55- Schaltfläche, Option / Spiel erstellen
@@ -165,9 +172,9 @@
 		
 	
 	::::::::::::::::::::
-	V. multiplayerLobby //Wird mehrfach vorkommen (Wenn Spieler spiel betritt und wenn er eines erstellt)
+	V. multiplayerlobby //Wird mehrfach vorkommen (Wenn Spieler spiel betritt und wenn er eines erstellt)
 	::::::::::::::::::::
-		VI. Chat 				<- Die Gruppe Chat, ist wiederum bestandteil der Gruppe Mehrspieler-Lobby ->
+		VI. chat 				<- Die Gruppe Chat, ist wiederum bestandteil der Gruppe Mehrspieler-Lobby ->
 		VIII. teamübersicht 		<- Die Gruppe Teamübersicht, ist wiederum bestandteil der Gruppe Mehrspieler-Lobby ->
 		-68- Schaltfläche, Option / Freunde Einladen
 		-71- Schaltfläche, Option / Mitspieler zufällig auswählen
@@ -218,7 +225,7 @@
 	X. navigationsleiste
 	:::::::::::::::::::::
 		-09- Schaltfläche, Option / Hauptmenü öffnen
-		II. EndGame 	
+		II. endgame 	
 		-45- Schaltfläche, Option / Team ansehen
 		IV. MultiplayerStart
 		
@@ -236,7 +243,7 @@
 		-78- Textfeld / aktiver Charakter in einem Kampf
 	
 	:::::::::
-	XII. mainMenu	
+	XII. main_menu	
 	:::::::::
 		-10- Schaltfläche, Option / Charaktermenü öffnen
 		-11- Schaltfläche, Option / Inventar öffnen
@@ -248,18 +255,18 @@
 		<- Die einzelnen Menüs werden dann nur Ansichten->
 	
 	:::::::::::::::::::::
-	XIII. AbschnittAnsicht
+	XIII. abschnittübersicht
 	:::::::::::::::::::::
-		X. Navigationsleiste
+		X. navigationsleiste
 		-34- Schaltfläche, Option / Level betreten
 		-74- Textfeld / Level Name und Nummer
 		-75- Textfeld / Abschnitt Name und Nummer
 		
 	
 	::::::::::::
-	XIV. spieler
+	XIV. spieleranzeige
 	::::::::::::
-		III. Charakterstatus
+		III. characterstatus
 		-04- Bild / Hintegrundbild
 		-05- Bild / Bild des Charakters
 
@@ -283,26 +290,26 @@
 ===================
 	
 	----------------------------------
-	--- view_PlayfieldSinglePlayer ---
+	--- view_playfieldsingleplayer ---
 	----------------------------------
 		-72- Option / zu Mausklick oder Fingertipp gehen
-		XIII. AbschnittAnsicht
-		XIV. Spieler
+		XIII. abschnittübersicht
+		XIV. spieleranzeige
 		II. endGame
 		IV. multiplayerStart
 		
 	----------------------------------
-	--- view_PlayfieldMultiPlayer ---
+	--- view_playfieldmultiplayer ---
 	----------------------------------
 		-72- Option / zu Mausklick oder Fingertipp gehen
-		XIII. AbschnittAnsicht
+		XIII. abschnittansicht
 		VI. chat			
 		-47- Textfeld / Username
-		XIV. Spieler
+		XIV. spieler
 		II. endGame
 		
 	--------------------------
-	--- view_Registrierung ---
+	--- view_registrierung ---
 	--------------------------
 		-61- Textfeld / Username eingeben
 		-62- Textfeld / Email-Adresse
@@ -313,24 +320,24 @@
 		-67- Schaltfläche / Regsitrierung abschicken
 	
 	-------------------
-	--- view_Log-In ---
+	--- view_log-in ---
 	-------------------
-		I. Log-In
+		I. login
 		
 	------------------	
-	---	view_Lobby ---
+	---	view_lobby ---
 	-----------------
-		V. MultiplayerLobby
+		V. multiplayerlobby
 		
 	------------------	
 	--- view_fight ---
 	------------------
-		XI. Kämpfe
+		XI. kämpfe
 		
 	---------------------	
-	--- view_mainMenu ---
+	--- view_mainmenu ---
 	---------------------
-		XII. mainMenu
+		XII. main_menu
 		
 	--------------------------
 	--- view_charaktermenü ---
@@ -341,23 +348,41 @@
 		-19- Schaltfläche, Option / Verteidigungspunkte erhöhren
 		-20- Schaltfläche, Option / Aktionspunkte erhöhen
 		
+		-83- Textfeld / Stärke
+		-84- Textfeld / Verteidigung
+		-85- Textfeld / Aktionspunkte
+		-86- Textfeld / Schaden
+		-87- Textfeld / Rüstungswert
+
 		-81- Schaltfläche, Option / Zurück zum Spiel
 		-82- Schaltfläche, Option / Zurück zum Hauptmenü
-
-			
+		
 	
 	---------------------
 	--- view_inventar ---
 	---------------------
-		
-	
+		-23- Schaltfläche, Option / Gegenstand anlegen
+		-24- Schaltfläche, Option / Gegenstand ablegen
+		-25- Textfeld / Beschreibung der Schaltflächen,Optionen
+			Liste
+		-81- Schaltfläche, Option / Zurück zum Spiel
+		-82- Schaltfläche, Option / Zurück zum Hauptmenü
+			
 	----------------------------
 	--- view_fähigkeitenmenü ---
 	----------------------------
+		-27- Schaltfäche, Option / Fähigkeit ausrüsten
+		-28- Schaltfläche, Option / Fähigkeit ablegen	
+			Liste
+		-88- Textfeld / Fähigkeit
+		
 	
 	-----------------------
 	--- view_systemmenü ---
 	-----------------------
+		-29- Schaltfläche, Option / Spielstand Speichern
+		-89- Schaltfläche, Option / Musik an/aus
+		-90- Schaltfläche, Option / ausloggen
 		
 	
 	

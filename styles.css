@@ -2,8 +2,19 @@ body {
 	font-family: Garamond, "Times New Roman", serif;
 }
 
-#background {
-	background-image: url(../images/bg.gif);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
+
+.background {
+	background-image: url(Bilder/map.jpg);
+	background-position: background;
+}
+
+.hud {
+	background-color: white;
+	font-size: 20px;
+}
+
+.heroe {
+	width: 20px;
+	height: 40px;
+	/*Die Größenveränderungen sind lediglich provisorisch und dienen der besseren übersichtlichkeit während der Programmierung*/
 }
