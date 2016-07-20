@@ -8,3 +8,5 @@
 <?php include("multiplayerStart.php") ?>
 <?php include("endgame.php") ?>
 
+<!--Die Navigationsleiste soll in der Spielwelt eingeblendet werden. Sie ermöglicht es ein Spiel zu beenden, oder ein Multiplayerspiel zu erstellen-->
+

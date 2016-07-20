@@ -8,13 +8,12 @@
 	</head>
 
 	<body>
-		<!--Die jeweiligen Werte werden über ein Programm abgefragt und ausgegeben-->
 	<main class=hud>	
+		<!--Die jeweiligen Werte werden über ein Programm abgefragt und ausgegeben-->
 		<p>Lebenspunkte:</p>
 		<p>Aktionspunkte:</p>
 		<p>Level:</p> 
 	</main>	
-		<!--Hier ein Programm, dass den Namen des Charakters abfragt und ausgibt-->
 	</body>
 
 
