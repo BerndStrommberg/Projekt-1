@@ -1,20 +1,11 @@
-<!doctype html>
 
-<html lang=de>
-	<head>
-		<title>Charakterstatus</title>
-		<meta charset=utf-8>
-		<link rel=srylesheet href=styles.css>
-	</head>
+<main class=hud>	
+	<!--Werden dann Später über ein echo ausgegeben. Die Werte der Variablen werden aus einer Datenbank ausgelesen-->
+	
+	<p>Spielerlevel:</p>
+	<p>Benutzername:</p>
+	<p>Lebenspunkte:</p>
+	<p>Aktionspunkte:</p>
+	<p>Level:</p> 
 
-	<body>
-	<main class=hud>	
-		<!--Die jeweiligen Werte werden über ein Programm abgefragt und ausgegeben-->
-		<p>Lebenspunkte:</p>
-		<p>Aktionspunkte:</p>
-		<p>Level:</p> 
-	</main>	
-	</body>
-
-
-</html>
+</main>	

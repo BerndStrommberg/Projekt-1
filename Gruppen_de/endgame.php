@@ -1,11 +1,12 @@
-<form>
-	<input type=button value="Spiel Beenden" onklick=function()>
-</form>
-		
-<!-- Zweites Formular öffnet sich, wenn auf Spiel Beenden gedrückt wird-->
-<form>
-	<input type=button value="Bestätigen" onklick=function()>
-	<input type=button value="Abbrechen" onklick=function()>
-</form>
-		
+<form method=post action=form_eval_endgame.php>
+	<fieldset>
+		<label for=endgame>Spiel Beenden</label>
+		<input type=checkbox id=endgame name="Spiel Beenden">
+	</fieldset>
 
+	<label for=id>Bestätigen</label>
+	<input type=submit id=submit>
+
+</form>
+
+<!--UM nicht ausversehen das Spiel zu beenden, muss der Nutzer die OPtion Spiel Beenden anwählen und diese im Anschluss bestätigen.-->

@@ -130,6 +130,11 @@
 	-88- Textfeld / Fähigkeit
 	-89- Schaltfläche, Option / Musik an/aus
 	-90- Schaltfläche, Option / ausloggen
+	-91- Formular
+	-92- Bild / Logo
+	-93- Button /Submit
+	-94- Checkbox / Spiel Beenden
+	
 
  
 ========================================	
@@ -139,19 +144,20 @@
 	:::::::::::::::
 	I. login
 	:::::::::::::::
-		-01- Textfeld / Eingabe Benutzername
-		-02- Textfeld / Eingabe Passwort
-		-03- Schaltfläche / Log Inventarmenü
-		-60- Schaltfläche / Neuregistrierung
+		-91- Formular
+			-01- Textfeld / Eingabe Benutzername
+			-02- Textfeld / Eingabe Passwort
+			-03- Schaltfläche / Log Inventarmenü
+			-60- Schaltfläche - Link / Neuregistrierung
+		-93- Button /Submit
 		
 	
 	:::::::::::::::::::::::	
 	II. endgame
 	:::::::::::::::::::::::
-		-06- Schaltfläche, Option / Spiel Beenden
-		-07- Schaltfläche, Option / Spiel Beenden bestätigen
-		-08- Schaltfläche, Option / Spiel Beenden abbrechen
-
+	-91- Formular
+			-94- Checkbox / Spiel Beenden
+	-93- Button /Submit
 		
 	
 	::::::::::::::::::::::::::::
@@ -166,20 +172,18 @@
 	::::::::::::::::::::::::::::
 	IV. multiplayerstart (kann von Mehreren Punkten aus ausgeführt werden. Aus dem Startbildschirm und dem Einzelspielermodus)
 	::::::::::::::::::::::::::::
-		-25- Textfeld / Beschreibung der Schaltflächen,Optionen
-		-55- Schaltfläche, Option / Spiel erstellen
-		-56- Schaltfläche, Option / Spiel beitreten
+		-91- Formular
+			-55- Schaltfläche, Option / Spiel erstellen
+			-56- Schaltfläche, Option / Spiel beitreten
 		
 	
 	::::::::::::::::::::
-	V. multiplayerlobby //Wird mehrfach vorkommen (Wenn Spieler spiel betritt und wenn er eines erstellt)
+	V. multiplayerlobby //Wird mehrfach vorkommen (Wenn Spieler Spiel betritt und wenn er eines erstellt)
 	::::::::::::::::::::
-		VI. chat 				<- Die Gruppe Chat, ist wiederum bestandteil der Gruppe Mehrspieler-Lobby ->
-		VIII. teamübersicht 		<- Die Gruppe Teamübersicht, ist wiederum bestandteil der Gruppe Mehrspieler-Lobby ->
-		-68- Schaltfläche, Option / Freunde Einladen
-		-71- Schaltfläche, Option / Mitspieler zufällig auswählen
-		-58- Schaltfläche, Option / Spiel starten (nur für Host)
-		VII. freundesliste
+		-91- Formular
+			-68- Schaltfläche, Option / Freunde Einladen
+			-71- Schaltfläche, Option / Mitspieler zufällig auswählen
+			-58- Schaltfläche, Option / Spiel starten (nur für Host)
 	
 	::::::::
 	VI. chat
@@ -226,25 +230,31 @@
 	:::::::::::::::::::::
 		-09- Schaltfläche, Option / Hauptmenü öffnen
 		II. endgame 	
+		XVIII. endgame2
 		-45- Schaltfläche, Option / Team ansehen
 		IV. MultiplayerStart
 		
 	
 	::::::::::::::::
-	XI. kämpfe
+	XI. kaempfe
 	::::::::::::::::
 		-05- Bild / Bild des Charakters - aktiver Spieler
 		-05- Bild / Bild des Charakters - Gegner
-		-35- Schaltfläche, Option / Fähigkeit einsetzen
-		-36- Schaltfläche, Option / Level verlassen
-		-37- Schaltfläche, Option / Level neustarten
-		-80- Schaltfläche, Option / Aussetzen
+		
+		-91- Formular
+			-35- Schaltfläche, Option / Fähigkeit einsetzen
+			-36- Schaltfläche, Option / Level verlassen
+			-37- Schaltfläche, Option / Level neustarten
+			-80- Schaltfläche, Option / Aussetzen
+		-93- Button /Submit	
+		
 		III. Charakterstatus
 		-78- Textfeld / aktiver Charakter in einem Kampf
 	
 	:::::::::
 	XII. main_menu	
 	:::::::::
+	-91- Formular
 		-10- Schaltfläche, Option / Charaktermenü öffnen
 		-11- Schaltfläche, Option / Inventar öffnen
 		-12- Schaltfläche, Option / Fähigkeitenmenü öffnen
@@ -252,7 +262,6 @@
 		-81- Schaltfläche, Option / Zurück zum Spiel
 		
 		
-		<- Die einzelnen Menüs werden dann nur Ansichten->
 	
 	:::::::::::::::::::::
 	XIII. abschnittübersicht
@@ -268,15 +277,67 @@
 		III. characterstatus
 		-04- Bild / Hintegrundbild
 		-05- Bild / Bild des Charakters
-
-Bei der Implementierung sind sicher noch "Fehler" Dinge, die so nicht funktionieren(Bsp.: Mehrere Spieler im Mehrspielermodus). Hier weiß ich noch nicht, wie ich das umsetzen kann. Ich habe diese Dinge versucht durch Platzhalter "vorubereiten". Hier würde ich mich über einen Ratschlag freuen.
+		
+	:::::::::::::::::
+	XV. registrierung
+	:::::::::::::::::
+		-61- Textfeld / Username eingeben
+		-62- Textfeld / Email-Adresse
+		-63- Texfeld / Passwort eingeben
+		-64- Textfeld / Passwort wiederholen
+		-65- Bild / Captcha anzeigen
+		-66- Textfeld / Captcha eingeben
+		-67- Schaltfläche / Regsitrierung abschicken
+	
+	:::::::::::::::::::
+	XVI. charaktermenue
+	:::::::::::::::::::
+		-91- Formular
+			-17- Schaltfläche, Option / Lebenspunkte erhöhen
+			-18- Schaltfläche, Option / Stärke erhöhen
+			-19- Schaltfläche, Option / Verteidigungspunkte erhöhren
+			-20- Schaltfläche, Option / Aktionspunkte erhöhen
+		-93- Button /Submit
+		
+		-83- Textfeld / Stärke
+		-84- Textfeld / Verteidigung
+		-85- Textfeld / Aktionspunkte
+		-86- Textfeld / Schaden
+		-87- Textfeld / Rüstungswert
+	
+		-91- Formular
+			-81- Schaltfläche, Option / Zurück zum Spiel
+			-82- Schaltfläche, Option / Zurück zum Hauptmenü
+		
+		
+	::::::::::::::
+	XVII. inventar
+	::::::::::::::
+			Liste
+		-91- Formular
+			-23- Schaltfläche, Option / Gegenstand anlegen
+			-24- Schaltfläche, Option / Gegenstand ablegen
+		
+		
+		-91- Formular
+			-81- Schaltfläche, Option / Zurück zum Spiel
+			-82- Schaltfläche, Option / Zurück zum Hauptmenü
+	
+	:::::::	::::::::::
+	XIX. systemmenue 		
+	:::::::::::::::::
+		-29- Schaltfläche, Option / Spielstand Speichern
+			-89- Schaltfläche, Option / Musik an/aus
+			-90- Schaltfläche, Option / ausloggen
+		
+		
 
 ===================	
 ==== Ansichten ====
 ===================
 	
 	----------------------------------
-	--- view_playfieldsingleplayer ---   )
+	--- view_playfieldsingleplayer ---   
 	----------------------------------
 		-72- Option / zu Mausklick oder Fingertipp gehen
 		XIII. abschnittübersicht
@@ -287,7 +348,7 @@ Bei der Implementierung sind sicher noch "Fehler" Dinge, die so nicht funktionie
 	--- view_playfieldmultiplayer ---
 	----------------------------------
 		-72- Option / zu Mausklick oder Fingertipp gehen
-		XIII. abschnittansicht
+		XIII. abschnittübersicht
 		VI. chat			
 		-47- Textfeld / Username
 		XIV. spieleranzeige
@@ -296,28 +357,29 @@ Bei der Implementierung sind sicher noch "Fehler" Dinge, die so nicht funktionie
 	--------------------------
 	--- view_registrierung ---
 	--------------------------
-		-61- Textfeld / Username eingeben
-		-62- Textfeld / Email-Adresse
-		-63- Texfeld / Passwort eingeben
-		-64- Textfeld / Passwort wiederholen
-		-65- Bild / Captcha anzeigen
-		-66- Textfeld / Captcha eingeben
-		-67- Schaltfläche / Regsitrierung abschicken
+		-92- Bild / Logo
+		XV. registrierung
 	
 	-------------------
-	--- view_log-in ---
+	--- view_startseite ---
 	-------------------
+		-92- Bild / Logo
 		I. login
+		
 		
 	------------------	
 	---	view_lobby ---
 	-----------------
 		V. multiplayerlobby
+		VI. chat	
+		VIII. teamübersicht 	
 		
 	------------------	
 	--- view_fight ---
 	------------------
-		XI. kämpfe
+		X. navigationsleiste
+		XI. kaempfe
+		VI. chat
 		
 	---------------------	
 	--- view_mainmenu ---
@@ -325,36 +387,18 @@ Bei der Implementierung sind sicher noch "Fehler" Dinge, die so nicht funktionie
 		XII. main_menu
 		
 	--------------------------
-	--- view_charaktermenü ---
+	--- view_charmenue ---
 	--------------------------
 		XIV. spieler
-		-17- Schaltfläche, Option / Lebenspunkte erhöhen
-		-18- Schaltfläche, Option / Stärke erhöhen
-		-19- Schaltfläche, Option / Verteidigungspunkte erhöhren
-		-20- Schaltfläche, Option / Aktionspunkte erhöhen
-		
-		-83- Textfeld / Stärke
-		-84- Textfeld / Verteidigung
-		-85- Textfeld / Aktionspunkte
-		-86- Textfeld / Schaden
-		-87- Textfeld / Rüstungswert
+		XVI. charaktermenue
 
-		-81- Schaltfläche, Option / Zurück zum Spiel
-		-82- Schaltfläche, Option / Zurück zum Hauptmenü
-		
-	
 	---------------------
 	--- view_inventar ---
 	---------------------
-		-23- Schaltfläche, Option / Gegenstand anlegen
-		-24- Schaltfläche, Option / Gegenstand ablegen
-		-25- Textfeld / Beschreibung der Schaltflächen,Optionen
-			Liste
-		-81- Schaltfläche, Option / Zurück zum Spiel
-		-82- Schaltfläche, Option / Zurück zum Hauptmenü
+		XVII. inventar
 			
 	----------------------------
-	--- view_fähigkeitenmenü ---
+	--- view_fähigkeitenmenue ---
 	----------------------------
 		-27- Schaltfäche, Option / Fähigkeit ausrüsten
 		-28- Schaltfläche, Option / Fähigkeit ablegen	
@@ -363,17 +407,15 @@ Bei der Implementierung sind sicher noch "Fehler" Dinge, die so nicht funktionie
 		
 	
 	-----------------------
-	--- view_systemmenü ---
+	--- view_systemmenue ---
 	-----------------------
-		-29- Schaltfläche, Option / Spielstand Speichern
-		-89- Schaltfläche, Option / Musik an/aus
-		-90- Schaltfläche, Option / ausloggen
+		XIX. systemmenue
 		
-	
-	
-	
-		
-		
+
+	******************************
+	***********Hinweis************
+	******************************
+	Ich habe nach unserem letzten Gespräch ein wenig recherchiert. Meine Frage war ja, wie es Möglich ist mit PHP Nutzereingaben "direkt", also ohne Submit zu verarbeiten. Bei Buttons ist das nur über das onklick attribut Möglich. Dieses funktioniert jedoch nur mit Javascript Funktionen. ICh könnte jetzt eine Funktion in Javascript schreiben, die dann wiederrum das PHP Script aufruft. Mir erschien es an dieser Stelle jedoch einfacher alles in PHP zu machen, also sämtliche Nutzereingaben immer über ein Formular und einen Submit durchzuführen. Auch wenn das teilweise für den Nutzer etwas weniger komfortabel wäre.
 		
 		
 	-->
@@ -506,7 +548,7 @@ Wertung 5: Ansichten: 3 / 5
 Tatsächlich würde ich Ihr Projekt gerne als gutes Beispiel den anderen Studierenden nennen. Ist Ihnen das recht?
 -->
 
-<!--
+
 
 
 <!--
@@ -520,7 +562,8 @@ Tatsächlich würde ich Ihr Projekt gerne als gutes Beispiel den anderen Studier
  
  Wichtig: Benutzen Sie bei Dateinamen keine Umlaute, sonst könnte es Probleme geben. Gruppennamen wie kämpfe sind deshalb schlecht gewählt.
  
- Leider sind die Ansichten nicht gut definiert; darin sollten fast ausschließlich Gruppen auftauchen und in aller Regel besteht eine Ansicht aus mehreren Gruppen. Bitte passen Sie das als erstes an. Tatsächlich steckt hier eine Menge Arbeit drin, doch wenn Sie das nach hinten verschieben, werden Sie später noch wesentlich mehr Arbeit nachreichen müssen.
+ Leider sind die Ansichten nicht gut definiert; darin sollten fast ausschließlich Gruppen auftauchen und in aller Regel besteht eine Ansicht aus mehreren Gruppen. Bitte passen Sie das als erstes an. Tatsächlich steckt hier eine Menge Arbeit drin, doch wenn Sie das nach hinten verschieben, werden Sie später noch wesentlich mehr Arbeit nachreichen müssen. 
+ 
  
  Aufgrund der Vielzahl an nötigen Änderungen im HTML-Teil kann ich zurzeit noch keine Wertung erteilen. Wie Sie sehen werden sind das aber überwiegend keine schlimmen Fehler, sondern vorrangig unnötiger Code, der aber darauf hinweist, dass Sie die include()-Funktion noch nicht verstanden haben.
  

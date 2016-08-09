@@ -1,0 +1,1 @@
+<!--Hier werden die EIngaben aus endgame.php ausgewertet-->
