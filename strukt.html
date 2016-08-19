@@ -133,7 +133,7 @@
 	-91- Formular
 	-92- Bild / Logo
 	-93- Button /Submit
-	-94- Checkbox / Spiel Beenden
+	-94- Radio-Button / Spiel Beenden
 	
 
  
@@ -155,10 +155,7 @@
 	:::::::::::::::::::::::	
 	II. endgame
 	:::::::::::::::::::::::
-	-91- Formular
-			-94- Checkbox / Spiel Beenden
-	-93- Button /Submit
-		
+		!!Verworfen, direkt in navigationsleiste eingebaut. Die soll immer zu sehen sein
 	
 	::::::::::::::::::::::::::::
 	III. characterstatus
@@ -175,6 +172,7 @@
 		-91- Formular
 			-55- Schaltfläche, Option / Spiel erstellen
 			-56- Schaltfläche, Option / Spiel beitreten
+		93- Button /Submit
 		
 	
 	::::::::::::::::::::
@@ -184,14 +182,16 @@
 			-68- Schaltfläche, Option / Freunde Einladen
 			-71- Schaltfläche, Option / Mitspieler zufällig auswählen
 			-58- Schaltfläche, Option / Spiel starten (nur für Host)
+		93- Button /Submit
 	
 	::::::::
 	VI. chat
 	::::::::
+	-91- Formular
 		-38- Textfeld / Eingabe Chat
 		-39- Anzeige / Chatverlauf
-		-40- Schaltfläche, Option / Nachricht Senden
-		
+	-93- Button /Submit
+	
 
 	::::::::::::::::::
 	VII. freundesliste
@@ -200,8 +200,10 @@
 		-48- Link / Spielerprofil
 		-49- Textfeld / Spielerlevel
 		-69- Textfeld / Status (online/offline)
-		-70- Schaltfläche, Option / Diesen Freund einladen
 		
+		-91- Formular
+			-70- Schaltfläche, Option / Diesen Freund einladen
+		-93- Button /Submit
 		
 
 	:::::::::::::::::::
@@ -210,8 +212,10 @@
 		-47- Textfeld / Username
 		-48- Link / Spielerprofil
 		-49- Textfeld / Spielerlevel
-		-76- Schaltfläche, Option / Handeln
-		-50- Schaltfläche, Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
+		-91- Formular
+			-76- Schaltfläche, Option / Handeln
+			-50- Schaltfläche, Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
+		-93- Button /Submit
 		
 
 	::::::::::::::::
@@ -219,8 +223,12 @@
 	::::::::::::::::
 		-47- Textfeld / Username
 		-49- Textfeld / Spielerlevel
-		-76- Schaltfläche, Option / Handeln
-		-50- Schaltfläche, Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
+		
+		-91- Formular
+			-76- Schaltfläche, Option / Handeln
+			-50- Schaltfläche, Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
+		-93- Button /Submit
+		
 		-05- Bild / Bild des Charakters
 		-79- Textfeld / Hintegrundgeschichte		
 		
@@ -228,9 +236,8 @@
 	:::::::::::::::::::::	
 	X. navigationsleiste
 	:::::::::::::::::::::
-		-09- Schaltfläche, Option / Hauptmenü öffnen
-		II. endgame 	
-		XVIII. endgame2
+		-09- Schaltfläche, Option / Hauptmenü öffnen	
+		-94- Radio-Button / Spiel Beenden
 		-45- Schaltfläche, Option / Team ansehen
 		IV. MultiplayerStart
 		
@@ -416,7 +423,11 @@
 	***********Hinweis************
 	******************************
 	Ich habe nach unserem letzten Gespräch ein wenig recherchiert. Meine Frage war ja, wie es Möglich ist mit PHP Nutzereingaben "direkt", also ohne Submit zu verarbeiten. Bei Buttons ist das nur über das onklick attribut Möglich. Dieses funktioniert jedoch nur mit Javascript Funktionen. ICh könnte jetzt eine Funktion in Javascript schreiben, die dann wiederrum das PHP Script aufruft. Mir erschien es an dieser Stelle jedoch einfacher alles in PHP zu machen, also sämtliche Nutzereingaben immer über ein Formular und einen Submit durchzuführen. Auch wenn das teilweise für den Nutzer etwas weniger komfortabel wäre.
-		
+	
+	***************************************
+	************Zweiter Hinweis************
+	***************************************
+	Die Formulare und die Php Programme dazu passe ich noch an. Ich schreibe erst alle formulare und nehme "Platzhalter" hinter dem action attribut. Die Genauen namen der PHP Dateien ändern sich noch. Da an manchen stellen die selbe Option zur verfügung steht (Beispiel Freundschaftsanfrage).
 		
 	-->
 

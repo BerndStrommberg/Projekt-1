@@ -1,12 +1,21 @@
-<form>
-	<input type=button value="Hauptmenü öffnen" onklick=function()><!--Zeigt die Gruppe hauptmenü an-->
-	<input type=button value="Spiel beenden" onklick=function()><!--Zeigt die Gruppe endGame an-->
-	<input type=button value="Team ansehen" onklick=function()><!--Zeigt die Gruppe teamübersicht an-->
-	<input type=button value="Mehrspielermodus" onklick=function()><!--Das aktuelle Spiel wird gespeichert und verlassen, die Gruppe multplayerStart wird geöffnet-->
+<form method=POST action=form_eval_navigationsleiste.php>
+	<fieldset>
+		<label for=hauptmenue>Hauptmenü öffnen</label>
+		<input type=radio id=hauptmenue name=navigationsleiste>
+
+		<label for=team>Team ansehen</label>
+		<input type=radio id=team name=navigationsleiste>
+		
+		<label for=endgame>Spiel Beenden</label>
+		<input type=radio id=endgame name=navigationsleiste>
+
+	</fieldset>
+
+	<label for=bestaetigen>Bestätigen</label>
+	<input type=submit name=bestaetigen>
 </form>
 
-<?php include("multiplayerStart.php") ?>
-<?php include("endgame.php") ?>
+<?php include("multiplayerstart.php") ?>
 
 <!--Die Navigationsleiste soll in der Spielwelt eingeblendet werden. Sie ermöglicht es ein Spiel zu beenden, oder ein Multiplayerspiel zu erstellen-->
 
