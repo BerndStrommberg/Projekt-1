@@ -28,19 +28,25 @@
 			</td>
 
 			<td>
-				<label for=nr1>Fähigkeit 1</label>
-				<input type=radio id=nr1 name=kampf>
+				<label for=nr2>Fähigkeit 2</label>
+				<input type=radio id=nr2 name=kampf>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<label for=nr1>Fähigkeit 1</label>
-				<input type=radio id=nr1 name=kampf>
+				<label for=nr3>Fähigkeit 3</label>
+				<input type=radio id=nr3 name=kampf>
 			</td>
 		
 			<td>
-				<label for=nr1>Fähigkeit 1</label>
-				<input type=radio id=nr1 name=kampf>
+				<label for=nr4>Fähigkeit 4</label>
+				<input type=radio id=nr4 name=kampf>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for=aussetzen>Aussetzen</label>
+				<input type=radio id=aussetzen name=kampf>
 			</td>
 		</tr>
 	</table>
