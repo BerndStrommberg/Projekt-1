@@ -25,3 +25,14 @@
 
 
 <!--Die Multiplayerlobby erscheint, wenn ein Mehrspielerspiel erstellt wird, oder einem beigetreten wird. VOn hier aus kann der Host das Spiel editieren und starten-->
+
+<!--
+===================================
+=== Feedback Alpers, 2016-09-01 ===
+===================================
+
+Leider ist dieses Dokument gegenüber der strukt.html inkonsistent. Bitte gleichen Sie das an.
+
+0 / 1 Pk.
+
+-->
