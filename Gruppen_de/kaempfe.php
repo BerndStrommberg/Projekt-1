@@ -56,4 +56,14 @@
 </form>
 	
 		
+<!--
+===================================
+=== Feedback Alpers, 2016-09-01 ===
+===================================
 
+Leider ist auch dieses Dokument nicht konsistent gegenüber der Definition in der strukt.html.
+Außerdem haben Sie hier nicht ausgenutzt, dass Sie mit PHP die Tabelle sehr effizient generieren können: Die Zeilen für die vier Fähigkeiten brauchen Sie nur einmal in einer Schleife zu programmieren.
+
+0 / 1 Pk.
+
+-->

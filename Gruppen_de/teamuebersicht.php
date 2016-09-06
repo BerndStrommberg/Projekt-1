@@ -106,3 +106,14 @@ VIII. teamübersicht
 Passen Sie diese Datei bitte entsprechend an.
 	
  -->
+ 
+<!--
+===================================
+=== Feedback Alpers, 2016-09-01 ===
+===================================
+
+Auch hier haben Sie wieder jeden Eintrag manuell programmiert, anstatt eine Schleife zu nutzen. Bitte passen Sie das an.
+
+0 / 1 Pk.
+
+-->

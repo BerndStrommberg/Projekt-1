@@ -44,3 +44,28 @@ VII. freundesliste
 Passen Sie diese Datei bitte entsprechend an.
 	
  -->
+ 
+<!--
+===================================
+=== Feedback Alpers, 2016-09-01 ===
+===================================
+
+::::::::::::::::::
+VII. freundesliste
+::::::::::::::::::
+-47- Textfeld / Username
+-48- Link / Spielerprofil
+-49- Textfeld / Spielerlevel
+-69- Textfeld / Status (online/offline)
+
+-91- Formular
+	-70- Schaltfläche, Option / Diesen Freund einladen
+-93- Button /Submit
+
+Leider sind da immer noch Inkonsistenzen enthalten: 
+Ein Textfeld ist ein Feld, in das Nutzer Texte eingeben können.
+Eine Schaltfläche ist keine Checkbox.
+Wenn Sie die Möglichkeit erzeugen wollen, dass mehrere Spieler eingeladen werden können, dann nutzen Sie dazu bitte eine Schleife.
+
+0 / 1 Pk.
+-->

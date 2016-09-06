@@ -10,4 +10,13 @@
 	</fieldset>
 </form>
 
+<!--
+===================================
+=== Feedback Alpers, 2016-09-01 ===
+===================================
 
+Auch hier gibt es wieder eine Inkonsistenz gegenüber der Definition in der strukt.html
+
+0 / Pk.
+
+-->
