@@ -13,7 +13,7 @@
 
 	<label for=level4>Level 4 betreten</label>
 	<input type=radio id=level4 name=level>   
-	<br>
+	
 	<label for=betreten>Betreten</label>
 	<input type=submit id=betreten>
 </form>

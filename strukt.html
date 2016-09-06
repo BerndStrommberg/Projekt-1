@@ -55,16 +55,16 @@
 	-21- 
 
 	-22- 
-	-23- Schaltfläche, Option / Gegenstand anlegen
-	-24- Schaltfläche, Option / Gegenstand ablegen
+	-23- Option / Gegenstand anlegen
+	-24- Option / Gegenstand ablegen
 	-25- Textfeld / Beschreibung der Schaltflächen,Optionen
 	
 	-26- <- Verworfen ->
 
-	-27- Schaltfläche, Option / Fähigkeit ausrüsten
-	-28- Schaltfläche, Option / Fähigkeit ablegen
+	-27- Option / Fähigkeit ausrüsten
+	-28- Option / Fähigkeit ablegen
 
-	-29- Schaltfläche, Option / Spielstand Speichern
+	-29- Option / Spielstand Speichern
 
 	-30- 
 	-31- 
@@ -128,8 +128,8 @@
 	-87- Textfeld / Rüstungswert
 	
 	-88- Textfeld / Fähigkeit
-	-89- Schaltfläche, Option / Musik an/aus
-	-90- Schaltfläche, Option / ausloggen
+	-89- Option / Musik an/aus
+	-90- Option / ausloggen
 	-91- Formular
 	-92- Bild / Logo
 	-93- Button /Submit
@@ -208,7 +208,7 @@
 		
 
 	:::::::::::::::::::
-	VIII. teamübersicht
+	VIII. teamuebersicht
 	:::::::::::::::::::
 		-47- Textfeld / Username
 		-48- Link / Spielerprofil
@@ -325,20 +325,22 @@
 	::::::::::::::
 	XVII. inventar
 	::::::::::::::
-			Liste
 	-91- Formular
-		-23- Schaltfläche, Option / Gegenstand anlegen
-		-24- Schaltfläche, Option / Gegenstand ablegen	
+		Liste
+		-23- Option / Gegenstand anlegen
+		-24- Option / Gegenstand ablegen	
 	-93- Button /Submit
 		XIX. zurueckzumspiel
 	
 	:::::::	::::::::::
 	XVIII. systemmenue 		
 	:::::::::::::::::
-		-29- Schaltfläche, Option / Spielstand Speichern
-			-89- Schaltfläche, Option / Musik an/aus
-			-90- Schaltfläche, Option / ausloggen
-			
+	-91- Formular
+		-29- Option / Spielstand Speichern
+		-89- Option / Musik an/aus
+		-90- Option / ausloggen
+	-93- Button /Submit
+	
 	::::::::::::::::::::
 	XIX. zurueckzumspiel
 	::::::::::::::::::::
@@ -348,7 +350,16 @@
 		//Nur in den Menüs, die man über das Hauptmenü erreicht
 	-93- Button /Submit
 	
-		
+	:::::::::::::::::::::
+	XX. faehigkeitenmenue
+	:::::::::::::::::::::
+	-91- Formular
+		Liste
+		Tabelle
+		-27- Schaltfläche, Option / Fähigkeit ausrüsten
+		-28- Schaltfläche, Option / Fähigkeit ablegen
+	-93- Button / Submmit
+	XIX. zurueckzumspiel	
 		
 
 ===================	
@@ -358,7 +369,7 @@
 	----------------------------------
 	--- view_playfieldsingleplayer ---   
 	----------------------------------
-		-72- Option / zu Mausklick oder Fingertipp gehen
+		-72- Option / zu Mausklick oder Fingertipp gehen //Verworfen
 		XIII. abschnittübersicht
 		XIV. spieleranzeige
 		
@@ -366,7 +377,7 @@
 	----------------------------------
 	--- view_playfieldmultiplayer ---
 	----------------------------------
-		-72- Option / zu Mausklick oder Fingertipp gehen
+		-72- Option / zu Mausklick oder Fingertipp gehen //Verworfen
 		XIII. abschnittübersicht
 		VI. chat			
 		-47- Textfeld / Username
@@ -391,7 +402,7 @@
 	-----------------
 		V. multiplayerlobby
 		VI. chat	
-		VIII. teamübersicht 	
+		VIII. teamuebersicht 	
 		
 	------------------	
 	--- view_fight ---
@@ -408,8 +419,9 @@
 	--------------------------
 	--- view_charmenue ---
 	--------------------------
-		XIV. spieler
+		-05- Bild / Bild des Charakters
 		XVI. charaktermenue
+		
 
 	---------------------
 	--- view_inventar ---

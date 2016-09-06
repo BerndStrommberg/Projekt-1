@@ -12,10 +12,6 @@
 			<?php include("Gruppen_de/spieleranzeige.php") ?>
 			<?php include("Gruppen_de/abschnittuebersicht.php") ?>
 
-			<form>
-				<!--Hier soll eine Eingabe per Mausklick hinein. ZU der geklickten Position soll sich die Spielfigur bewegen-->
-			</form>	
-
 			<!--Frage: Wie erzeuge ich ein Spielfeld? Mit einer art Tabelle, oder raster?-->
 		</main>
 	</body>

@@ -66,7 +66,7 @@ Pen and Paper abenteuer eine eigene Hintergrundgeschichte für ihren Charakter z
 	Funktion der Struktur:
 		(i)  - Die Spielwelt ist on Abschnitte unterteilt, die wiederum betreten werden können
 
-		(ii) - In den Abschnitten ist der Charakter frei bewegbar. Der Spieler kann bereits absolvierte
+		(ii) - In den Abschnitten ist der Charakter nicht(!) frei bewegbar. Der Spieler kann bereits absolvierte
 		       Abschnitte erneut betreten
 
 		(iii)- Die Level können aus den Abschnitten heraus betreten werden (siehe 1.2 "Die Level")

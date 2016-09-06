@@ -1,6 +1,6 @@
 
-<li>
-	<ul>Username:<!--Hier ein echo--> 
+<ul>
+	<li>Username:<!--Hier ein echo--> 
 		<br><a href="Link zu Spielerprofilen">Profil</a>
 		<br>Level:<!--Hier ein echo--> 
 		<br>Status:<!--Hier ein echo--> 
@@ -13,15 +13,15 @@
 			<label for=bestaetigen>Einladen</label>
 			<input type=submit id=bestaetigen>
 		</form>
-	</ul>
+	</li>
 
-	<ul></ul>
-	<ul></ul>
-	<ul></ul>
-	<ul></ul>
-	<ul></ul>
-	<ul></ul>			
-</li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>			
+</ul>
 		<!--DIe Liste soll aus einer Datenbank generiert werden und somit immer so groß, wie die Anzahl der Freunde sein-->
 	
 
