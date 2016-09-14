@@ -2,7 +2,11 @@
 	<!--Die Einträge der Tabelle sollen aus einer Datenbank importiert werden-->
 	<!-- Der Input zur Freundschaftsanfrage wird über eine cho ausgegeben, falls noch keine Freundschaftsanfrage vorliegt-->
 	<table>
-		<tr>
+	
+	<?php
+		$teammember = 4;
+	 	for($i=1; $i<=$teammember; $i++) {
+	 		echo '<tr>
 			<td>Username:<!--Hier ein echo--></td>
 			<td><a href=spielerprofil.html>Spielerprofil</a></td>
 			<td>Spielerlevel:<!--Hier ein echo--> </td>
@@ -21,69 +25,10 @@
 					<input type=submit id=bestaetigen name=bestaetigen>
 				</form>
 			</td>
-		</tr>
-
-		<tr>
-			<td>Username:<!--Hier ein echo--></td>
-			<td><a href=spielerprofil.html>Spielerprofil</a></td>
-			<td>Spielerlevel:<!--Hier ein echo--> </td>
-			<td>Status:<!--Hier ein echo--></td>
-
-			<td>
-				<br>
-				<form method=POST action=form_eval_teamuebersicht.php>
-					<label for=handel>Handel</label>
-					<input type=checkbox id=handel name=handel>
-
-					<label for=freundschaftsanfragen>Freund hinzufügen</label>
-					<input type=checkbox id=freundschaftsanfrage name=freundschaftsanfrage>
-
-					<label for=bestaetigen>Bestätigen</label>
-					<input type=submit id=bestaetigen name=bestaetigen>
-				</form>
-			</td>
-		</tr>
-		<tr>
-			<td>Username:<!--Hier ein echo--></td>
-			<td><a href=spielerprofil.html>Spielerprofil</a></td>
-			<td>Spielerlevel:<!--Hier ein echo--> </td>
-			<td>Status:<!--Hier ein echo--></td>
-
-			<td>
-				<br>
-				<form method=POST action=form_eval_teamuebersicht.php>
-					<label for=handel>Handel</label>
-					<input type=checkbox id=handel name=handel>
-
-					<label for=freundschaftsanfragen>Freund hinzufügen</label>
-					<input type=checkbox id=freundschaftsanfrage name=freundschaftsanfrage>
-
-					<label for=bestaetigen>Bestätigen</label>
-					<input type=submit id=bestaetigen name=bestaetigen>
-				</form>
-			</td>
-		</tr>
-		<tr>
-			<td>Username:<!--Hier ein echo--></td>
-			<td><a href=spielerprofil.html>Spielerprofil</a></td>
-			<td>Spielerlevel:<!--Hier ein echo--> </td>
-			<td>Status:<!--Hier ein echo--></td>
-
-			<td>
-				<br>
-				<form method=POST action=form_eval_teamuebersicht.php>
-					<label for=handel>Handel</label>
-					<input type=checkbox id=handel name=handel>
-
-					<label for=freundschaftsanfragen>Freund hinzufügen</label>
-					<input type=checkbox id=freundschaftsanfrage name=freundschaftsanfrage>
-
-					<label for=bestaetigen>Bestätigen</label>
-					<input type=submit id=bestaetigen name=bestaetigen>
-				</form>
-			</td>
-		</tr>
-
+		</tr>';	
+	 	}
+	 ?> 
+		
 	</table>
 
 
@@ -115,5 +60,6 @@ Passen Sie diese Datei bitte entsprechend an.
 Auch hier haben Sie wieder jeden Eintrag manuell programmiert, anstatt eine Schleife zu nutzen. Bitte passen Sie das an.
 
 0 / 1 Pk.
+
 
 -->

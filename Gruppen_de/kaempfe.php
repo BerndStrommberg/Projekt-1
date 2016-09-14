@@ -7,8 +7,16 @@
 			<td>Gegner Name</td>
 		</tr>
 		<tr>
-			<td><?php include("characterstatus.php") ?></td>
-			<td><?php include("characterstatus.php") ?></td>
+			<!--für die Spieler-->
+			<?php 
+				$anzahlSpieler = 4;
+				for($i=0; $i < $anzahlSpieler; $i++ ) {
+					echo '<td><?php include("characterstatus.php") ?></td>';
+
+
+				}
+			?>
+			<td><?php include("characterstatus.php") ?></td> <!--Für den Gegner -->
 		</tr>
 	
 		<tr>
@@ -17,39 +25,40 @@
 		</tr>
 	</table>
 
+<h2>Aktiver Spieler</h2>
 
+<?php
+//ausgabe des aktiven Spielers
 
+?>
 <form method=POST action=form_eval_kaempfe.php>
 	<table>
 		<tr>
-			<td>
-				<label for=nr1>Fähigkeit 1</label>
-				<input type=radio id=nr1 name=kampf>
-			</td>
-
-			<td>
-				<label for=nr2>Fähigkeit 2</label>
-				<input type=radio id=nr2 name=kampf>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label for=nr3>Fähigkeit 3</label>
-				<input type=radio id=nr3 name=kampf>
-			</td>
-		
-			<td>
-				<label for=nr4>Fähigkeit 4</label>
-				<input type=radio id=nr4 name=kampf>
-			</td>
-		</tr>
-		<tr>
+			<?php 
+				$anzahlFaehigkeiten = 4;
+				for($i=0; $i< $anzahlFaehigkeiten; $i++) {
+				
+				echo 
+				'<td>
+					<label for=nr',($i+1),'>Fähigkeit',($i+1),'</label>
+					<input type=radio id=nr',($i+1),'name=kampf>
+				</td>';
+					
+				}
+			?>
+			<!--Mit der Schleife funktionieren aber die Radio-Buttons nicht mehr.. Oder übersehe ich da etwas?-->
 			<td>
 				<label for=aussetzen>Aussetzen</label>
 				<input type=radio id=aussetzen name=kampf>
 			</td>
 		</tr>
 	</table>
+
+	<label for=verlassen>Level verlassen</label>
+	<input type=checkbox id=verlassen>
+
+	<label for=neustarten>Level neustarten</label>
+	<input type=checkbox id=neustarten>
 
 	<label for=bestaetigen>Bestätigen</label>
 	<input type=submit id=bestaetigen>

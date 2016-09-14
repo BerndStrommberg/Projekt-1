@@ -30,4 +30,8 @@
 	<input type=submit id=bestaetigen>
 </form>
 
-<?php include("zurueckzumspiel.php") ?>
+<?php 
+	$inMainMenu = false;
+	include("zurueckzumspiel.php") 
+
+?>

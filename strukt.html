@@ -40,10 +40,10 @@
 	-08- Schaltfläche, Option / Spiel Beenden abbrechen
 	-09- Option / Hauptmenü öffnen
 	
-	-10- Option / Charaktermenü öffnen
-	-11- Option / Inventar öffnen
-	-12- Option / Fähigkeitenmenü öffnen
-	-13- Option / Systemmenü öffnen
+	-10- Option, Radio-Button / Charaktermenü öffnen
+	-11- Option, Radio-Button / Inventar öffnen
+	-12- Option, Radio-Button / Fähigkeitenmenü öffnen
+	-13- Option, Radio-Button / Systemmenü öffnen
 
 	-14- Anzeige / Erfahrungspunkte
 	-15- Anzeige / Charakterlevel
@@ -64,7 +64,7 @@
 	-27- Option / Fähigkeit ausrüsten
 	-28- Option / Fähigkeit ablegen
 
-	-29- Option / Spielstand Speichern
+	-29- Option, Radio-Button / Spielstand Speichern
 
 	-30- 
 	-31- 
@@ -72,28 +72,28 @@
 	-32-  
 	-33- Textfelder / statische Textfelder, die die Funktion einer Schaltfläche, Option für den Spieler beschreiben
 	-34- Option / Level betreten
-	-35- Option / Fähigkeit einsetzen
-	-36- Option / Level verlassen
-	-37- Option / Level neustarten
+	-35- Option, Radio-Button / Fähigkeit einsetzen
+	-36- Option, Checkbox / Level verlassen
+	-37- Option, Checkbox / Level neustarten
 	-38- Textfeld / Eingabe Chat
 	-39- Anzeige / Chatverlauf
 	-40- Schaltfläche, Option / Nachricht Senden
 	-45- Option / Team ansehen
 	-46- 
-	-47- Textfeld / Username
+	-47- Text, Ausgabe/ Username
 	-48- Link / Spielerprofil
-	-49- Textfeld / Spielerlevel
-	-50- Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
+	-49- Text, Ausgabe / Spielerlevel
+	-50- Option, Checkbox / Freundschaftsanfrage <- Falls noch nicht befreundet ->
 
 	-51- 
 
 	-52- Schaltfläche, Option / Einladung zu Spiel senden
 	-53- Schaltfläche, Option / Einzelspielermodus wählen
 	-54- Schaltfläche, Option / Mehrspielermodus wählen
-	-55- Option / Spiel erstellen
-	-56- Option / Spiel beitreten
+	-55- Option, Radio-Button / Spiel erstellen
+	-56- Option, Radio-Button / Spiel beitreten
 	-57- Tabelle / Anzeige Spieler im Team, enthält Textfelder und Links zu Profilen
-	-58- Option / Spiel starten (nur für Host)
+	-58- Option, Checkbox / Spiel starten (nur für Host)
 	-59- 
 	
 	-60- Schaltfläche / Neuregistrierung
@@ -104,22 +104,22 @@
 	-65- Bild / Captcha anzeigen
 	-66- Textfeld / Captcha eingeben
 	-67- Schaltfläche / Regsitrierung abschicken
-	-68- Option / Freunde Einladen
+	-68- Option, Radio-Button / Freunde Einladen
 	-69- Textfeld / Status (online/offline)
 	-70- Option / Diesen Freund einladen
-	-71- Option / Mitspieler zufällig auswählen
+	-71- Option, Radio-Button / Mitspieler zufällig auswählen
 	
 	-72- Option / zu Mausklick oder Fingertipp gehen
 	-73- Textfeld / Level Name und Nummer
 	-74- Textfeld / Abschnitt Name und Nummer
-	-75- Option / Handeln
-	-76- Anzeige / Lebenspunkte
-	-77- Anzeige / Aktionspunkte
+	-75- Option, Checkbox / Handeln
+	-76- Text, Ausgabe/ Lebenspunkte
+	-77- Text, Ausgabe / Aktionspunkte
 	-78- Textfeld / aktiver Charakter in einem Kampf
 	-79- Textfeld / Hintegrundgeschichte
 	-80- Option / Aussetzen
-	-81- Option / Zurück zum Spiel
-	-82- Option / Zurück zum Hauptmenü
+	-81- Option, Radio-Button / Zurück zum Spiel
+	-82- Option, Radio-Button / Zurück zum Hauptmenü
 	
 	-83- Textfeld / Stärke
 	-84- Textfeld / Verteidigung
@@ -128,14 +128,19 @@
 	-87- Textfeld / Rüstungswert
 	
 	-88- Textfeld / Fähigkeit
-	-89- Option / Musik an/aus
-	-90- Option / ausloggen
+	-89- Option, Radio-Button# / Musik an/aus
+	-90- Option, Radio-Button / ausloggen
 	-91- Formular
 	-92- Bild / Logo
 	-93- Button /Submit
 	-94- Radio-Button / Spiel Beenden
 	-95- Textfeld / max Lebenspunkte
-	
+	-96- Legende 
+	-97- Label 
+	-98- Fieldset 
+	-99- Überschrift 
+	-100- Zeilenumbruch
+	-101- Absatz
 
  
 ========================================	
@@ -146,11 +151,19 @@
 	I. login
 	:::::::::::::::
 		-91- Formular
+		-98- Fieldset 
+			-96- Legende 
+			-97- Label
 			-01- Textfeld / Eingabe Benutzername
+			
+			-97- Label
 			-02- Textfeld / Eingabe Passwort
-			-03- Schaltfläche / Log Inventarmenü
-			-60- Schaltfläche - Link / Neuregistrierung
+			
+			-97- Label
+			-03- Schaltfläche / Log In
 		-93- Button /Submit
+
+		-60- Schaltfläche - Link / Neuregistrierung Als Button 
 		
 	
 	:::::::::::::::::::::::	
@@ -161,18 +174,24 @@
 	::::::::::::::::::::::::::::
 	III. characterstatus
 	::::::::::::::::::::::::::::
-		-76- Anzeige / Lebenspunkte
-		-77- Anzeige / Aktionspunkte
-		-49- Textfeld / Spielerlevel
-		-47- Textfeld / Username
-		
+	Liste
+		-76- Text, Ausgabe / Lebenspunkte
+		-77- Text, Ausgabe / Aktionspunkte
+		-49- Text, Ausgabe / Spielerlevel
+		-47- Text, Ausgabe / Username
+		//Hinweis, Ausgabe meint aus einer Datenbank 
 
 	::::::::::::::::::::::::::::
 	IV. multiplayerstart (kann von Mehreren Punkten aus ausgeführt werden. Aus dem Startbildschirm und dem Einzelspielermodus)
 	::::::::::::::::::::::::::::
 		-91- Formular
-			-55- Option / Spiel erstellen
-			-56- Option / Spiel beitreten
+		-98- Fieldset 
+			-96- Legend 
+			-97- Label 
+			-55- Option, Radio-Button / Spiel erstellen
+			
+			-97- Label 
+			-56- Option, Radio-Button / Spiel beitreten
 		93- Button /Submit
 		
 	
@@ -180,28 +199,48 @@
 	V. multiplayerlobby //Wird mehrfach vorkommen (Wenn Spieler Spiel betritt und wenn er eines erstellt)
 	::::::::::::::::::::
 		-91- Formular
-			-68- Option / Freunde Einladen
-			-71- Option / Mitspieler zufällig auswählen
-			-58- Option / Spiel starten (nur für Host)
+		-98- Fieldset 
+			-96- Legend
+			-97- Label 
+			-68- Option, Radio-Button / Freunde Einladen
+			
+			-97- Label 
+			-71- Option, Radio-Button / Mitspieler zufällig auswählen
 		93- Button /Submit
 	
+		-91- Formular
+		-98- Fieldset 
+			
+			-58- Option, Checkbox / Spiel starten (nur für Host)
+		-93- Button /Submit
+		
 	::::::::
 	VI. chat
 	::::::::
+	-99- Überschrift / Chat
 	-91- Formular
+	-98- Fieldset
+		-97- Label 
 		-38- Textfeld / Eingabe Chat
 		-39- Anzeige / Chatverlauf
 	-93- Button /Submit
 	
 
 	::::::::::::::::::
-	VII. freundesliste
+	VII. freundesliste Noch mal anschauen
 	::::::::::::::::::
-		-47- Textfeld / Username
+	AUsgabe über eine Schleife
+	Liste
+		-101- Absatz
+		-47- Text, Ausgabe / Username
+		-101- Absatz
 		-48- Link / Spielerprofil
-		-49- Textfeld / Spielerlevel
+		-101- Absatz
+		-49- Text, Ausgabe / Spielerlevel
+		-101- Absatz
 		-69- Textfeld / Status (online/offline)
 		
+		-101- Absatz
 		-91- Formular
 			-70- Schaltfläche, Option / Diesen Freund einladen
 		-93- Button /Submit
@@ -210,38 +249,57 @@
 	:::::::::::::::::::
 	VIII. teamuebersicht
 	:::::::::::::::::::
-		-47- Textfeld / Username
+	Tabelle
+		4 Fache ausgabe über eine Schleife
+		
+		-47- Text, Ausgabe Username
 		-48- Link / Spielerprofil
-		-49- Textfeld / Spielerlevel
-		-57- Tabelle 
+		-49- Text, Ausgabe / Spielerlevel 
 		-91- Formular
-			-76- Schaltfläche, Option / Handeln
-			-50- Schaltfläche, Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
+			-97- Label 
+			-75- Option, Checkbox / Handeln
+			-97- Label 
+			-50- Option, Checkbox / Freundschaftsanfrage <- Falls noch nicht befreundet ->
 		-93- Button /Submit
 		
 
 	::::::::::::::::
 	IX. spielerprofil
 	::::::::::::::::
-		-47- Textfeld / Username
-		-49- Textfeld / Spielerlevel
+		-99- Überschrift / Spielerprofil
+		-05- Bild / Bild des Charakters
+	Tabelle
+		-47- Text, Ausgabe / Username
+		-49- Text, Ausgabe / Spielerlevel
 		
 		-91- Formular
-			-75- Option / Handeln
+			-97- Label 
+			-75- Option, Checkbox / Handeln
+		-93- Button /Submit
+		
+		-91- Formular
+			-97- Label 
 			-50- Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
 		-93- Button /Submit
 		
-		-05- Bild / Bild des Charakters
-		-79- Textfeld / Hintegrundgeschichte		
+		-99- Überschrift / Hintergundgeschichte
+		-79- Textfeld / Hintegrundgeschichte
+
+		XIX. zurueckzumspiel		
 		
 
 	:::::::::::::::::::::	
 	X. navigationsleiste
 	:::::::::::::::::::::
 	-91- Formular
-		-09- Option / Hauptmenü öffnen	
-		-94- Radio-Button / Spiel Beenden
-		-45- Option / Team ansehen
+		-97- Label 
+		-09- Option, Radio-Button / Hauptmenü öffnen	
+		
+		-97- Label 
+		-94- Option, Radio-Button / Spiel Beenden
+		
+		-97- Label
+		-45- Option, Radio-Button / Team ansehen
 	-93- Button /Submit
 		IV. MultiplayerStart
 		
@@ -249,26 +307,43 @@
 	::::::::::::::::
 	XI. kaempfe
 	::::::::::::::::
+		-99- Überschrift / Aktiver Spieler, 
 		-05- Bild / Bild des Charakters - aktiver Spieler
 		-05- Bild / Bild des Charakters - Gegner
+		III. Charakterstatus // für Spieler und Gegner - Schleife
 		
 		-91- Formular
-			-35- Option / Fähigkeit einsetzen
-			-36- Option / Level verlassen
-			-37- Option / Level neustarten
-			-80- Option / Aussetzen
+			4 Fache ausgabe über eine Schleife
+			-97- Label
+			-35- Option, Radio-Button / Fähigkeit einsetzen
+			
+			-97- Label
+			-80- Option, Radio-Button / Aussetzen
+			
+			-97- Label
+			-36- Option, Checkbox / Level verlassen
+			
+			-97- Label
+			-37- Option, Checkbox / Level neustarten
 		-93- Button / Submit	
-		III. Charakterstatus
-		-78- Textfeld / aktiver Charakter in einem Kampf
 	
 	:::::::::
 	XII. main_menu	
 	:::::::::
 	-91- Formular
-		-10- Option / Charaktermenü öffnen
-		-11- Option / Inventar öffnen
-		-12- Option / Fähigkeitenmenü öffnen
-		-13- Option / Systemmenü öffnen
+		Zweidimensionales Array
+		Ausgabe über eine Schleife
+		-97- Label
+		-10- Option, Radio-Button / Charaktermenü öffnen
+		
+		-97- Label
+		-11- Option, Radio-Button / Inventar öffnen
+		
+		-97- Label
+		-12- Option, Radio-Button / Fähigkeitenmenü öffnen
+		
+		-97- Label
+		-13- Option, Radio-Button / Systemmenü öffnen
 	-93- Button / Submit
 	XIX. zurueckzumspiel
 		
@@ -277,47 +352,69 @@
 	:::::::::::::::::::::
 	XIII. abschnittuebersicht
 	:::::::::::::::::::::
-		-34- Option / Level betreten
-		-75- Textfeld / Abschnitt Name und Nummer
 		X. navigationsleiste
-	
+		-99- Überschrift / Abschnitt Name und Nummer
+		-91- Formular
+		AUsgabe über schleife
+			-97- Label
+			-34- Option / Level betreten
+		-93- Button / Submit
+		
 	::::::::::::
 	XIV. spieleranzeige
 	::::::::::::
 		III. characterstatus
-		-04- Bild / Hintegrundbild
 		-05- Bild / Bild des Charakters
 		
 	:::::::::::::::::
 	XV. registrierung
 	:::::::::::::::::
 	-91- Formular
+	
+		-97- Label
 		-61- Textfeld / Username eingeben
+		
+		-97- Label
 		-62- Textfeld / Email-Adresse
+		
+		-97- Label
 		-63- Texfeld / Passwort eingeben
+		
+		-97- Label
 		-64- Textfeld / Passwort wiederholen
 		-65- Bild / Captcha anzeigen
+		
+		-97- Label
 		-66- Textfeld / Captcha eingeben
 	-93- Button / Submit
 	
 	:::::::::::::::::::
 	XVI. charaktermenue
 	:::::::::::::::::::
-	-14- Anzeige / Erfahrungspunkte
+	-99- Überschrift / Erfahrungspunkte
 		-91- Formular
 		
-		-95- Textfeld / max Lebenspunkte
-			-17- Option / Lebenspunkte erhöhen
-		-83- Textfeld / Stärke
-			-18- Option / Stärke erhöhen
-		-84- Textfeld / Verteidigung
-			-19- Option / Verteidigungspunkte erhöhren
-		-85- Textfeld / Aktionspunkte
-			-20- Option / Aktionspunkte erhöhen
-		-87- Textfeld / Rüstungswert
+			-95- Textfeld / max Lebenspunkte
+			-97- Label
+				-17- Option / Lebenspunkte erhöhen
+			
+			-83- Textfeld / Stärke
+			-97- Label	
+				-18- Option / Stärke erhöhen
+			
+			-84- Textfeld / Verteidigung
+			-97- Label
+				-19- Option / Verteidigungspunkte erhöhren
+			
+			-85- Textfeld / Aktionspunkte
+			-97- Label
+				-20- Option / Aktionspunkte erhöhen
+			
+			
+			-87- Textfeld / Rüstungswert
+			-86- Textfeld / Schaden
 		
 		-93- Button /Submit
-		-86- Textfeld / Schaden
 		
 		XIX. zurueckzumspiel
 		
@@ -326,27 +423,43 @@
 	XVII. inventar
 	::::::::::::::
 	-91- Formular
-		Liste
-		-23- Option / Gegenstand anlegen
-		-24- Option / Gegenstand ablegen	
+		Ausgabe über eine Schleife
+		Liste, Tabelle
+		-97- Label
+		-23- Option, Radio-Button / Gegenstand anlegen
+		
+		-97- Label
+		-24- Option, Radio-Button / Gegenstand ablegen	
 	-93- Button /Submit
 		XIX. zurueckzumspiel
 	
-	:::::::	::::::::::
+	:::::::::::::::::
 	XVIII. systemmenue 		
 	:::::::::::::::::
 	-91- Formular
-		-29- Option / Spielstand Speichern
-		-89- Option / Musik an/aus
-		-90- Option / ausloggen
+	-98- Fieldset
+		-96- Legend 
+		-97- Label
+		-29- Option, Radio-Button / Spielstand Speichern
+		
+		-97- Label
+		-89- Option, Radio-Button / Musik an/aus
+		-89- Option, Radio-Button / Musik an/aus
+		
+		-97- Label
+		-90- Option, Radio-Button / ausloggen
 	-93- Button /Submit
+	XIX. zurueckzumspiel
 	
 	::::::::::::::::::::
 	XIX. zurueckzumspiel
 	::::::::::::::::::::
 	-91- Formular
-		-81- Option / Zurück zum Spiel
-		-82- Option / Zurück zum Hauptmenü 
+		-97- Label
+		-81- Option, Radio-Button / Zurück zum Spiel
+		
+		-97- Label
+		-82- Option, Radio-Button / Zurück zum Hauptmenü 
 		//Nur in den Menüs, die man über das Hauptmenü erreicht
 	-93- Button /Submit
 	
@@ -354,8 +467,11 @@
 	XX. faehigkeitenmenue
 	:::::::::::::::::::::
 	-91- Formular
+	-98- Fieldset	
+		-96- Legend
 		Liste
 		Tabelle
+		Ausgabe über schleife
 		-27- Schaltfläche, Option / Fähigkeit ausrüsten
 		-28- Schaltfläche, Option / Fähigkeit ablegen
 	-93- Button / Submmit

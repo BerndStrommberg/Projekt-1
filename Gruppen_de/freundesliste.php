@@ -1,26 +1,29 @@
 
 <ul>
-	<li>Username:<!--Hier ein echo--> 
-		<br><a href="Link zu Spielerprofilen">Profil</a>
-		<br>Level:<!--Hier ein echo--> 
-		<br>Status:<!--Hier ein echo--> 
-		<br>
+	<?php
+	$anzahlFreunde = 10;
+	for($i = 0; $i < $anzahlFreunde; $i++) {
+		echo	
+			'<li><p>Username:</p> 
+			<p><a href="Link zu Spielerprofilen">Profil</a></p>
+			<p><br>Level:</p> 
+			<p><br>Status:</p> 
+			
 
-		<form method=POST action=form_eval_freundesliste.php>
-			<label for=invite>Spieler einladen</label>
-			<input type=checkbox id=invite name=einladen>
-			<br>
-			<label for=bestaetigen>Einladen</label>
-			<input type=submit id=bestaetigen>
-		</form>
-	</li>
-
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>			
+			<p>
+				<form method=POST action=form_eval_freundesliste.php>
+					<label for=invite>Diesen Spieler einladen</label>
+					<input type=checkbox id=invite name=einladen>
+				
+					<label for=bestaetigen>Einladen</label>
+					<input type=submit id=bestaetigen>
+				</form>
+			</p>
+		</li>';	
+	}
+	
+?>
+			
 </ul>
 		<!--DIe Liste soll aus einer Datenbank generiert werden und somit immer so groß, wie die Anzahl der Freunde sein-->
 	

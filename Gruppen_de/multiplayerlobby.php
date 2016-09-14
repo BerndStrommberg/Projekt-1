@@ -1,5 +1,5 @@
 
-<form action=form_eval_multiplayerlobby.php method=POST>
+<form action=../Formulare/form_eval_multiplayerlobby.php method=POST>
 	<fieldset>
 		<legend>Multiplayerspiel erstellen</legend>
 		<input type=radio id=freunde name=teamerstellen>
@@ -17,8 +17,7 @@
 		<input type=checkbox value="Spiel starten">
 	</fieldset>
 
-	<label for=starten>Starten</label>
-	<input type=submit id=starten>
+	<input type=submit value=Starten>
 </form>
 			<!--Beginnt das Spiel. DIese Option ist nur sichtbar, falls der Spieler das Spiel erstellt hat-->
 			

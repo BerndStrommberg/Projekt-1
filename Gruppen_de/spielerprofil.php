@@ -1,6 +1,6 @@
 
 		<!--alle Konkrete Angaben zu dem Spieler, stammen aus einer Datenbank-->
-<h1>Spielerprofil: Username</h1>
+<h1>Spielerprofil</h1>
 <img src=../Bilder/SSJ_Goku.png>
 <table>
 	<tr>
@@ -18,7 +18,6 @@
 				<label for=handeln>Handeln</label>
 				<input type=checkbox id=handeln name=handeln>
 
-				<label for=bestaetigen>Bestätigen</label>
 				<input type=submit id=bestaetigen>
 			</form> 
 		</td>
@@ -30,7 +29,6 @@
 				<label for=freundschaftsanfrage>Freund hinzufügen</label>
 				<input type=checkbox id=freundschaftsanfrage name=freundschaftsanfrage>
 
-				<label for=bestaetigen>Bestätigen</label>
 				<input type=submit id=bestaetigen>
 			</form>
 		</td>
@@ -42,6 +40,8 @@
 	<h2>Hintergrundgeschichte</h2>
 	<p>Dieser Text kommt aus einer Datenbank, jeder Spieler verfasst ihn selber.</p>
 </footer>
+
+<?php include("zurueckzumspiel.php") ?>
  
 
 

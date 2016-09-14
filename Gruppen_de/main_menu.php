@@ -1,23 +1,30 @@
 <form method=POST action=form_eval_main_menue.php>
 	<fieldset>
 		<legend>Hauptmenü</legend>
-		<label for=charaktermenue>Charaktermenü</label>
-		<input type=radio name=main_menu id=charaktermenue>
-
-		<label for=inventar>Inventar</label>
-		<input type=radio name=main_menu id=inventar>
-
-		<label for=faehigkeitenmenue>Fähigkeitenmenü</label>
-		<input type=radio name=main_menu id=faehigkeitenmenue>
-
-		<label for=system>Systemmenü</label>
-		<input type=radio name=main_menu id=system>
-
+	<?php
+		$titelUndId = array(
+			array("Charaktermenü","charaktermenue"),
+			array("Inventar","inventar"),
+			array("Fähigkeitenmenü","faehigkeitenmenue"),
+			array("Systemmenü","system")
+		);
+		for($i = 0; $i < 4; $i++){
+			for($j = $i; $j < $i+1; $j++) {
+				echo'
+					<label for=',$titelUndId[$i][($j+1)],'>',$titelUndId[$i][$j],'</label>
+					<input type=radio name=main_menu id=',$titelUndId[$i][($j+1)],',>';
+			}
+		}
+		
+	?> 
 	</fieldset>
-	
-		<label for=bestaetigen>Bestätigen</label>
 		<input type=submit name=main_menu id=bestaetigen>
 </form>
+
+<?php 
+	$inMainMenu = true;
+	include("zurueckzumspiel.php") 
+?>
 
 <!--Über das Hauptmenü kann der Spieler in vier Untermenüs gelangen-->
 
