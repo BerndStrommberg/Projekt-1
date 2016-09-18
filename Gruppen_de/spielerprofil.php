@@ -14,7 +14,7 @@
 
 	<tr>
 		<td>
-			<form method=POST action=form_eval_handeln.php>
+			<form method=POST action=../Formulare/form_eval_handeln.php>
 				<label for=handeln>Handeln</label>
 				<input type=checkbox id=handeln name=handeln>
 
@@ -23,16 +23,24 @@
 		</td>
 	</tr>
 
-	<tr>
-		<td>
-			<form method=POST action=form_eval_freundschaftsanfrage.php>
-				<label for=freundschaftsanfrage>Freund hinzufügen</label>
-				<input type=checkbox id=freundschaftsanfrage name=freundschaftsanfrage>
+	<?php
+		$friends = false;//Dieser Wert kommt aus einer Datenbank
+		if(!$friends) {
+			echo
+				'<tr>
+					<td>
+						<form method=POST action=../Formulare/form_eval_freundschaftsanfrage.php>
+							<label for=freundschaftsanfrage>Freund hinzufügen</label>
+							<input type=checkbox id=freundschaftsanfrage name=freundschaftsanfrage>
 
-				<input type=submit id=bestaetigen>
-			</form>
-		</td>
-	</tr>
+							<input type=submit id=bestaetigen>
+						</form>
+					</td>
+				</tr>';
+		}
+
+	?>
+	
 </table>
 	
 
@@ -41,7 +49,10 @@
 	<p>Dieser Text kommt aus einer Datenbank, jeder Spieler verfasst ihn selber.</p>
 </footer>
 
-<?php include("zurueckzumspiel.php") ?>
+<?php 
+	$inMainMenu = false;
+	include("zurueckzumspiel.php") 
+?>
  
 
 

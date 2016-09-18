@@ -13,16 +13,15 @@
 			<td>Status:<!--Hier ein echo--></td>
 
 			<td>
-				<br>
-				<form method=POST action=form_eval_teamuebersicht.php>
+				<form method=POST action=../Formulare/form_eval_teamuebersicht.php>
 					<label for=handel>Handel</label>
 					<input type=checkbox id=handel name=handel>
 
 					<label for=freundschaftsanfragen>Freund hinzufügen</label>
 					<input type=checkbox id=freundschaftsanfrage name=freundschaftsanfrage>
 
-					<label for=bestaetigen>Bestätigen</label>
-					<input type=submit id=bestaetigen name=bestaetigen>
+					
+					<input type=submit>
 				</form>
 			</td>
 		</tr>';	
@@ -30,6 +29,10 @@
 	 ?> 
 		
 	</table>
+	<?php
+		$inMainMenu = false;
+		include("zurueckzumspiel.php");
+	?>
 
 
 <!--

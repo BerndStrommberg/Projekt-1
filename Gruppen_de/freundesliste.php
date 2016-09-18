@@ -11,7 +11,7 @@
 			
 
 			<p>
-				<form method=POST action=form_eval_freundesliste.php>
+				<form method=POST action=../Formulare/form_eval_freundesliste.php>
 					<label for=invite>Diesen Spieler einladen</label>
 					<input type=checkbox id=invite name=einladen>
 				

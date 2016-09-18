@@ -18,7 +18,9 @@
 
 </form>
 
-<button><a href=../registrierung.php>Neu registrieren</a></button>
+<form action=registrierung.php>
+	<button>Neu registrieren</button>
+</form>
 <!--
 ===================================
 === Feedback Alpers, 2016-06-17 ===

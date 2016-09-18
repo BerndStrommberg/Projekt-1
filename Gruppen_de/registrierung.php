@@ -4,7 +4,7 @@
 
 		<label for=username>Benutzername: </label>
 		<input type=text id=username name=registrierung required>
-
+		
 		<label for=passwort>Passwort:</label>
 		<input type=text id=passwort name=registrierung required> 
 

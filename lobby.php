@@ -9,7 +9,7 @@
 
 	<body>
 		<main>
-			<?php include("Gruppen_de/multplayerlobby.php") ?>
+			<?php include("Gruppen_de/multiplayerlobby.php") ?>
 			<?php include("Gruppen_de/chat.php") ?>
 			<?php include("Gruppen_de/teamuebersicht.php") ?>
 		</main>

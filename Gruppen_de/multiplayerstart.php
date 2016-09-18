@@ -1,4 +1,4 @@
-<form action=../Formulare/form_eval_multiplayerstart.php method=POST>
+<!--<form action=../Formulare/form_eval_multiplayerstart.php method=POST>
 	<fieldset>
 		<legend>Zu Multiplayer wechseln</legend>
 		<input type=radio id=erstellen name=multiplayer>
@@ -11,7 +11,12 @@
 	 
 	<input type=submit id=submit>
 </form>
+-->
 
+<form action=lobby.php>
+	<button> Multiplayerspiel erstellen</button>
+	<button>Multiplayerspiel Beitreten</button>
+</form>
 <!--Hier soll die Möglichkeit gegeben sein ein Mehrspielerspiel erstellt zu werden, das aktuelle Einzelspielerspiel beendet sich dadurch automatisch-->
 
 <!--

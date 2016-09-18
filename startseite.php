@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-		<img src="Bilder/map.jpg"><!--Hier soll eigentlich ein Logo hin-->
+		<img src=Bilder/titleheader.png alt="Titel des Spiels"><!--Hier soll eigentlich ein Logo hin-->
 		<?php include("Gruppen_de/login.php") ?>
 	</body>
 

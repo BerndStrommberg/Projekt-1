@@ -115,8 +115,8 @@
 	-75- Option, Checkbox / Handeln
 	-76- Text, Ausgabe/ Lebenspunkte
 	-77- Text, Ausgabe / Aktionspunkte
-	-78- Textfeld / aktiver Charakter in einem Kampf
-	-79- Textfeld / Hintegrundgeschichte
+	-78- Textfeld, Ausgabe / aktiver Charakter in einem Kampf
+	-79- Textfeld, Ausgabe / Hintegrundgeschichte
 	-80- Option / Aussetzen
 	-81- Option, Radio-Button / Zurück zum Spiel
 	-82- Option, Radio-Button / Zurück zum Hauptmenü
@@ -162,14 +162,15 @@
 			-97- Label
 			-03- Schaltfläche / Log In
 		-93- Button /Submit
-
-		-60- Schaltfläche - Link / Neuregistrierung Als Button 
+		
+		-91- Formular
+			-60- Schaltfläche - Link / Neuregistrierung Als Button 
 		
 	
 	:::::::::::::::::::::::	
 	II. endgame
 	:::::::::::::::::::::::
-		!!Verworfen, direkt in navigationsleiste eingebaut. Die soll immer zu sehen sein
+
 	
 	::::::::::::::::::::::::::::
 	III. characterstatus
@@ -182,8 +183,10 @@
 		//Hinweis, Ausgabe meint aus einer Datenbank 
 
 	::::::::::::::::::::::::::::
-	IV. multiplayerstart (kann von Mehreren Punkten aus ausgeführt werden. Aus dem Startbildschirm und dem Einzelspielermodus)
+	IV. multiplayerstart 
 	::::::::::::::::::::::::::::
+		
+		//In Kommentaren noch vorhanden
 		-91- Formular
 		-98- Fieldset 
 			-96- Legend 
@@ -194,10 +197,16 @@
 			-56- Option, Radio-Button / Spiel beitreten
 		93- Button /Submit
 		
+		Neue Version mit Buttons
+		-91- Formular
+			Button - Spiel erstellen
+			Button - Spiel beitreten
+		
 	
 	::::::::::::::::::::
 	V. multiplayerlobby //Wird mehrfach vorkommen (Wenn Spieler Spiel betritt und wenn er eines erstellt)
 	::::::::::::::::::::
+		//So in den Kommentaren noch vorhanden
 		-91- Formular
 		-98- Fieldset 
 			-96- Legend
@@ -206,13 +215,24 @@
 			
 			-97- Label 
 			-71- Option, Radio-Button / Mitspieler zufällig auswählen
-		93- Button /Submit
+		-93- Button /Submit
 	
 		-91- Formular
 		-98- Fieldset 
 			
 			-58- Option, Checkbox / Spiel starten (nur für Host)
 		-93- Button /Submit
+		
+		neue Version, angepasst
+		-91- Formular
+		-98- Fieldset 
+			-96- Legend
+			Ausgabe über eine Schleife
+			-97- Label
+			Textfeld / Name Freund eingeben
+			
+			Button / Random Team erstellen
+			-93- Button /Submit
 		
 	::::::::
 	VI. chat
@@ -249,6 +269,7 @@
 	:::::::::::::::::::
 	VIII. teamuebersicht
 	:::::::::::::::::::
+		-99- Überschrift / Aktuelles Team
 	Tabelle
 		4 Fache ausgabe über eine Schleife
 		
@@ -261,6 +282,7 @@
 			-97- Label 
 			-50- Option, Checkbox / Freundschaftsanfrage <- Falls noch nicht befreundet ->
 		-93- Button /Submit
+			XIX. zurueckzumspiel
 		
 
 	::::::::::::::::
@@ -277,13 +299,14 @@
 			-75- Option, Checkbox / Handeln
 		-93- Button /Submit
 		
+		Nur wenn noch keine Freunde (if abfrage)
 		-91- Formular
 			-97- Label 
-			-50- Option / Freundschaftsanfrage <- Falls noch nicht befreundet ->
+			-50- Option, Checkbox / Freundschaftsanfrage 
 		-93- Button /Submit
 		
 		-99- Überschrift / Hintergundgeschichte
-		-79- Textfeld / Hintegrundgeschichte
+		-79- Text, Ausgabe / Hintegrundgeschichte
 
 		XIX. zurueckzumspiel		
 		
@@ -302,8 +325,19 @@
 		-45- Option, Radio-Button / Team ansehen
 	-93- Button /Submit
 		IV. MultiplayerStart
-		
+		//in Kommentaren noch vorhanden
 	
+	Neue Version mit buttons!!
+	-91- Formular
+		Button - Hauptmenü
+	
+	-91- Formular
+		Button - Team ansehen
+	
+	-91- Formular
+		Button - Spiel Beenden
+		
+		IV. MultiplayerStart
 	::::::::::::::::
 	XI. kaempfe
 	::::::::::::::::
@@ -352,6 +386,7 @@
 	:::::::::::::::::::::
 	XIII. abschnittuebersicht
 	:::::::::::::::::::::
+		//So noch in Kommentaren vorhanden
 		X. navigationsleiste
 		-99- Überschrift / Abschnitt Name und Nummer
 		-91- Formular
@@ -359,6 +394,12 @@
 			-97- Label
 			-34- Option / Level betreten
 		-93- Button / Submit
+		
+		
+		neue Version mit Buttons
+		Schleife Anzahl der Level
+			-91- Formular	
+				Button - jeweiliges Level betreten
 		
 	::::::::::::
 	XIV. spieleranzeige
@@ -454,6 +495,7 @@
 	::::::::::::::::::::
 	XIX. zurueckzumspiel
 	::::::::::::::::::::
+	//So in den Kommentaren noch VOrhanden	
 	-91- Formular
 		-97- Label
 		-81- Option, Radio-Button / Zurück zum Spiel
@@ -462,6 +504,16 @@
 		-82- Option, Radio-Button / Zurück zum Hauptmenü 
 		//Nur in den Menüs, die man über das Hauptmenü erreicht
 	-93- Button /Submit
+	
+	
+	Neue Version
+	-91- Formular
+		Button / Zurück zum Spiel
+		
+	-91- Formular
+		Button / Zurück zum Hauptmenüs
+		
+		Abfrage über Boolen Wert
 	
 	:::::::::::::::::::::
 	XX. faehigkeitenmenue
@@ -506,9 +558,9 @@
 		-92- Bild / Logo
 		XV. registrierung
 	
-	-------------------
+	-----------------------
 	--- view_startseite ---
-	-------------------
+	-----------------------
 		-92- Bild / Logo
 		I. login
 		
@@ -558,6 +610,20 @@
 	-----------------------
 		XIX. systemmenue
 		
+	-------------------
+	--- view_teamansicht ---
+	-------------------
+		VIII. teamuebersicht
+		
+	--------------------
+	--- view_endgame ---
+	--------------------
+		II. endgame
+	
+	---------------
+	--- freunde ---
+	---------------
+		VII. freundesliste
 
 	******************************
 	***********Hinweis************
