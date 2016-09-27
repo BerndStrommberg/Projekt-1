@@ -32,7 +32,7 @@
 	$inMainMenu = false;
 	if(!$inMainMenu) {
 		echo 
-			'<form action=mainmenue.php>
+			'<form action=mainmenu.php>
 				<button>Zurück zum Hauptmenü</button>
 			</form>';
 	}

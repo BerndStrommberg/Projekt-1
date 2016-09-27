@@ -1,8 +1,10 @@
-<form method=POST action=form_eval_main_menue.php>
+
+
+<!--<form method=POST action=form_eval_main_menue.php>
 	<fieldset>
 		<legend>Hauptmenü</legend>
 	<?php
-		$titelUndId = array(
+	/*	$titelUndId = array(
 			array("Charaktermenü","charaktermenue"),
 			array("Inventar","inventar"),
 			array("Fähigkeitenmenü","faehigkeitenmenue"),
@@ -15,19 +17,39 @@
 					<input type=radio name=main_menu id=',$titelUndId[$i][($j+1)],',>';
 			}
 		}
-		
+	*/	
 	?> 
 	</fieldset>
 		<input type=submit name=main_menu id=bestaetigen>
 </form>
 
 <?php 
-	$inMainMenu = true;
-	include("zurueckzumspiel.php") 
+	//$inMainMenu = true;
+	//include("zurueckzumspiel.php") 
 ?>
 
 <!--Über das Hauptmenü kann der Spieler in vier Untermenüs gelangen-->
 
+
+<form action=charmenue.php>
+	<button>Charaktermenü</button>
+</form>
+
+<form action=inventar.php>
+	<button>Inventar</button>
+</form>
+
+<form action=faehigkeitenmenue.php>
+	<button>Fähigkeitenmenü</button>
+</form>
+
+<form action=systemmenue.php>
+	<button>Systemmenü</button>
+</form>
+
+<br>
+
+<?php include("zurueckzumspiel.php") ?>
 <!--
 ===================================
 === Feedback Alpers, 2016-07-19 ===

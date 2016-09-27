@@ -39,10 +39,10 @@
 				for($i=0; $i< $anzahlFaehigkeiten; $i++) {
 				
 				echo 
-				'<td>
-					<label for=nr',($i+1),'>Fähigkeit',($i+1),'</label>
-					<input type=radio id=nr',($i+1),'name=kampf>
-				</td>';
+				"<td>
+					<label for=nr",($i+1),">Fähigkeit",($i+1),"</label>
+					<input type=radio id=nr",($i+1),"name=kampf>
+				</td>";
 					
 				}
 			?>

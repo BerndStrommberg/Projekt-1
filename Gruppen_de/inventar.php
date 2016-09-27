@@ -18,7 +18,7 @@
 								<ul>
 									<li>
 										<label for=oitem',$i+1,'>oItem',$i+1,'</label>
-										<input type=radio id=oitem',$i+1,' name=oitems>
+										<input type=checkbox id=oitem',$i+1,' name=oitems>
 									</li>
 								</ul>
 							</td>';
@@ -38,7 +38,7 @@
 								<ul>
 									<li>
 										<label for=ditem',$i+1,'>dItem',$i+1,'</label>
-										<input type=radio id=ditem',$i+1,' name=ditems>
+										<input type=checkbox id=ditem',$i+1,' name=ditems>
 									</li>
 								</ul>
 							</td>';

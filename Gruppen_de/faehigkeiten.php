@@ -26,7 +26,7 @@
 
 				<td>
 					<?php
-						$anzahlFaehigkeiten = 10; //AUs einer Datenbank
+					 //AUs einer Datenbank
 						for($i = 0; $i < $anzahlFaehigkeiten; $i++) {
 							echo
 								'<ul>

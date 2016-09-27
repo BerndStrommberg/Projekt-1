@@ -121,11 +121,11 @@
 	-81- Option, Radio-Button / Zurück zum Spiel
 	-82- Option, Radio-Button / Zurück zum Hauptmenü
 	
-	-83- Textfeld / Stärke
-	-84- Textfeld / Verteidigung
-	-85- Textfeld / Aktionspunkte
-	-86- Textfeld / Schaden
-	-87- Textfeld / Rüstungswert
+	-83- Text, Ausgabe / Stärke
+	-84- Text, Ausgabe / Verteidigung
+	-85- Text, Ausgabe / Aktionspunkte
+	-86- Text, Ausgabe / Schaden
+	-87- Text, Ausgabe / Rüstungswert
 	
 	-88- Textfeld / Fähigkeit
 	-89- Option, Radio-Button# / Musik an/aus
@@ -134,7 +134,7 @@
 	-92- Bild / Logo
 	-93- Button /Submit
 	-94- Radio-Button / Spiel Beenden
-	-95- Textfeld / max Lebenspunkte
+	-95- Text, Ausgabe / max Lebenspunkte
 	-96- Legende 
 	-97- Label 
 	-98- Fieldset 
@@ -364,6 +364,8 @@
 	:::::::::
 	XII. main_menu	
 	:::::::::
+	
+	//So in Kommentaren noch vorhanden
 	-91- Formular
 		Zweidimensionales Array
 		Ausgabe über eine Schleife
@@ -379,6 +381,21 @@
 		-97- Label
 		-13- Option, Radio-Button / Systemmenü öffnen
 	-93- Button / Submit
+	XIX. zurueckzumspiel
+	
+	Neue Version mit Buttons
+		-91- Formular
+		Button /Charaktermenü
+		
+		-91- Formular
+		Button / Inventar
+			
+		-91- Formular
+		Button / Fähigkeitenmenü
+		
+		-91- Formular
+		Button / Systemmenü
+	
 	XIX. zurueckzumspiel
 		
 		
@@ -434,26 +451,27 @@
 	:::::::::::::::::::
 	-99- Überschrift / Erfahrungspunkte
 		-91- Formular
-		
-			-95- Textfeld / max Lebenspunkte
+		-98- Fieldset
+			-96- Legend 
+			-95- Text, Ausgabe / max Lebenspunkte
 			-97- Label
 				-17- Option / Lebenspunkte erhöhen
 			
-			-83- Textfeld / Stärke
+			-83- Text, Ausgabe / Stärke
 			-97- Label	
 				-18- Option / Stärke erhöhen
 			
-			-84- Textfeld / Verteidigung
+			-84- Text, Ausgabe / Verteidigung
 			-97- Label
 				-19- Option / Verteidigungspunkte erhöhren
 			
-			-85- Textfeld / Aktionspunkte
+			-85- Text, Ausgabe / Aktionspunkte
 			-97- Label
 				-20- Option / Aktionspunkte erhöhen
 			
 			
-			-87- Textfeld / Rüstungswert
-			-86- Textfeld / Schaden
+			-87- Text, Ausgabe / Rüstungswert
+			-86- Text, Ausgabe  / Schaden
 		
 		-93- Button /Submit
 		
@@ -467,15 +485,18 @@
 		Ausgabe über eine Schleife
 		Liste, Tabelle
 		-97- Label
-		-23- Option, Radio-Button / Gegenstand anlegen
+		-23- Option, Checkbox / Gegenstand anlegen
 		
+		Ausgabe über eine Schleife
+		Liste, Tabelle
 		-97- Label
-		-24- Option, Radio-Button / Gegenstand ablegen	
+		-23- Option, Checkbox / Gegenstand anlegen
+	
 	-93- Button /Submit
 		XIX. zurueckzumspiel
 	
 	:::::::::::::::::
-	XVIII. systemmenue 		
+	XVIII. system	
 	:::::::::::::::::
 	-91- Formular
 	-98- Fieldset
@@ -487,8 +508,16 @@
 		-89- Option, Radio-Button / Musik an/aus
 		-89- Option, Radio-Button / Musik an/aus
 		
+		//diese Elemente so noch in Kommentaren vorhanden
 		-97- Label
 		-90- Option, Radio-Button / ausloggen
+		
+		neue Version: 
+		-91- Formular
+		Button / Ausloggen
+		
+		Zeilenumbruch 
+		
 	-93- Button /Submit
 	XIX. zurueckzumspiel
 	
@@ -516,13 +545,15 @@
 		Abfrage über Boolen Wert
 	
 	:::::::::::::::::::::
-	XX. faehigkeitenmenue
+	XX. faehigkeiten
 	:::::::::::::::::::::
 	-91- Formular
 	-98- Fieldset	
 		-96- Legend
 		Liste
 		Tabelle
+		-102- Text, Ausgabe / Offensive Fähigkeiten
+		-102- Text, Ausgabe / Defensive Fähigkeiten
 		Ausgabe über schleife
 		-27- Schaltfläche, Option / Fähigkeit ausrüsten
 		-28- Schaltfläche, Option / Fähigkeit ablegen
@@ -597,13 +628,9 @@
 		XVII. inventar
 			
 	----------------------------
-	--- view_fähigkeitenmenue ---
+	--- view_faehigkeitenmenue ---
 	----------------------------
-		-27- Schaltfäche, Option / Fähigkeit ausrüsten
-		-28- Schaltfläche, Option / Fähigkeit ablegen	
-			Liste
-		-88- Textfeld / Fähigkeit
-		
+		XX. faehigkeiten
 	
 	-----------------------
 	--- view_systemmenue ---
