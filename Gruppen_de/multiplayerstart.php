@@ -1,17 +1,4 @@
-<!--<form action=../Formulare/form_eval_multiplayerstart.php method=POST>
-	<fieldset>
-		<legend>Zu Multiplayer wechseln</legend>
-		<input type=radio id=erstellen name=multiplayer>
-		<label for=erstellen>Spiel Erstellen</label>
 
-		<input type=radio id=beitreten name=multiplayer>
-		<label for=beitreten>Spiel Beitreten</label>
-	</fieldset>
-	
-	 
-	<input type=submit id=submit>
-</form>
--->
 
 <form action=lobby.php>
 	<button> Multiplayerspiel erstellen</button>

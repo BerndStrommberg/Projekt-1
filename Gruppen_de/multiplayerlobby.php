@@ -1,24 +1,4 @@
 
-<!--<form action=../Formulare/form_eval_multiplayerlobby.php method=POST>
-	<fieldset>
-		<legend>Multiplayerspiel erstellen</legend>
-		<input type=radio id=freunde name=teamerstellen>
-		<label for=freunde>Freund einladen</label>
-		<!--öffnet Freundesliste-->
-		<!--<input type=radio id=random name=teamerstellen>
-		<label for=random>Zufälliges Team</label>
-		<!-- Es wird nach Spielern gesucht, die online sind und ungefähr auf dem selben Level sind-->
-	<!--</fieldset>
-	<input type=submit id=submit>	
-</form>
-
-<form action=form_eval_multiplayerlobby.php method=POST> 
-	<fieldset>
-		<input type=checkbox value="Spiel starten">
-	</fieldset>
-
-	<input type=submit value=Starten>
-</form>-->
 
 <form action=../Formulare/form_eval_teamerstellen.php method=POST>
 <fieldset>

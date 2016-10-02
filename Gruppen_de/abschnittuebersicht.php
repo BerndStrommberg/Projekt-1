@@ -10,13 +10,6 @@
 				<button>Level ',$i+1,' betreten</button>
 			</form>';
 		}	
-
-	/*	$anzahlLevel = 4;//Dieser Wert kommt aus einer Datenbank
-		for($i = 0; $i < $anzahlLevel; $i++){
-			echo 
-				"<label for=level",$i + 1,">Level",$i + 1," betreten</label>
-				<input type=radio id=level",$i + 1,"name=level>"; 
-		}*/
 	?>
 <!--
 	

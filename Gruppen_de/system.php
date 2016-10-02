@@ -9,9 +9,6 @@
 
 		<label for=musikaus>Musik aus</label>
 		<input type=radio id=musikaus name=system>
-
-		<!--<label for=logout>Ausloggen</label>
-		<input type=radio id=logout name=system>-->
 	</fieldset>	
 
 </form>

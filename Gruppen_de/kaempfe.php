@@ -63,6 +63,8 @@
 	<label for=bestaetigen>Bestätigen</label>
 	<input type=submit id=bestaetigen>
 </form>
+
+<?php include("zurueckzumspiel.php") ?>
 	
 		
 <!--

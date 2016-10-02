@@ -92,7 +92,7 @@
 	-54- Schaltfläche, Option / Mehrspielermodus wählen
 	-55- Option, Radio-Button / Spiel erstellen
 	-56- Option, Radio-Button / Spiel beitreten
-	-57- Tabelle / Anzeige Spieler im Team, enthält Textfelder und Links zu Profilen
+	-57- Tabelle / 
 	-58- Option, Checkbox / Spiel starten (nur für Host)
 	-59- 
 	
@@ -143,7 +143,7 @@
 	-101- Absatz
 	
 	-102- Button als Link zu einer Ansicht in einem Formular(technisch leichter als ein normaler Link) / Hier In-Gamme Funktion
-
+	-103- Liste
  
 ========================================	
 ==== Gruppen struktureller Elemente ====
@@ -202,7 +202,7 @@
 		-91- Formular
 		-98- Fieldset 
 			-96- Legend
-			Ausgabe über eine Schleife
+			//Ausgabe über eine Schleife
 			-97- Label
 			Textfeld / Name Freund eingeben
 			
@@ -245,7 +245,7 @@
 	VIII. teamuebersicht
 	:::::::::::::::::::
 		-99- Überschrift / Aktuelles Team
-	Tabelle
+		-57- Tabelle
 		4 Fache ausgabe über eine Schleife
 		
 		-47- Text, Ausgabe Username
@@ -265,7 +265,7 @@
 	::::::::::::::::
 		-99- Überschrift / Spielerprofil
 		-05- Bild / Bild des Charakters
-	Tabelle
+		-57- Tabelle
 		-47- Text, Ausgabe / Username
 		-49- Text, Ausgabe / Spielerlevel
 		
@@ -274,7 +274,7 @@
 			-75- Option, Checkbox / Handeln
 		-93- Button /Submit
 		
-		Nur wenn noch keine Freunde (if abfrage)
+		//Nur wenn noch keine Freunde (if abfrage)
 		-91- Formular
 			-97- Label 
 			-50- Option, Checkbox / Freundschaftsanfrage 
@@ -420,12 +420,14 @@
 	::::::::::::::
 	-91- Formular
 		Ausgabe über eine Schleife
-		Liste, Tabelle
+		-103- Liste
+		-57- Tabelle
 		-97- Label
 		-23- Option, Checkbox / Gegenstand anlegen
 		
 		Ausgabe über eine Schleife
-		Liste, Tabelle
+		-103- Liste 
+		-57- Tabelle
 		-97- Label
 		-23- Option, Checkbox / Gegenstand anlegen
 	
@@ -445,15 +447,13 @@
 		-89- Option, Radio-Button / Musik an/aus
 		-89- Option, Radio-Button / Musik an/aus
 		
-		//diese Elemente so noch in Kommentaren vorhanden
-		-97- Label
-		-90- Option, Radio-Button / ausloggen
+		
 		
 		neue Version: 
 		-91- Formular
-		Button / Ausloggen
+		-102- Button / Ausloggen
 		
-		Zeilenumbruch 
+		-100- Zeilenumbruch 
 		
 	-93- Button /Submit
 	XIX. zurueckzumspiel
@@ -477,11 +477,11 @@
 	-91- Formular
 	-98- Fieldset	
 		-96- Legend
-		Liste
-		Tabelle
+		-103- Liste
+		-57- Tabelle
 		-102- Text, Ausgabe / Offensive Fähigkeiten
 		-102- Text, Ausgabe / Defensive Fähigkeiten
-		Ausgabe über schleife
+		//Ausgabe über schleife
 		-27- Schaltfläche, Option / Fähigkeit ausrüsten
 		-28- Schaltfläche, Option / Fähigkeit ablegen
 	-93- Button / Submmit
@@ -578,6 +578,13 @@
 	--- freunde ---
 	---------------
 		VII. freundesliste
+		
+		
+	
+	***************************************
+	************Dritter Hinweis************
+	***************************************
+	Ich habe anstelle von Links Buttons benutzt, die in einem Formular stehen. Über das action-Attribut wird hier zu anderen Ansichten verlinbkt. Das ist unkomplizierter, als die normalen Links wie Buttons aussehen zu lassen. Das betrifft ale Elemente der Nummer -102-.
 
 	******************************
 	***********Hinweis************
