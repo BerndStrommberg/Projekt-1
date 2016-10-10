@@ -7,7 +7,7 @@
 	<button>Team ansehen</button>
 </form>
 
-<form action=endgame.php>
+<form action=end_game.php>
 	<button>Spiel beenden</button>
 </form>
 
