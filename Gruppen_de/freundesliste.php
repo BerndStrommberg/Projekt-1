@@ -25,6 +25,8 @@
 ?>
 			
 </ul>
+
+<?php include("zurueckzumspiel.php") ?>
 		<!--DIe Liste soll aus einer Datenbank generiert werden und somit immer so groß, wie die Anzahl der Freunde sein-->
 	
 
