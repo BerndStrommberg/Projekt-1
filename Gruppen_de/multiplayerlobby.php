@@ -31,4 +31,11 @@ Leider ist dieses Dokument gegenüber der strukt.html inkonsistent. Bitte gleich
 
 0 / 1 Pk.
 
+===================================
+=== Feedback Alpers, 2016-11-02 ===
+===================================
+
+Die verlinkte Datei zur Auswertung des Formulars existiert noch nicht.
+
+Ansonsten wie in strukt.html umgesetzt: 1/1
 -->

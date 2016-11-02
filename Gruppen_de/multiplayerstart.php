@@ -17,4 +17,9 @@ Ansonsten gibt es noch einige Inkonsistenzen bezüglich der strukt.html, die ich
 
 0 / 1 Pk.
 
+===================================
+=== Feedback Alpers, 2016-11-02 ===
+===================================
+
+Aktuell hätten Sie folgenden Ablauf: Wenn eine der Schaltflächen angewählt wird, wird die Ansicht Lobby gewählt. Diese Datei wird aber bereits in der Lobby included. Es kann also passieren, dass Spieler eine der Schaltflächen betätigen und (scheinbar) passiert nichts.
 -->

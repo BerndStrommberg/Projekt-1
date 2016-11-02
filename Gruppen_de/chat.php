@@ -19,4 +19,13 @@ Auch hier gibt es wieder eine Inkonsistenz gegenüber der Definition in der stru
 
 0 / Pk.
 
+===================================
+=== Feedback Alpers, 2016-11-02 ===
+===================================
+
+Einziges Manko an dieser Stelle: Überschriften von Formularen werden über den legend-Container umgesetzt. 
+
+Die verknüpfte Auswertung existiert noch nicht.
+
+Wertung: 0,75/1
 -->

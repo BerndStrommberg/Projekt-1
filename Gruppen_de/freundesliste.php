@@ -73,4 +73,17 @@ Eine Schaltfläche ist keine Checkbox.
 Wenn Sie die Möglichkeit erzeugen wollen, dass mehrere Spieler eingeladen werden können, dann nutzen Sie dazu bitte eine Schleife.
 
 0 / 1 Pk.
+
+===================================
+=== Feedback Alpers, 2016-11-02 ===
+===================================
+
+Hier haben Sie am Anfang ein <li>. Das macht ohne eigentliche Aufzählung keinen Sinn.
+
+Es fehlt auch noch die Anbindung konkreter Spieleprofile.
+
+Wertung: 0,75/1
+
+(Hinweis: Die Nutzung von PHP in Kombination mit HTML wurde unabhängig davon durchgeführt. Damit haben Sie inzwischen die geforderten 35 Punkte und somit den Leistungsnachweis erbracht. Kurzfassung: Bestanden, viel Erfolg bei den übrigen Leistungen und Prüfungen im Studium.)
+
 -->

@@ -601,3 +601,33 @@ Außerdem fehlt etwas wichtiges, dass Sie mir im Gespräch genannt hatten: Die B
 Wertung 2: Projektbeschreibung: gesamt: 9 / 10
 Hier erfolgt keine Teilwertung nach dem bisherigen Schlüssel, da Sie einerseits die dort genannten Kriterien nicht eindeutig erfüllt haben, aber andererseits klar erkennbar ist, dass Ihre Spielidee die in der Aufgabenstellung geforderten Aspekte weitegehend erfüllt.
 (Bitte beachten Sie, dass das die Wertung zum aktuellen Zeitpunkt und keine abschließende Wertung Ihrer Beschreibung ist.)
+
+===================================
+=== Feedback Alpers, 2016-11-02 ===
+===================================
+
+=== 1.) Inhaltlich
+
+== 1.1.) Bezüglich Leveln und Abschnitten
+
+Fügen Sie bitte noch kurz ein, ob Level in Abschnitte unterteilt sind oder umgekehrt. Das wird erst später klar.
+
+Ansonsten sehr gut.
+
+=== 2.) Formales
+
+Wie immer gilt: Alles kann noch besser werden, aber das würde im Rahmen dieses Leistungsnachweises weit über das nötige Maß hinausgehen.
+
+=== 3.) Verteilte Anwendung
+
+Hier haben Sie genau das erreicht, worum es ging: Anstatt sich zu beschränken, haben Sie ein Konzept entwickelt, das es ermöglicht, mit beliebig vielen Spielern zu spielen. Bei Ihnen ist es zwar rein kooperativ ausgerichtet, aber das ist an dieser Stelle irrelevant. Einziges Manko ist zurzeit, dass es bei Ihrer Planung noch nicht möglich ist, dynamisch Spieler aufzunehmen oder auszuschließen bzw. dass nicht geklärt ist, was passiert, wenn einzelne Spieler das Spiel verlassen. Aber das sind auch genau die Fragen, die Sie bei späteren Projekten lösen müssen.
+
+=== 4.) Adaptive Anwendung
+
+Sie haben zwar noch nicht ins letzte Detail ausgearbeitet, welche Eigenschaften und Entscheidungen im Detail in die Adaption einfließen, aber diese Details ändern sich ohnehin im Laufe der Entwicklung. Auch hier gilt: Das ist eine der Aufgaben, die Sie bei späteren Projekten lösen müssen.
+
+=== 5.) Zusammenfassung
+
+Auch wenn das Spiel im Kern noch relativ simpel ist, haben Sie sehr detailliert die einzelnen Aspekte ausgearbeitet und so eine perfekte Basis, um aus diesem Projekt ein wesentlich größeres zu entwickeln. Sie binden aktuelle technologische Möglichkeiten ein, ohne sich auf einzelnes System zu beschränken. Ihre Beschreibung geht weit über das geforderte Maß hinaus, ist bis auf das eine genannte Detail (Level versus Abschnitte) für jeden Leser sofort nachvollziehbar. Neue Teammitglieder könnten deshalb sofort mit der Strukturierung beliebiger Teilaufgaben beginnen.
+
+Wertung: 10 Punkte + 5 Punkte Bonus

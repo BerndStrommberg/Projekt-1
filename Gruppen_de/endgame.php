@@ -18,3 +18,11 @@
 	}
 ?>
 <!--UM nicht ausversehen das Spiel zu beenden, muss der Nutzer die OPtion Spiel Beenden anwählen und diese im Anschluss bestätigen.-->
+
+<!--
+
+Gruppe umgesetzt: 1/1
+
+Allerdings sind hier die Verlinkungen noch falsch, denn die Spielfelder befinden sich ja in einem anderen Verzeichnis.
+
+-->

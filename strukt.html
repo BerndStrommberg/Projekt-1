@@ -603,27 +603,6 @@
 		
 	-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<!--
 	
 	<- Hinweis: Das sind die strukturellen Elemente basierend auf der ersten Version der Projektidee vom 12.04.2016. Diese habe ch verworfen/überarbeitet
@@ -752,7 +731,7 @@ Tatsächlich würde ich Ihr Projekt gerne als gutes Beispiel den anderen Studier
  
  -->
  
- <!--
+<!--
 ===================================
 === Feedback Alpers, 2016-09-01 ===
 ===================================
@@ -760,4 +739,107 @@ Tatsächlich würde ich Ihr Projekt gerne als gutes Beispiel den anderen Studier
 Ich habe rund 2/3 der HTML-Dokumente durchgesehen und kommentiert. Auch wenn Sie gutes HTML5 programmiert haben, sind die Dokumente leider nicht gut, weil so gut wie keines konsistent gegenüber der strukt.html ist. Außerdem haben Sie einen kleinen aber gemeinen Fehler in den Verlinkungen auf die Auswertungs-PHP-Skripte gemacht, der aber wirklich jedem passieren kann. Und Sie haben leider keine Schleifen eingesetzt, wo das sinnvoll ist. Wenn Sie das getan hätten, wären Sie aktuell bei ca. 32 Punkten, müssten also nur noch einige PHP-Skripte erstellen und wären dann fertig.
 
 Deshalb bleibt Ihre Wertung zurzeit gleich.
+-->
+
+<!--
+===================================
+=== Feedback Alpers, 2016-11-02 ===
+===================================
+
+=== I.) Strukturelle Elemente
+
+== I.1.) Leider notieren Sie noch "Textfelder". Diesen Begriff hatte ich häufig verwendet, dabei ist er streng genommen falsch: Für anzuzeigende Texte verwenden wir z.B. Absätze, für Eingaben input-Container unterschiedlicher Typen.
+
+== I.2.) -03- Schaltfläche / Log In
+
+Das dürfte eher ein Link oder ein input/submit sein.
+
+== I.3.) -06- Schaltfläche, Option / Spiel Beenden
+
+Entscheiden Sie bitte, ob es eine Schaltfläche oder eine Option sein soll. 
+
+Eine Option wäre so etwas wie eine Auswahl aus mehreren, von denen auch mehrere ausgewählt werden können. Denken Sie da an so etwas wie einen Pizza-Bringdienst: Käse, Oregano, Zwiebeln u.a. könnten Sie alle unabhängig voneinander als "Zugabe" auf die Pizza bestellen. Und solch eine beliebige Kombination aus einer Auswahl an Möglichkeiten liefe unter dem Begriff Optionen.
+
+== I.4.) -14- Anzeige / Erfahrungspunkte
+
+Letzten Endes beinhalten die meisten Container eine Anzeige. Die Frage, die Sie klären müssen lautet: Was wird angezeigt? Ein Text, dann wäre wahrscheinlich ein Absatz oder eine Zelle (einer Tabelle) das passende strukturelle Element.
+
+== I.5.) -29- Option, Radio-Button / Spielstand Speichern
+
+Ähnlich wie I.3.) Radio-Buttons sind eine Möglichkeit, um Optionen umzusetzen. Hier ist wahrscheinlich eine Schaltfläche sinnvoll.
+
+== I.6.) -69- Textfeld / Status (online/offline)
+
+Das folgende ist ein Hinweis auf ein Problem, das Sie später bei der Umsetzung bekommen werden, wenn Sie die bisherige Strategie weiter verfolgen: Sie hatten ja in der Beschreibung festgelegt, dass ein Spieler der Host wird. Wenn Sie das so umsetzen, dann gibt es keinen Webserver abgesehen von dem Rechner dieses Spielers. In dem Fall werden Sie später das Problem bekommen, dass alle anderen Spieler nur als offline gelten können, bis dieser Spieler den anderen seine IP-Adresse mitgeteilt hat und diese über Ihren Rechner versuchen, Verbindung mit seinem Rechner aufzunehmen.
+
+Das bedeutet auch, dass ein Spieler effektiv niemanden einladen kann, der nicht ohnehin schon mit seinem Rechner verbunden ist. Es würde also einige Probleme vermeiden, wenn Sie das Spiel so entwickeln, als wenn es auf einem Webserver mit einer statischen IP-Adresse laufen würde. (Wenn Sie hier nicht nachvollziehen können, was das im einzelnen bedeutet: U.a. werden Sie die Details in der Veranstaltung NWI kennen lernen. Aber wir können auch schon im Vorfeld mal drüber reden.)
+
+================================================================
+=== Wertung 3: Ausarbeitung der strukt. Elem. gesamt: 6 / 10 ===
+================================================================
+- Knappe Form 0 bis 3 Pk.: 3 
+- Für je 5 unterschiedl. strukt. Elem (keine Gruppierungen) 1 Pk., 0 bis 7 Pk.: 3 
+=== (Malus bei strukt. Elem.) ===
+- Vermischung strukt. Elem., Gruppierung, Abläufe usw. bis zu 5 Pk. Abzug: 0 
+(Dies ist keine abschließende Wertung.)
+
+=== II.) Gruppen
+
+== II.1.) II. endgame
+
+Diese Gruppe wirkt nicht sehr sinnvoll: Da werden zwei Buttons gleichzeitig angezeigt, die so beschriftet sind, als wenn es Sinn machen würde, dass der zweite erst nach dem drücken des ersten angezeigt werden würde. Wenn das der Fall ist, dann sollte es sich um einen Button handeln, dessen Beschriftung nach einmaligem Betätigen wechselt.
+
+Gruppen, die nur aus einem Button bestehen (oder generell aus nur einem strukturellen Element) machen wenig Sinn, denn sie sind dann ja nur ein strukturelles Element. Hier wäre zu prüfen, ob dieser Button nicht eher Teil einer anderen Gruppe werden sollte. (Z.B. X. navigationsleiste)
+
+Hinweis: Sie können durchaus einen Button als Teil einer Gruppe definieren, der nicht ständig angezeigt wird. Das wäre im einfachsten Fall über eine simple Kontrollstruktur zu realisieren.
+
+== II.2.) IV. multiplayerstart 
+
+Hier fehlt noch etwas: Denn wenn es die Schaltfläche gibt, um einer Partie beizutreten, ohne dass es eine Übersicht der existierenden Partien gibt, dann macht die Schaltfläche wenig Sinn. Umgekehrt macht es auch wenig Sinn, wenn alle Spieler eine eigene Partie anlegen. Deshalb sollte diese Gruppe um eine Übersicht der bestehenden Partien ergänzt werden.
+
+== II.3.) III. characterstatus
+
+Hier führen Sie ein strukturelles Element (Liste) auf, das in der Liste der strukturellen Elemente nicht auftaucht. Außerdem fehlt die Angabe, um was für eine Art von Liste es sich handeln soll. (Prüfen Sie auch, ob ggf. eine Tabelle ein besseres Mittel ist. Aber das ist nachrangig, weil hier effektiv eine Präferenz nach Design durchgeführt werden würde.)
+
+== II.4.) VI. chat
+
+-99- Überschrift / Chat
+-91- Formular
+-98- Fieldset
+-97- Label 
+-38- Textfeld / Eingabe Chat
+-39- Anzeige / Chatverlauf
+-93- Button /Submit
+
+Hier wird etwas akut, was oben schon bei der Definition der strukturellen Elemente deutlich wurde: Das Element -39- ist nicht genau genug definiert.
+
+== II.5.) 	VIII. teamuebersicht
+
+-99- Überschrift / Aktuelles Team
+-57- Tabelle
+4 Fache ausgabe über eine Schleife
+
+Hier ist nicht klar, was viermal ausgegeben werden soll und warum. Aus der Beschreibung ergibt es sich nicht (wenn ich da nichts übersehen habe).
+
+== II.6.) Unklar, wo der Unterschied liegt.
+
+XX. faehigkeiten versus III. characterstatus
+
+Bitte ändern Sie die Bezeichnung der Gruppen so ab, das klar wird, wie die sich unterscheiden.
+
+=======================================
+=== Wertung 4: Microservices: 5 / 5 ===
+=======================================
+- für jeden für die Kernanwendung sinnvollen Microservice 1 Pk.: 5 
+=== (Malus bei strukt. Elem.) ===
+- Wenn Micrservices vergessen wurden, die für verteilte adaptive Anwendungen eine Voraussetzung sind, je 1 Pk. Abzug:
+(Dies ist keine abschließende Wertung.)
+
+=== III.) Ansichten
+
+Die Ansichten sind leider nicht gut: Sie gehen hier vor, als wenn Sie eine Anwendung für ein Smartphone (also ein Gerät mit kleinem Display) entwickeln würden. Prüfen Sie bitte, wie Sie jeweils mehrere Gruppen zu sinnvollen Ansichten kombinieren können.
+
+Bezüglich Ihres ***********Hinweis************
+
+Eine der Herausforderungen dieses Projekts besteht darin, dass Sie alle nur beschränkte Möglichkeiten haben, um das Projekt zumzusetzen. Und Sie haben Recht: Die Folge besteht darin, dass zum Teil der Komfort für Nutzer reduziert ist. (Z.B. weil Pop-Ups effektiv nur mit einem kruden Workaround möglich wären.) Da es bei diesem Projekt darum geht, dass Sie sich darauf konzentrieren a) knapp und übersichtlich zu formulieren, b) klar zu strukturieren, c) Funktionalitäten an Strukturen zu binden, ist das hier kein Problem. In späteren Projekten sieht das wieder anders aus.
 -->

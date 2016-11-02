@@ -20,4 +20,5 @@ Dazu kommt, dass Sie hier vier Absatz-Container programmiert haben, obwohl Sie i
 
 0 / 1 Pk.
 
+Nachtrag (2.11.): Strukturell wie geplant, allerdings fehlen da noch die Werte (wie oben von Ihnen angemerkt).
 -->

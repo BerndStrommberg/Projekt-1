@@ -17,3 +17,9 @@
 		</main>
 	</body>
 </html>
+
+<!--
+
+Das ist genau die Frage, die Sie in der Entwicklung der Struktur beantworten sollen. Sie müssen sich dazu zunächst selbst darüber klar werden, was alles zum Spielfeld gehört.
+
+-->
